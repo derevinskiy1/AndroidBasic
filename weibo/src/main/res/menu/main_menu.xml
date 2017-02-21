@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/home"
+        android:icon="@drawable/icon_1_n"
+        android:title="@string/main_home" />
+    <item
+        android:id="@id/compose"
+        android:icon="@drawable/tabbar_icon_compose_add_meizu"
+        android:title="@string/more" />
+    <item
+        android:id="@id/message"
+        android:icon="@drawable/icon_2_n"
+        android:title="@string/main_news" />
+    <item
+        android:id="@id/square"
+        android:icon="@drawable/icon_4_n"
+        android:title="@string/menu_search" />
+    <item
+        android:id="@id/info"
+        android:icon="@drawable/icon_3_n"
+        android:title="@string/main_my_info" />
+    <item
+        android:id="@id/exit"
+        android:icon="@drawable/menu_exit"
+        android:title="@string/exit" />
+</menu>

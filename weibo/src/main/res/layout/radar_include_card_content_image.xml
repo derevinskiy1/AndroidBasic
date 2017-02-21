@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="130.0dip" android:src="@drawable/radar_draw_content_mask" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="bottom" android:id="@id/layout_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginBottom="11.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/iv_corner_right" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginBottom="3.0px" android:scaleType="fitXY" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/common_button_text" android:gravity="bottom" android:id="@id/tv_corner_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxWidth="120.0dip" android:text="" android:singleLine="true" android:includeFontPadding="false" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/view_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="11.0dip" android:layout_toLeftOf="@id/view_right" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <ImageView android:id="@id/iv_corner_left" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginBottom="3.0px" android:scaleType="fitXY" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/common_button_text" android:gravity="bottom" android:id="@id/tv_corner_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxWidth="150.0dip" android:text="" android:singleLine="true" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/common_button_text" android:ellipsize="end" android:gravity="bottom" android:id="@id/tv_desc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="" android:maxLines="3" android:layout_above="@id/view_left" android:lineSpacingExtra="6.0px" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="98.0dip" android:layout_centerHorizontal="true" />
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" layout="@layout/radar_include_read_count" />
+</RelativeLayout>

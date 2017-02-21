@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_coupon_icon" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/page_news_flag" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="@dimen/card_coupon_height" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/universal_textsize_16" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_coupon_des" android:layout_width="wrap_content" android:layout_height="@dimen/card_coupon_height" android:maxEms="12" android:singleLine="true" android:includeFontPadding="false" />
+        <TextView android:textSize="@dimen/universal_textsize_12" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_coupon_des_extr" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/card_coupon_height" android:layout_marginLeft="8.0dip" android:singleLine="true" android:includeFontPadding="false" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_highlight_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" android:maxWidth="@dimen/card_coupon_highlight_icon_width" android:maxHeight="@dimen/card_coupon_highlight_icon_width" android:layout_centerVertical="true" />
+    <com.sina.weibo.view.RoundedImageView android:id="@id/iv_avatar" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/universal_textsize_12" android:gravity="center" android:id="@id/tv_notify" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_search_record_del" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+</LinearLayout>

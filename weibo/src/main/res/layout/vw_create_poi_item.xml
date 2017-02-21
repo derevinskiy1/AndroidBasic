@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/create_poi_img" android:layout_width="wrap_content" android:layout_height="34.669983dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/add_poi" android:scaleType="center" android:adjustViewBounds="true" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/create_poi_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/create_poi" />
+</LinearLayout>

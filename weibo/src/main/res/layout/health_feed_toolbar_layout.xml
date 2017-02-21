@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/common_card_middle_bg" android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/menu_weight" android:background="@drawable/common_card_middle_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/toolbar_icon_health_health" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_63" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_icon_weighting" />
+    </LinearLayout>
+    <View android:background="@color/common_line" android:layout_width="1.0px" android:layout_height="18.0dip" />
+    <LinearLayout android:gravity="center" android:id="@id/menu_run" android:background="@drawable/common_card_middle_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/menu_run_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/toolbar_icon_health_fit" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_63" android:id="@id/menu_run_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_icon_run" />
+    </LinearLayout>
+    <View android:background="@color/common_line" android:layout_width="1.0px" android:layout_height="18.0dip" />
+    <LinearLayout android:gravity="center" android:id="@id/menu_checkin" android:background="@drawable/common_card_middle_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/toolbar_icon_health_check" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_63" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_icon_check" />
+    </LinearLayout>
+</LinearLayout>

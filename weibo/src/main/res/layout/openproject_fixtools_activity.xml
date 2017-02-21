@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/settings_margin_top" android:paddingBottom="@dimen/settings_margin_top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/cmdpingLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/cmdtitle0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="run ping" android:layout_weight="1.0" style="@style/userinfo_panel_textview_title" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/ping_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" />
+    </LinearLayout>
+    <ImageView android:id="@id/divider1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/cmdtraceLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/cmdtitle1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="run traceroute" android:layout_weight="1.0" style="@style/userinfo_panel_textview_title" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/traceroute_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" />
+    </LinearLayout>
+</LinearLayout>

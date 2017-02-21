@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#99000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/report_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="29.0dip" android:layout_marginRight="29.0dip" android:layout_centerVertical="true">
+        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/reprot_title" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginLeft="14.0dip" android:text="@string/market_report_title" />
+        <View android:id="@id/reprot_title_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <ScrollView android:id="@id/report_item_scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/check_ll" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="36.0dip">
+            <TextView android:textSize="@dimen/market_font_16" android:gravity="center" android:id="@id/report_ok" android:background="@drawable/market_selector_rect_gray_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/market_report_ok" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/market_font_16" android:gravity="center" android:id="@id/report_cancel" android:background="@drawable/market_selector_rect_gray_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/market_cancel" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

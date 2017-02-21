@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/please_fill_info" />
+    <TextView android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/nickname" />
+    <EditText android:id="@id/etNickname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:singleLine="true" />
+    <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/sex" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/rgSex" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="10.0dip">
+        <RadioButton android:textColor="@android:color/black" android:id="@id/rbMale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/male" />
+        <RadioButton android:textColor="@android:color/black" android:id="@id/rbFemale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/female" />
+    </RadioGroup>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <Button android:id="@id/btOkay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ok" android:layout_weight="1.0" />
+        <Button android:id="@id/btCancel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

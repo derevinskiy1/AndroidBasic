@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ly_weibo_browser" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.sina.weibo.view.LoadingBar android:id="@id/loading_bar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/weibobrowser_loadingbar_height" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/webview_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ly_toolbar" android:layout_below="@id/loading_bar" />
+        <ScrollView android:id="@id/ly_received_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ly_toolbar">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:src="@drawable/empty_failed" />
+                <TextView android:textSize="14.0sp" android:gravity="center_horizontal" android:id="@id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_prompt_bad_network_ui" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:lineSpacingMultiplier="1.1" />
+                <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btRetry" android:layout_width="142.0dip" android:layout_height="46.0dip" android:layout_marginTop="10.0dip" android:text="@string/channel_data_error" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:lineSpacingMultiplier="1.1" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/ly_video_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

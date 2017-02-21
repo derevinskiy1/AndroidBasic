@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/card_radar_coupon_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_top_pic" android:saveEnabled="true" android:layout_width="fill_parent" android:layout_height="132.0dip" android:src="@drawable/preview_card_pic_loading" android:scaleType="centerCrop" android:adjustViewBounds="false" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/main_content_text_color" android:gravity="center" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="空页面" />
+</LinearLayout>

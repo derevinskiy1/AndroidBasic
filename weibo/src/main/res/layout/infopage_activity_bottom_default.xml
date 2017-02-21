@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/page_bottom_bar_btns" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/page_forward" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/page_forward_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/detail_bottom_tab_font_size" android:id="@id/page_forward_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/forward" android:layout_toRightOf="@id/page_forward_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/infopage_divider_0" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/statusdetail_comment_top_rule" />
+    <RelativeLayout android:gravity="center" android:id="@id/page_discuss" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/page_home_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/detail_bottom_tab_font_size" android:id="@id/page_home_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/discuss" android:layout_toRightOf="@id/page_home_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/infopage_divider_1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/statusdetail_comment_top_rule" />
+    <RelativeLayout android:gravity="center" android:id="@id/page_liked" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/page_liked_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/detail_bottom_tab_font_size" android:id="@id/page_liked_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/btn_detailweibo_liked" android:layout_toRightOf="@id/page_liked_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

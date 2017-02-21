@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/market_sng_h5game_loading_logo" android:paddingBottom="@dimen/market_sng_h5game_loading_logo_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/market_sng_h5game_loading_logo" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/market_sng_h5game_loading_text_size" android:textColor="@color/market_sng_h5game_loading_desc_text" android:id="@id/market_sng_h5game_loading_text" android:layout_width="@dimen/market_sng_h5game_loading_text_width" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/market_sng_h5game_loading_text_margin_bottom" android:text="@string/market_sng_h5game_init_engine" android:layout_alignParentBottom="true" />
+</RelativeLayout>

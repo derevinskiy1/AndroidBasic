@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/detailweibo_header_poi_root" android:layout_width="wrap_content" android:layout_height="@dimen/detail_weibo_header_poi_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.feed.view.DetailWeiboPOIImageView android:layout_gravity="center_vertical" android:id="@id/detailweibo_header_poi_img" android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginLeft="5.0dip" />
+    <TextView android:textSize="15.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/detailweibo_header_poi_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:maxWidth="184.0dip" android:minWidth="74.0dip" android:singleLine="true" />
+    <ImageView android:layout_gravity="center|right" android:id="@id/detailweibo_header_poi_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/common_icon_arrow" />
+</LinearLayout>

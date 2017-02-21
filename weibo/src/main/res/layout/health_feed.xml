@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/health_feed_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/cardlist" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_menu_top_board" />
+    <View android:id="@id/bottom_menu_top_board" android:background="@drawable/health_common_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/bottom_menu" />
+    <include android:id="@id/bottom_menu" android:layout_width="fill_parent" android:layout_height="@dimen/baselayout_title_height" android:layout_alignParentBottom="true" layout="@layout/health_feed_toolbar_layout" />
+    <ImageView android:id="@id/guideView" android:background="@drawable/helper_health_run2016" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="36.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivCommentPic" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+    <com.sina.weibo.feed.view.MBlogTextView android:textSize="13.0sp" android:id="@id/tvComment1" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mblogitem_commentlist_margin_left" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/mblogitem_commentlist_margin_left" android:layout_toRightOf="@id/ivCommentPic" />
+    <com.sina.weibo.feed.view.MBlogTextView android:textSize="13.0sp" android:id="@id/tvComment2" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/tvComment1" android:layout_alignLeft="@id/tvComment1" />
+    <com.sina.weibo.feed.view.MBlogTextView android:textSize="13.0sp" android:id="@id/tvComment3" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/tvComment2" android:layout_alignLeft="@id/tvComment1" />
+    <com.sina.weibo.feed.view.MBlogTextView android:textSize="13.0sp" android:id="@id/tvCommentScan" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/tvComment3" android:layout_alignLeft="@id/tvComment1" />
+</merge>

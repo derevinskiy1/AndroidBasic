@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/camera_rootview" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/camera_titlebar" android:background="@drawable/navigationbar_background" android:layout_width="fill_parent" android:layout_height="@dimen/camera_title_bar_height">
+        <ImageView android:id="@id/camera_close" android:background="@drawable/camera_close_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/navigationbar_title_color" android:id="@id/camera_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/camera_flash" android:background="@drawable/camera_flashlight" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/camera_switch" android:background="@drawable/btn_camera_overturn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <SurfaceView android:id="@id/camera_preview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/camera_preview_animation" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/camera_focus_view" android:background="@drawable/camera_aperture" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/camera_layout" android:layout_width="fill_parent" android:layout_height="300.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/camera_bottom_bar" android:background="@color/common_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/camera_layout">
+            <com.sina.weibo.photoalbum.camera.ProgressView android:id="@id/camera_progress" android:layout_width="fill_parent" android:layout_height="7.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/cameraDropPoint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/camera_drop_highlighted" android:layout_centerHorizontal="true" />
+                <com.sina.weibo.photoalbum.view.ScrollEdgeView android:id="@id/hscrollview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <View android:id="@id/leftView" android:layout_width="30.0dip" android:layout_height="1.0dip" />
+                        <TextView android:gravity="center" android:id="@id/takePicTextView" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingRight="10.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/media_camera_pic" />
+                        <TextView android:gravity="center" android:id="@id/recordVideoTextView" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingRight="10.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/media_camera_video" />
+                        <View android:id="@id/rightView" android:layout_width="30.0dip" android:layout_height="1.0dip" />
+                    </LinearLayout>
+                </com.sina.weibo.photoalbum.view.ScrollEdgeView>
+                <RelativeLayout android:id="@id/adapter_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+                <RelativeLayout android:id="@id/bottom_btn_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/adapter_layout">
+                    <CheckedTextView android:enabled="false" android:id="@id/camera_bottom_left_delete" android:background="@drawable/video_delete_button_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_centerVertical="true" />
+                    <TextView android:id="@id/camera_bottom_middle" android:background="@drawable/camera_camera_background_selector" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/camera_bottom_right_album" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="35.0dip" android:src="@color/camera_capture_photo_ablum" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/camera_bottom_right_next" android:background="@drawable/video_next_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="35.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.composerinde.element.view.RatingElementView android:id="@id/ratingbar_compose_edit_layout" android:background="@color/compose_content_background_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.sina.weibo.composerinde.element.view.EditBoxElementView android:id="@id/element_editbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="3.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_addition_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <com.sina.weibo.composerinde.element.view.VideoElementView android:id="@id/element_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginBottom="7.0dip" />
+        <com.sina.weibo.composerinde.element.view.PicElementView android:id="@id/element_pic" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.sina.weibo.composerinde.element.view.PageElementView android:id="@id/element_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" />
+    <com.sina.weibo.composerinde.element.view.UserElementView android:id="@id/element_user" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" />
+    <com.sina.weibo.composerinde.element.view.ThirdAppShareElementView android:id="@id/element_third_app_share" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" />
+    <com.sina.weibo.composerinde.element.view.URLElementView android:id="@id/element_url" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="3.0dip" />
+    <com.sina.weibo.composerinde.element.view.ProductShowElementView android:id="@id/element_product_show" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="8.0dip" />
+    <com.sina.weibo.composerinde.element.view.SportPicElementView android:id="@id/element_sport_pic" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" />
+</LinearLayout>

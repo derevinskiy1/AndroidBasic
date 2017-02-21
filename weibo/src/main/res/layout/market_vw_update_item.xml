@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/market_selector_default_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_card_layout" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/item_like_reason" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_recomment_item_distance_nocard_h" android:layout_marginTop="@dimen/market_recomment_item_distance_nocard_v" layout="@layout/market_vw_like_reason" />
+        <RelativeLayout android:id="@id/item_update_info_layout" android:layout_width="fill_parent" android:layout_height="@dimen/market_update_item_height">
+            <ImageView android:id="@id/item_icon" android:layout_width="@dimen/market_icon_size" android:layout_height="@dimen/market_icon_size" android:layout_marginLeft="@dimen/market_recomment_item_distance_nocard_h" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/item_action_info_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <com.sina.weibo.appmarket.widget.CircleProgressButton android:id="@id/item_update_button" style="@style/market_circle_progress_button" />
+                <com.sina.weibo.appmarket.widget.CircleProgressButton android:id="@id/item_like_button" android:visibility="gone" style="@style/market_circle_progress_button" />
+            </LinearLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/market_icon_size" android:layout_marginLeft="8.0dip" android:minHeight="@dimen/market_download_item_height" android:layout_toLeftOf="@id/item_action_info_layout" android:layout_toRightOf="@id/item_icon" android:layout_alignTop="@id/item_icon" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:ellipsize="end" android:gravity="center|left|top" android:id="@id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerVertical="true" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/item_name" android:layout_alignLeft="@id/item_name" android:layout_alignBottom="@id/item_icon" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+                    <TextView android:textSize="@dimen/market_font_14" android:layout_gravity="center" android:id="@id/app_size_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_text_app_size_tip" android:singleLine="true" />
+                    <FrameLayout android:id="@id/layout_full_size" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/market_font_14" android:layout_gravity="center" android:id="@id/full_size" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" />
+                        <ImageView android:layout_gravity="center" android:id="@id/size_paint_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/market_paint_line" />
+                    </FrameLayout>
+                    <TextView android:textSize="@dimen/market_font_14" android:id="@id/patch_size" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" />
+                    <ImageView android:id="@id/item_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/market_icon_arrow_down" android:scaleType="fitXY" />
+                </LinearLayout>
+                <include android:id="@id/item_layout_like" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/item_name" android:layout_alignLeft="@id/item_name" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" layout="@layout/market_vw_like_num" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.sina.weibo.appmarket.widget.ManageToolsBar android:id="@id/item_update_tools" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_card_layout" />
+    <View android:id="@id/item_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/market_list_item_divider_margin_size" android:layout_marginRight="@dimen/market_list_item_divider_margin_size" android:layout_alignParentBottom="true" />
+</RelativeLayout>

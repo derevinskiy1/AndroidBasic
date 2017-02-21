@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|left" android:orientation="horizontal" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="true"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sina="http://schemas.android.com/apk/res/com.sina.weibo">
+    <TextView android:textSize="14.0sp" android:id="@id/number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+    <ImageView android:id="@id/head" android:layout_width="@dimen/card_sort_head_image_size" android:layout_height="@dimen/card_sort_head_image_size" android:layout_margin="5.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <com.sina.weibo.card.widget.LeftRightPercentGroup android:id="@id/lrgroup" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" sina:leftPercent="50" sina:gap="20.0dip">
+        <TextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/left_child" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="14.0sp" android:ellipsize="end" android:gravity="right" android:id="@id/right_child" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </com.sina.weibo.card.widget.LeftRightPercentGroup>
+</LinearLayout>

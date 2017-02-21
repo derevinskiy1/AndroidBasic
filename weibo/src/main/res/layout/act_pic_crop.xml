@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lyPortraitPreRoot" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.photoalbum.view.PhotoalbumToolbar android:id="@id/photoalbum_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/touchParentView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.sina.weibo.view.SplitTouchImageView android:id="@id/ivPortraitPreview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.sina.weibo.photoalbum.view.PicCropViewFinder android:id="@id/vCropRect" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.sina.weibo.photoalbum.crop.CropImageView android:layout_gravity="center" android:id="@id/CropImageView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.sina.weibo.photoalbum.view.PicHeadCropViewFinder android:id="@id/vHeadCropRect" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="17.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center|right|top" android:id="@id/btnRotate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="旋转" />
+    </FrameLayout>
+</LinearLayout>

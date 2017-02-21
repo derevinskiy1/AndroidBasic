@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.view.EmptyGuideCommonView android:id="@id/emptyview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <android.support.v4.view.ViewPager android:id="@id/mViewPager" android:visibility="gone" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="36.0dip" />
+    <com.sina.weibo.view.FragmentToolBarView android:id="@id/titlelayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:paddingTop="@dimen/settings_margin_top" android:paddingBottom="@dimen/settings_margin_top" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/image_setting_adp" android:layout_width="fill_parent" android:layout_height="62.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:id="@id/image_setting_adt_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/image_size_adaptive" />
+                <TextView android:textSize="12.0sp" android:id="@id/image_setting_adt_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_image_adptive_des" />
+            </LinearLayout>
+            <ImageView android:id="@id/image_size_adt_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:src="@drawable/check_box_bg" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/divider2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/image_setting_high" android:layout_width="fill_parent" android:layout_height="62.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:id="@id/image_setting_high_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/image_size_large" />
+                <TextView android:textSize="12.0sp" android:id="@id/image_setting_size_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_image_high_des" />
+            </LinearLayout>
+            <ImageView android:id="@id/image_size_large_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:src="@drawable/check_box_bg" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/divider3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/image_setting_low" android:layout_width="fill_parent" android:layout_height="62.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:id="@id/image_setting_low_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/image_size_low" />
+                <TextView android:textSize="12.0sp" android:id="@id/image_setting_low_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_image_low_des" />
+            </LinearLayout>
+            <ImageView android:id="@id/image_size_low_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:src="@drawable/check_box_bg" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textColor="@color/settings_desc_color" android:gravity="center_horizontal" android:id="@id/tvPicUpUploadDescript" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:text="@string/setting_image_des" style="@style/SettingExplainText" />
+    </LinearLayout>
+</ScrollView>

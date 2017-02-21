@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.photoalbum.view.PhotoalbumToolbar android:id="@id/photoalbum_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.sina.weibo.view.PullDownView android:id="@id/video_music_store_pull_down_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.sina.weibo.photoalbum.view.pinnedheaderlistview.PinnedHeaderListView android:scrollbarStyle="outsideOverlay" android:id="@id/video_music_store_data_list" android:background="@drawable/video_music_store_bg" android:paddingLeft="@dimen/detail_margin" android:paddingRight="@dimen/detail_margin" android:fadingEdge="none" android:fadingEdgeLength="0.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:scrollingCache="false" android:cacheColorHint="#00000000" android:divider="@color/common_line" android:dividerHeight="1.0dip" android:headerDividersEnabled="false" />
+    </com.sina.weibo.view.PullDownView>
+</LinearLayout>

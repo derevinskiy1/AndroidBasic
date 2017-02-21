@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.sina.weibo.photoalbum.view.PhotoalbumToolbar android:id="@id/photoalbum_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/preview_title" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <android.support.v4.view.ViewPager android:id="@id/filterPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/photo_album_title_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/filterBarParent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/filter_tool_bar_height" android:layout_alignParentBottom="true">
+                <HorizontalScrollView android:id="@id/filterToolBar" android:padding="3.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.sina.weibo.photoalbum.view.FilterTabView android:orientation="horizontal" android:id="@id/filterTabView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </HorizontalScrollView>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/filterEditBarParent" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/filter_tool_bar_height" android:layout_alignParentBottom="true">
+                <ImageView android:id="@id/btnRotate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/camera_edit_revolve_selector" android:layout_weight="1.0" android:contentDescription="@string/filter_rotate_text" />
+                <ImageView android:id="@id/btnShowCrop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/camera_edit_cut_selector" android:layout_weight="1.0" android:contentDescription="@string/filter_cut_text" />
+                <ImageView android:id="@id/btnShowAutoOpt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/camera_edit_optimize_selector" android:layout_weight="1.0" android:contentDescription="@string/filter_cut_text" />
+                <ImageView android:id="@id/btnAddTag" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/camera_edit_tag_selector" android:layout_weight="1.0" android:contentDescription="@string/filter_tag_text" />
+            </LinearLayout>
+            <ImageView android:id="@id/photo_album_bottom_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <include layout="@layout/picfilter_toolbar_middle_layout" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/root_edit_pic_view_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

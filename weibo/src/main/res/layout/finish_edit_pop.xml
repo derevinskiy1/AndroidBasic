@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/compose_popup_bg" android:padding="0.0dip" android:layout_width="280.0dip" android:layout_height="wrap_content" android:minHeight="150.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/to_article" android:background="@drawable/format_bar_button_list_selector" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/preview_string" />
+        <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/to_compose" android:background="@drawable/format_bar_button_list_selector" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/post_string" />
+        <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/to_cancel" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cancel_string" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/card_radar_coupon_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:weibo="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/iv_top_pic" android:saveEnabled="true" android:layout_width="fill_parent" android:layout_height="@dimen/radar_card_top_pic_height" android:scaleType="fitXY" android:adjustViewBounds="false" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/text_layout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/radar_card_text_layout_height">
+        <TextView android:textSize="16.0sp" android:textColor="@color/main_content_text_color" android:gravity="center" android:id="@id/tv_name" android:paddingLeft="@dimen/radar_card_text_padding" android:paddingRight="@dimen/radar_card_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/main_content_text_color" android:gravity="center" android:id="@id/tv_desc" android:paddingLeft="@dimen/radar_card_text_padding" android:paddingTop="6.0dip" android:paddingRight="@dimen/radar_card_text_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

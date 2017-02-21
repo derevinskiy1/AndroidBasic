@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sina.weibo.view.ImageSquareGrideViewItem android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fr_pic_cell" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_edit_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_edit_sticker_overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    </FrameLayout>
+    <ImageView android:id="@id/iv_edit_pic_delete" android:background="@drawable/compose_photo_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+</com.sina.weibo.view.ImageSquareGrideViewItem>

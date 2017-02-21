@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/genderLayout" android:layout_width="fill_parent" android:layout_height="@dimen/group_item_text_height">
+        <TextView android:textSize="18.0sp" android:gravity="center|left" android:id="@id/genderText" android:layout_width="wrap_content" android:layout_height="@dimen/group_item_text_height" android:layout_marginLeft="@dimen/group_item_text_padding" android:layout_marginRight="@dimen/group_item_text_padding" android:singleLine="true" />
+        <ImageView android:id="@id/genderIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+    </LinearLayout>
+</LinearLayout>

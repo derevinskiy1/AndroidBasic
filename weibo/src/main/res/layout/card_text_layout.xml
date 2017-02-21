@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/titlelayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/universal_textsize_16" android:textColor="@color/common_gray_33" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/arrow_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/devide_line" android:background="@color/main_content_split_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/universal_textsize_16" android:textColor="@color/common_gray_33" android:id="@id/tvContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_plaint_text_margin_top" android:layout_below="@id/titlelayout" />
+    <TextView android:textSize="@dimen/universal_textsize_12" android:textColor="@color/common_gray_93" android:ellipsize="end" android:id="@id/tvSource" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/tvContent" />
+</RelativeLayout>

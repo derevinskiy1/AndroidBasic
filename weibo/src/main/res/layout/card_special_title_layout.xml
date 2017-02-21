@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_title_sign" android:visibility="gone" android:layout_width="3.0dip" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_alignParentLeft="true" />
+    <ImageView android:id="@id/iv_title_pic" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="@dimen/card_normal_margin_left" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rightgrp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_alignParentRight="true">
+        <TextView android:textSize="@dimen/universal_textsize_12" android:textColor="@color/common_gray_93" android:ellipsize="end" android:id="@id/numbertext" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="5" android:singleLine="true" />
+        <ImageView android:id="@id/iv_title_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/arrow_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/card_more_text_margin_left" />
+        <ImageView android:id="@id/menuimg" android:paddingLeft="@dimen/card_more_text_margin_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feed_card_navigationbar_more_icon" />
+    </LinearLayout>
+    <com.sina.weibo.feed.view.MBlogTextView android:textSize="@dimen/universal_textsize_16" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_content1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/rightgrp" android:layout_toRightOf="@id/iv_title_pic" />
+</RelativeLayout>

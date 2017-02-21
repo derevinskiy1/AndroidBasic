@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/market_sng_fragment2_item_layout" android:layout_width="fill_parent" android:layout_height="@dimen/market_sng_activity_fragment2_item_height">
+        <ImageView android:id="@id/market_sng_fragment2_item_icon" android:layout_width="@dimen/market_sng_activity_fragment2_item_img_width" android:layout_height="@dimen/market_sng_activity_fragment2_item_img_width" android:layout_marginLeft="@dimen/market_sng_activity_icon_v2_margin" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        <com.sina.weibo.appmarket.sng.widget.DownLoadLayout android:id="@id/market_sng_fragment2_item_downloadlayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/market_sng_activity_icon_v2_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_sng_activity_fragment_listview_item_margin" android:layout_marginRight="@dimen/market_sng_activity_fragment_listview_item_margin" android:layout_toLeftOf="@id/market_sng_fragment2_item_downloadlayout" android:layout_toRightOf="@id/market_sng_fragment2_item_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/market_sng_textsize_14" android:id="@id/market_sng_fragment2_tv_appname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/market_sng_adapter_item_margintop">
+                <TextView android:textSize="@dimen/market_sng_textsize_11.5" android:layout_gravity="center_vertical" android:id="@id/market_sng_fragment2_tv_tips2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <RatingBar android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/market_sng_fragment2_ratingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_sng_category_ratingbar_margin_left" android:numStars="5" android:stepSize="0.1" android:isIndicator="true" style="@style/sng_ratingbar_common" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/market_sng_textsize_11.5" android:id="@id/market_sng_fragment2_tv_tips1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/market_sng_adapter_item_margintop" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@id/market_sng_line" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/market_sng_game_line" />
+</LinearLayout>

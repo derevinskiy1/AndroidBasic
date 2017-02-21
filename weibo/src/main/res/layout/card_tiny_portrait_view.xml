@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <com.sina.weibo.view.RoundedImageView android:id="@id/iv_card_pic" android:paddingRight="3.0dip" android:paddingBottom="3.0dip" android:saveEnabled="true" android:layout_width="21.0dip" android:layout_height="21.0dip" android:scaleType="fitXY" android:adjustViewBounds="false" weibo:corner_radius="@dimen/detail_portrait_round_radius" weibo:cover_border_width="@dimen/detail_portrait_border" weibo:cover_border_color="@color/detail_portrait_border_color" weibo:round_background="true" />
+    <ImageView android:id="@id/iv_portrait_mask" style="@style/detail_small_portrait_mask" />
+</FrameLayout>

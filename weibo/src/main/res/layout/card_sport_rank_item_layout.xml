@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="italic" android:textColor="@color/common_gray_33" android:gravity="center" android:id="@id/rank_number" android:layout_width="32.0dip" android:layout_height="wrap_content" android:text="1." android:singleLine="true" android:layout_centerVertical="true" />
+    <com.sina.weibo.view.PortraitView android:id="@id/rank_user_portrait" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_toRightOf="@id/rank_number" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_63" android:ellipsize="end" android:id="@id/rank_user_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="3.0dip" android:text="" android:singleLine="true" android:layout_toLeftOf="@id/rank_data" android:layout_toRightOf="@id/rank_user_portrait" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/common_gray_33" android:id="@id/rank_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toLeftOf="@id/rank_data_unit" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_33" android:id="@id/rank_data_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignBaseline="@id/rank_data" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</merge>

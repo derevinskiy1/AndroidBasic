@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/group_feed_header_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_group_message" android:background="@drawable/default_btn_bg" android:layout_width="@dimen/group_feed_btn_width" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/iv_group_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/card_icon_addhi" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/main_link_text_color" android:gravity="center" android:id="@id/tv_group_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/group_feed_header_msg_btn" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/ll_group_main_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/ll_group_message" android:layout_alignParentLeft="true">
+        <FrameLayout android:id="@id/fl_group_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_right_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/fl_group_avatar" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/main_content_text_color" android:id="@id/tv_group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/main_content_button_text_color" android:id="@id/tv_group_owner_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

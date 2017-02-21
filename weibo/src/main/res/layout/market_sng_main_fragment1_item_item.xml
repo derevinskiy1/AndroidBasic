@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/market_sng_main_head_hot_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_sng_tv_margintop1" android:layout_marginTop="@dimen/market_sng_tv_margintop1" android:scaleType="fitXY" />
+    <ImageView android:id="@id/market_sng_main_head_tag_icon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textSize="@dimen/market_sng_textsize_13" android:gravity="center" android:id="@id/market_sng_main_head_hot_appname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_sng_tv_margintop1" android:layout_marginTop="@dimen/market_sng_tv_margintop1" android:singleLine="true" android:layout_below="@id/market_sng_main_head_hot_icon" />
+    <TextView android:textSize="@dimen/market_sng_textsize_10" android:gravity="center" android:id="@id/market_sng_main_head_hot_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_sng_tv_margintop1" android:layout_marginTop="@dimen/market_sng_tv_margintop2" android:singleLine="true" android:layout_below="@id/market_sng_main_head_hot_appname" />
+    <com.sina.weibo.appmarket.sng.widget.DownLoadLayout android:layout_gravity="center_horizontal" android:id="@id/market_sng_main_download_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_sng_tv_margintop1" android:layout_marginTop="@dimen/market_sng_main_head_item_margintop" android:layout_below="@id/market_sng_main_head_hot_tips" />
+</RelativeLayout>

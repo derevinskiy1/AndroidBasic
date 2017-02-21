@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/market_sng_main_head_hot_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/market_sng_textsize_14" android:gravity="center" android:id="@id/market_sng_main_head_hot_appname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/market_sng_tv_margintop1" android:singleLine="true" />
+    <TextView android:textSize="@dimen/market_sng_textsize_11.5" android:gravity="center" android:id="@id/market_sng_main_head_hot_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/market_sng_tv_margintop2" android:singleLine="true" />
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.sina.weibo.appmarket.sng.widget.DownLoadLayout android:id="@id/market_sng_main_download_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/market_sng_main_head_item_margintop" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/market_sng_item_activity_dot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_sng_dimen_point_marginleft" android:layout_marginTop="@dimen/market_sng_main_head_item_margintop_1" android:src="@drawable/new_dot" android:layout_toRightOf="@id/market_sng_main_download_layout" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</LinearLayout>

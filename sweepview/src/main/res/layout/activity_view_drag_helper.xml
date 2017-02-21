@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.storm.sweepview.VDLineaLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_drag_helper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.storm.sweepview.ViewDragHelperActivity">
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="拖动我"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="拖动我"
+        android:textColor="#fff"/>
+
+</com.example.storm.sweepview.VDLineaLayout>

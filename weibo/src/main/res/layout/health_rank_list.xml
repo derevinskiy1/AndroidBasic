@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ranklist_container" android:background="@color/main_feed_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ly_background" android:background="@color/main_feed_background_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/imageview" android:background="@drawable/empty_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+        <TextView android:id="@id/textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_empty_rank" />
+    </LinearLayout>
+    <ListView android:id="@id/rank_list" android:fadingEdge="none" android:fadingEdgeLength="0.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:scrollingCache="false" android:divider="@null" android:dividerHeight="0.0dip" android:overScrollMode="never" />
+</RelativeLayout>

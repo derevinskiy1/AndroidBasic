@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/preCheckLayout" android:visibility="gone" layout="@layout/network_analyse_precheck" />
+        <include android:id="@id/checkingLayout" android:visibility="gone" layout="@layout/network_analyse_checking" />
+        <include android:id="@id/checkSuccLayout" android:visibility="gone" layout="@layout/network_analyse_check_succ" />
+        <include android:id="@id/checkErrorLayout" android:visibility="gone" layout="@layout/network_analyse_check_error" />
+    </FrameLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/common_background" android:paddingLeft="@dimen/detail_empty_padding_left" android:paddingRight="@dimen/detail_empty_padding_left" android:paddingBottom="@dimen/detail_empty_padding_left" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:gravity="center_horizontal" android:id="@id/tvEmptyGuidePrompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_prompt_common" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:lineSpacingMultiplier="1.1" />
+    <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btEmptyGuidePrompt" android:layout_width="120.0dip" android:layout_height="46.0dip" android:layout_marginTop="10.0dip" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:lineSpacingMultiplier="1.1" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/message_group_member_item_rl" android:clickable="true" android:layout_width="fill_parent" android:layout_height="130.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/message_group_member_item_left_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/message_group_member_item_triangle" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:textSize="16.0sp" android:id="@id/message_group_member_item_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/timeline_padding_left" />
+        <RelativeLayout android:id="@id/message_group_member_item_main_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/message_group_member_item_main_op_area_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_toLeftOf="@id/message_group_member_item_user_4">
+                <com.sina.weibo.view.MessageGroupMemberManageItemView android:id="@id/message_group_member_item_user_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <com.sina.weibo.view.MessageGroupMemberManageItemView android:id="@id/message_group_member_item_user_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <com.sina.weibo.view.MessageGroupMemberManageItemView android:id="@id/message_group_member_item_user_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <com.sina.weibo.view.MessageGroupMemberManageItemView android:id="@id/message_group_member_item_user_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/message_group_member_item_triangle" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/timeline_padding_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

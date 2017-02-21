@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/normalItemLayout" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="44.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tvName" style="@style/card_item_detail_info_name" />
+    <TextView android:id="@id/tvContent" style="@style/card_item_detail_info_content" />
+</LinearLayout>

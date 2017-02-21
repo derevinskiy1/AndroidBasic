@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#bf000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ivSecondBgContent" android:background="@drawable/friendcircle_other_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="55.0dip" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/ivCenterBgContent" android:background="@drawable/friendcircle_other_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/ivAddFriend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/friend_circle_guide_add_margin_top" android:src="@drawable/add_friend_button" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/ivClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10.0dip" android:layout_marginRight="-10.0dip" android:src="@drawable/close_button" android:layout_alignTop="@id/ivCenterBgContent" android:layout_alignRight="@id/ivCenterBgContent" />
+</RelativeLayout>

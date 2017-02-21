@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/article_view_layout" />
+    <ViewStub android:id="@id/article_paycontent_view_stub" android:layout="@layout/article_pay_content_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/article_pay_month_stub" android:layout="@layout/article_pay_month" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/article_reward_view_stub" android:layout="@layout/article_reward_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="38.0dip" android:layout_marginBottom="38.0dip" />
+    <View android:id="@id/bottom_share_divider" android:background="@color/common_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ViewStub android:id="@id/bottom_share_view" android:layout="@layout/article_share_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" />
+    <View android:id="@id/cardlist_divider" android:background="@color/common_background" android:layout_width="fill_parent" android:layout_height="@dimen/universal_textsize_dp_10" />
+    <com.sina.weibo.feed.view.CardListLinearLayout android:orientation="vertical" android:id="@id/article_cardlist" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.sina.weibo.feed.view.DetailWeiboMiddleTab android:id="@id/detail_middle_tab" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:visibility="gone" layout="@layout/select_channel_layout" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/mylayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="36.0dip">
+        <RelativeLayout android:id="@id/rl_column" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.sina.weibo.view.CloumnHroizontalScrollView android:id="@id/hroizontalscoll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:id="@id/mRadioGroup_content" android:paddingLeft="16.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </com.sina.weibo.view.CloumnHroizontalScrollView>
+            <ImageView android:id="@id/shade_left" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="fill_parent" android:layout_marginTop="1.0px" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/shade_right" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="fill_parent" android:layout_marginTop="1.0px" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/edit_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:id="@id/selectitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/my_channel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/editbutton" android:layout_width="46.0dip" android:layout_height="20.0dip" android:layout_marginRight="15.0dip" android:text="@string/theme_title_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/button_more_columns" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/timeline_icon_more" />
+    </LinearLayout>
+</FrameLayout>

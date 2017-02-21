@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_notice_fail" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_notice_fail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/market_icon_notice_failure" />
+        <TextView android:textSize="@dimen/market_font_18" android:gravity="center" android:id="@id/tv_notice_fail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/market_fail_reload" android:singleLine="true" />
+    </LinearLayout>
+</FrameLayout>

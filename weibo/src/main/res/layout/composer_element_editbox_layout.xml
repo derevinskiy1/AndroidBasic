@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.view.EditBlogView android:textSize="16.0sp" android:gravity="center|left|top" android:id="@id/edit_view" android:background="@color/compose_content_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minLines="3" android:singleLine="false" android:capitalize="sentences" android:isScrollContainer="true" android:imeOptions="actionDone" />
+</RelativeLayout>

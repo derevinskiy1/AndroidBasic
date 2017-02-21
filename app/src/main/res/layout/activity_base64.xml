@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.storm.ui.Base64Activity">
+
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/aes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="aes" />
+
+    <Button
+        android:id="@+id/des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="des" />
+
+    <Button
+        android:id="@+id/rsa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="rsa" />
+
+</LinearLayout>

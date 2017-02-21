@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/local_skin_cell_width" android:layout_height="@dimen/local_skin_cell_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ll_skin" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_skin_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <RelativeLayout android:id="@id/fr_skin_thumbail" android:layout_width="fill_parent" android:layout_height="88.0dip">
+            <FrameLayout android:id="@id/fl_skin_thumbail" android:paddingLeft="2.0dip" android:paddingTop="2.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/iv_skin_thumbail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <ImageView android:id="@id/iv_skin_update" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/skin_update_icon" android:scaleType="centerCrop" />
+                <ImageView android:id="@id/iv_skin_thumbail_cover" android:background="@drawable/skin_overlay_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            </FrameLayout>
+            <ProgressBar android:id="@id/pb_downloading" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_alignParentBottom="true" style="@style/skin_download_progressbar_style" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_skin_offline" android:background="@drawable/skin_abandoned_background" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_info_content" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_below="@id/fr_skin_thumbail">
+            <ImageView android:id="@id/iv_skin_using" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/main_content_text_color" android:gravity="left" android:id="@id/tv_skin_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:singleLine="true" android:shadowColor="@color/main_button_shadow_text_color_for_light_color_button" android:shadowDx="0.0" android:shadowDy="1.5" android:shadowRadius="1.0" android:layout_toLeftOf="@id/iv_skin_using" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="right" android:id="@id/iv_skin_member" android:paddingTop="7.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/skin_vip_icon" />
+    <ImageView android:id="@id/iv_skin_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

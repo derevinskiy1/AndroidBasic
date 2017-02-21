@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#aa000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/body_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/content_container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_centerInParent="true">
+            <TextView android:textSize="18.0sp" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/messagecomposer_title_margin_top" android:layout_marginBottom="@dimen/messagecompoesr_title_margin_bottom" android:text="@string/title_share_private_message" android:maxEms="10" android:singleLine="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/elements_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.sina.weibo.composerinde.element.view.MessagePicElementView android:id="@id/element_pic" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.sina.weibo.composerinde.element.view.PageElementView android:id="@id/element_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.sina.weibo.composerinde.element.view.UserElementView android:id="@id/element_user" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.sina.weibo.composerinde.element.view.WeiboElementView android:id="@id/element_weibo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.sina.weibo.composerinde.element.view.URLElementView android:id="@id/element_url" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/editbox_element_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="14.0dip">
+                <com.sina.weibo.composerinde.element.view.EditBoxElementView android:id="@id/element_editbox" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="38.0dip" android:layout_marginBottom="1.0dip" android:layout_centerVertical="true" />
+                <ImageButton android:id="@id/emotion_button" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="15.0sp" android:ellipsize="end" android:gravity="center|left" android:id="@id/text_limit_tip" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:maxLength="4" android:layout_alignBottom="@id/element_editbox" android:layout_alignParentRight="true" android:contentDescription="@string/new_label" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/buttons_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="14.0dip">
+                <Button android:textSize="18.0sp" android:gravity="center" android:id="@id/cancel_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:text="@string/share_cancle" android:layout_weight="1.0" />
+                <Button android:textSize="18.0sp" android:gravity="center" android:id="@id/ok_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="@string/share_confirm" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.sina.weibo.composerinde.view.ComposerToolbarPanelView android:id="@id/toolbar_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

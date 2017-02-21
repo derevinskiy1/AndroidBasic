@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:id="@id/tv_card_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginBottom="@dimen/card_title_margin_bottom" android:layout_toLeftOf="@id/linkgrp" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/linkgrp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_alignParentRight="true">
+        <TextView android:textSize="12.0sp" android:layout_gravity="center_vertical" android:id="@id/link_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/arrow_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/card_more_text_margin_left" android:src="@drawable/common_icon_arrow" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_card_pic" android:layout_width="56.0dip" android:layout_height="56.0dip" android:scaleType="centerCrop" android:adjustViewBounds="false" android:layout_below="@id/tv_card_title" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/iv_card_pic" android:layout_below="@id/tv_card_title" android:layout_centerVertical="true">
+        <TextView android:textSize="15.0sp" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="6.0dip" />
+        <TextView android:textSize="12.0sp" android:ellipsize="end" android:id="@id/tv_card_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:lines="2" android:lineSpacingExtra="1.5dip" />
+    </LinearLayout>
+</RelativeLayout>

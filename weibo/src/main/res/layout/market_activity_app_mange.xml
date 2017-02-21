@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lv_whole_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:attr="http://schemas.android.com/apk/res/com.sina.weibo">
+    <com.sina.weibo.appmarket.widget.TitleBar android:id="@id/tb_title" android:layout_width="fill_parent" android:layout_height="wrap_content" attr:left_type="1" attr:middle_text="@string/market_title_fragment_update" />
+    <com.sina.weibo.appmarket.widget.LocalAppTitleCardView android:id="@id/rl_in_download" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.sina.weibo.appmarket.widget.LocalAppTitleCardView android:id="@id/rl_in_update" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.sina.weibo.appmarket.widget.LocalAppTitleCardView android:id="@id/rl_in_ignored" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.sina.weibo.appmarket.widget.LocalAppTitleCardView android:id="@id/rl_in_installed" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.sina.weibo.appmarket.widget.ProgressView android:id="@id/rl_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

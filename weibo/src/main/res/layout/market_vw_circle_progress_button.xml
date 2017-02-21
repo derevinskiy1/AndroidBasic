@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:roundProgress="http://schemas.android.com/apk/res/com.sina.weibo">
+    <ImageView android:layout_gravity="center" android:id="@id/action_divider" android:background="#ffdfdfdf" android:visibility="visible" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center|right" android:orientation="vertical" android:id="@id/action_layout" android:layout_width="@dimen/market_list_action_layout_width" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="4.0dip">
+        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_image" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/action_icon" android:layout_width="@dimen/market_list_action_image_size" android:layout_height="@dimen/market_list_action_image_size" android:src="@drawable/market_icon_download" android:scaleType="fitXY" android:layout_centerInParent="true" />
+            <com.sina.weibo.appmarket.widget.CircleProgress android:layout_gravity="center" android:id="@id/action_progress" android:layout_width="@dimen/market_list_action_image_size" android:layout_height="@dimen/market_list_action_image_size" android:layout_centerInParent="true" roundProgress:max="100" roundProgress:fill="false" roundProgress:Paint_Width="3" roundProgress:Paint_Color="@color/market_cicle_round_progress_color" roundProgress:Inside_Interval="3" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/market_list_circle_button_text_size" android:gravity="center" android:id="@id/action_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/market_download" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="@dimen/market_recomment_item_distance_inner_h" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/market_recomment_suggest_distance" android:src="@drawable/market_icon_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/market_font_16" android:gravity="left" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_recomment_item_distance_inner_h" android:minEms="20" android:singleLine="true" android:layout_toLeftOf="@id/iv_right" android:layout_toRightOf="@id/iv_icon" android:layout_centerVertical="true" />
+</RelativeLayout>

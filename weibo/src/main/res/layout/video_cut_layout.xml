@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/preview_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="44.0dip">
+        <com.sina.weibo.photoalbum.video.VideoViewTouch android:id="@id/preview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="44.0dip" android:layout_above="@id/camera_toolbar">
+        <ImageView android:id="@id/play_status" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/multimedia_videocard_play_big" />
+    </LinearLayout>
+    <com.sina.weibo.photoalbum.view.PhotoalbumToolbar android:id="@id/photoalbum_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/camera_toolbar" android:background="@color/common_background" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.sina.weibo.photoalbum.video.VideoCutView android:id="@id/cut_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

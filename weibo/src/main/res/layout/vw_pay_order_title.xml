@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ly_pay_header" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/main_content_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_title" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="" android:lineSpacingExtra="2.0dip" />
+    <TextView android:textSize="36.0sp" android:textStyle="bold" android:textColor="@color/main_prompt_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="30.0dip" />
+    <View android:id="@id/v_separator" android:background="@drawable/common_horizontal_separator" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ly_desc" android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingRight="15.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/v_card_separator" android:background="@drawable/common_horizontal_separator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

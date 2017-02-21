@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_more" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@color/radar_card_bottom_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_more_btn" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/radar_card_bottom_height">
+        <FrameLayout android:layout_gravity="center" android:background="@drawable/radar_background_card_top_l" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:gravity="center" android:id="@id/left_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/radar_btn_unlike" android:scaleType="center" />
+        </FrameLayout>
+        <ImageView android:background="@color/radar_card_bottom_divider" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <FrameLayout android:layout_gravity="center" android:background="@drawable/radar_background_card_top_r" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="17.0sp" android:textColor="@color/radar_card_rightbtn_text" android:gravity="center" android:id="@id/right_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/radar_good" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <com.sina.weibo.view.PullDownView android:id="@id/pd_article" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/tweet_list" android:paddingLeft="@dimen/detail_margin" android:paddingRight="@dimen/detail_margin" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:scrollingCache="false" android:cacheColorHint="#00000000" android:divider="@null" android:headerDividersEnabled="false" />
+    </com.sina.weibo.view.PullDownView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tweet_bottom_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height" android:baselineAligned="false" android:layout_alignParentBottom="true">
+        <com.sina.weibo.view.HorizontalMixButton android:id="@id/forward" android:background="@drawable/feed_leftbutton_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:contentDescription="@string/forward" weibo:mixText="@string/forward" weibo:mixTextSize="@dimen/detail_bottom_tab_font_size" weibo:mixLeftSpace="6.0dip" />
+        <ImageView android:id="@id/detailt_divider_0" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/statusdetail_comment_top_rule" />
+        <com.sina.weibo.view.HorizontalMixButton android:id="@id/comment" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:contentDescription="@string/comment" weibo:mixText="@string/comment" weibo:mixTextSize="@dimen/detail_bottom_tab_font_size" weibo:mixLeftSpace="6.0dip" />
+        <ImageView android:id="@id/detailt_divider_1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/statusdetail_comment_top_rule" />
+        <RelativeLayout android:gravity="center" android:id="@id/liked" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:contentDescription="@string/btn_detailweibo_liked">
+            <ImageView android:id="@id/detail_liked_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/detail_bottom_tab_font_size" android:id="@id/detail_liked_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/btn_detailweibo_liked" android:layout_toRightOf="@id/detail_liked_icon" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.sina.weibo.feed.view.DetailWeiboOperationBottomBar android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/detail_operation_bottom_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height" android:baselineAligned="false" android:layout_alignParentBottom="true" />
+    <com.sina.weibo.feed.view.DetailWeiboMiddleTab android:id="@id/middleTab" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_margin" android:layout_marginRight="@dimen/detail_margin" />
+    <com.sina.weibo.feed.view.ArticleEmptyGuideView android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

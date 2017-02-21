@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_counter_down"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.storm.ui.CounterDownActivity">
+
+    <Button
+        android:id="@+id/btn_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="发送验证码"/>w
+</RelativeLayout>

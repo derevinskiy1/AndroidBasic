@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:paddingBottom="@dimen/settings_margin_top" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/fontSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/settings_margin_top">
+        <RadioButton android:textSize="@dimen/font_size_big" android:id="@id/fontSizeBig" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top" android:button="@null" android:text="@string/text_size_big" android:drawableRight="@drawable/check_box_bg" />
+        <ImageView android:id="@id/divider1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <RadioButton android:textSize="@dimen/font_size_middle" android:id="@id/fontSizeMiddle" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_middle" android:button="@null" android:text="@string/text_size_middle" android:drawableRight="@drawable/check_box_bg" />
+        <ImageView android:id="@id/divider2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <RadioButton android:textSize="@dimen/font_size_small" android:id="@id/fontSizeSmall" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top" android:button="@null" android:text="@string/text_size_small" android:drawableRight="@drawable/check_box_bg" />
+    </RadioGroup>
+</ScrollView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/card_three_apps_height">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/universal_textsize_16" android:textColor="@color/common_gray_33" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/tvAppNum1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/universal_textsize_12" android:textColor="@color/common_gray_93" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/tvAppName1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ivDivider1" android:layout_width="wrap_content" android:layout_height="34.0dip" android:scaleType="fitXY" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/universal_textsize_16" android:textColor="@color/common_gray_33" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/tvAppNum2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/universal_textsize_12" android:textColor="@color/common_gray_93" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/tvAppName2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ivDivider2" android:layout_width="wrap_content" android:layout_height="34.0dip" android:scaleType="fitXY" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/universal_textsize_16" android:textColor="@color/common_gray_33" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/tvAppNum3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/universal_textsize_12" android:textColor="@color/common_gray_93" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/tvAppName3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/group_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/lyGroupItem" android:background="@drawable/grouplist_fixed_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/group_item_text_height">
+        <TextView android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/groupNumItem" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/contacts_groupitem_text_num_marginleft" android:layout_marginRight="@dimen/contacts_groupitem_text_padding" android:singleLine="true" android:layout_alignParentRight="true" />
+        <TextView android:textSize="18.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/groupNameItem" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/contacts_groupitem_text_padding" android:singleLine="true" android:layout_toLeftOf="@id/groupNumItem" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_group_list_bg_divider" android:background="@drawable/group_divider" android:layout_width="fill_parent" android:layout_height="@dimen/group_item_divider_height" />
+</LinearLayout>

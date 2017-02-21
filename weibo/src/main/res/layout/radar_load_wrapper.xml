@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_radar_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" layout="@layout/radar_scan_background" />
+    <include android:id="@id/layout_radar_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/radar_scan_button" />
+    <include android:id="@id/layout_radar_ubable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/radar_unable_layout" />
+    <View android:id="@id/radar_center_stub" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerInParent="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/main_content_button_text_color" android:gravity="center" android:id="@id/radar_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/radar_tips_margin_top" android:layout_below="@id/radar_center_stub" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/main_content_button_text_color" android:gravity="center" android:id="@id/radar_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/radar_tips_margin_top" android:layout_below="@id/radar_center_stub" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/main_content_button_text_color" android:gravity="center" android:id="@id/radar_loadFail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/radar_tips_margin_top" android:layout_below="@id/radar_center_stub" android:layout_centerHorizontal="true" />
+</RelativeLayout>

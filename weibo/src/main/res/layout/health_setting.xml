@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/main_feed_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/common_gray_93" android:gravity="center_vertical" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/health_title_personal_info" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/user_info_content" android:background="@drawable/common_card_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="15.0sp" android:textColor="@color/common_gray_33" android:id="@id/user_gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/health_person_gender_male" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/common_gray_93" android:id="@id/textView23" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_person_gender" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="15.0sp" android:textColor="@color/common_gray_33" android:id="@id/user_years_old" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="25" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/common_gray_93" android:id="@id/textView25" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_person_year_old" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="15.0sp" android:textColor="@color/common_gray_33" android:id="@id/user_height" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/unit_person_height" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/common_gray_93" android:id="@id/textView27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_person_height" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="15.0sp" android:textColor="@color/common_gray_33" android:id="@id/user_weight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/unit_person_weight" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/common_gray_93" android:id="@id/textView29" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_icon_weight" />
+            </LinearLayout>
+            <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/common_icon_arrow_bg" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/common_gray_93" android:gravity="center_vertical" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/health_profile_device_title" />
+        <RelativeLayout android:id="@id/sourceSettingView" android:background="@drawable/common_card_top_background" android:layout_width="fill_parent" android:layout_height="74.0dip">
+            <ImageView android:id="@id/itemPic" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="12.0dip" android:src="@drawable/health_setting_icon_device_phone" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_gray_33" android:id="@id/itemTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/health_source_setting_title" android:layout_toRightOf="@id/itemPic" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_gray_93" android:ellipsize="end" android:id="@id/itemSummary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/health_source_setting_summary" android:singleLine="true" android:layout_toLeftOf="@id/sourceSettingSwitchButton" android:layout_below="@id/itemTitle" android:layout_alignLeft="@id/itemTitle" />
+            <com.sina.weibo.view.SwitchButton android:id="@id/sourceSettingSwitchButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:background="@drawable/health_common_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/boundDeviceContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/deviceShoppingView" android:background="@drawable/common_card_bottom_bg" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/device_list_pic" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/health_setting_device_icon_more" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/common_gray_63" android:id="@id/device_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/health_add_device_item_title" android:layout_toRightOf="@id/device_list_pic" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:background="@drawable/common_card_background" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="74.0dip" android:layout_marginTop="12.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_gray_33" android:ellipsize="end" android:id="@id/textView1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/health_set_message_option_text" android:singleLine="true" android:layout_weight="1.0" />
+            <com.sina.weibo.view.SwitchButton android:id="@id/message_option" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

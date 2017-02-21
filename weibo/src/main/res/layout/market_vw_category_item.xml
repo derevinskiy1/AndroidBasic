@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="0.0dip" android:layout_height="57.0dip" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_category_logo" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="@dimen/market_recomment_item_distance_inner_h" android:src="@drawable/market_icon_app_default" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0sp" android:ellipsize="end" android:gravity="left" android:id="@id/tv_category_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/market_category_header_title" android:maxLines="2" android:layout_toRightOf="@id/iv_category_logo" android:layout_centerVertical="true" />
+</RelativeLayout>

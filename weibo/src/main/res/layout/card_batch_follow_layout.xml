@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/infolayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/main_content_text_color" android:ellipsize="end" android:id="@id/tv_card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:singleLine="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/main_content_subtitle_text_color" android:ellipsize="end" android:id="@id/tv_card_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="12.0dip" android:maxLines="1" android:layout_below="@id/tv_card_title" />
+        <com.sina.weibo.view.CardOperationButtonView android:id="@id/card_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/usergroup" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="6.0dip" android:layout_below="@id/infolayout">
+        <include android:id="@id/fr_people1" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/muti_user_view" />
+        <include android:id="@id/fr_people2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" layout="@layout/muti_user_view" />
+        <include android:id="@id/fr_people3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" layout="@layout/muti_user_view" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="7.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/video_guide_item_icon" android:duplicateParentState="true" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_marginRight="6.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/common_button_text" android:gravity="center" android:id="@id/video_guide_item_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="12.0dip" android:paddingTop="27.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="50.0sp" android:textColor="@color/common_gray_33" android:id="@id/weightView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/common_gray_93" android:id="@id/weightUnitView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/unit_weight" android:layout_toRightOf="@id/weightView" android:layout_alignBaseline="@id/weightView" />
+        <TextView android:id="@id/bmiLevelView" android:background="@drawable/health_index_level_normal" android:text="" android:layout_alignBaseline="@id/weightView" android:layout_alignParentRight="true" style="@style/HealthIndexLevelTextView" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="12.0dip" android:paddingTop="17.0dip" android:paddingRight="12.0dip" android:paddingBottom="17.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="24.0sp" android:textColor="@color/common_gray_33" android:id="@id/bfpView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/common_gray_93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/unit_fat_percent" />
+            </LinearLayout>
+            <View android:background="@color/common_line" android:layout_width="1.0px" android:layout_height="53.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="24.0sp" android:textColor="@color/common_gray_33" android:id="@id/bmiView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/common_gray_93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/unit_bmi" />
+            </LinearLayout>
+            <View android:background="@color/common_line" android:layout_width="1.0px" android:layout_height="53.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="24.0sp" android:textColor="@color/common_gray_33" android:id="@id/weightChangesView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_33" android:id="@id/weightChangesUnitView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unit_weight" android:layout_toRightOf="@id/weightChangesView" android:layout_alignBaseline="@id/weightChangesView" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="@color/common_gray_93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/health_weight_compare_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

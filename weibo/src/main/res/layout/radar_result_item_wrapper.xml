@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sina.weibo.radar.widget.likecard.SwipeFlingAdapterView android:layout_gravity="center" android:id="@id/view_swipe_card" android:layout_width="fill_parent" android:layout_height="fill_parent" app:max_visible="4" app:about_to_empty_size="8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

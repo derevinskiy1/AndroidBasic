@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/flPageRoot" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.sina.weibo.view.SquareCoverPullDownView android:id="@id/pdCard" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.sina.weibo.card.view.CardListView android:id="@id/lvCard" android:fadingEdge="none" android:fadingEdgeLength="0.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:scrollingCache="false" android:divider="@null" android:dividerHeight="0.0dip" android:fastScrollEnabled="false" />
+        </com.sina.weibo.view.SquareCoverPullDownView>
+        <com.sina.weibo.view.PageMenuBarView android:id="@id/tb_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/page_toolbar_height_default" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rlUserInfoTitleBar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/page_title_height">
+        <com.sina.weibo.view.StateObservedImageView android:id="@id/ivUserInfoBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/titlebar_icon_margin" android:scaleType="center" android:layout_centerVertical="true" android:contentDescription="@string/acc_back" />
+        <TextView android:textSize="18.0dip" android:ellipsize="end" android:gravity="center" android:id="@id/tv_page_title_shadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:text="@string/user_info_title" android:singleLine="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="18.0dip" android:ellipsize="end" android:gravity="center" android:id="@id/tvUserInfoTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:text="@string/user_info_title" android:singleLine="true" android:layout_centerInParent="true" />
+        <FrameLayout android:layout_width="@dimen/titlebar_icon_width" android:layout_height="@dimen/titlebar_icon_height" android:layout_marginRight="@dimen/titlebar_icon_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <com.sina.weibo.view.StateObservedImageView android:layout_gravity="center" android:id="@id/ivUserInfoOptions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:contentDescription="@string/acc_more_oper" />
+            <ImageView android:layout_gravity="center" android:id="@id/ivUserInfoLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="matrix" android:contentDescription="@string/acc_loading" />
+        </FrameLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/ivUserInfoTitleBarShadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/page_title_height" android:scaleType="fitXY" />
+    <FrameLayout android:id="@id/video_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

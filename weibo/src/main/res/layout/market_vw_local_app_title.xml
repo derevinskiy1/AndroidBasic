@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/market_recomment_item_distance_h" android:paddingTop="@dimen/market_recomment_item_distance_v" android:paddingRight="@dimen/market_recomment_item_distance_h" android:paddingBottom="@dimen/market_recomment_item_distance_v" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_card_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center|left" android:id="@id/iv_title_icon" android:layout_width="@dimen/market_icon_size" android:layout_height="@dimen/market_icon_size" android:layout_marginLeft="@dimen/market_recomment_item_distance_inner_h" android:layout_marginTop="@dimen/market_recomment_item_distance_inner_v" android:layout_marginBottom="@dimen/market_recomment_item_distance_inner_v" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/market_font_16" android:layout_gravity="center_vertical" android:id="@id/tv_title_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/market_font_12" android:gravity="center|right" android:layout_gravity="center_vertical" android:id="@id/tv_title_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/iv_title_arraw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/market_title_margin_left" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MspAppBaseTheme" parent="@android:style/Theme.Holo.Light.NoActionBar" />
+    <style name="ActionBarOverlay" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="ActionBarOverlayForFlyme4" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:actionBarStyle">@style/CustomActionBarStyle</item>
+        <item name="android:actionButtonStyle">@style/CustomActionButtonStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/CustomActionButtonOverflowStyle</item>
+    </style>
+    <style name="CustomActionButtonOverflowStyle" parent="@android:style/Widget.DeviceDefault.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/mz_ic_sb_more</item>
+    </style>
+    <style name="CustomActionButtonStyle" parent="@android:style/Widget.DeviceDefault.Light.ActionButton">
+        <item name="android:src">@drawable/mz_ic_sb_back</item>
+    </style>
+    <style name="CustomActionBarStyle" parent="@android:style/Widget.DeviceDefault.Light.ActionBar">
+        <item name="android:background">@drawable/mz_titlebar_background</item>
+        <item name="android:backgroundSplit">@drawable/mz_smartbar_background</item>
+    </style>
+</resources>

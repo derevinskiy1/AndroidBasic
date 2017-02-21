@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/main_content_text_color" android:gravity="center" android:id="@id/checking_desc" android:layout_width="268.0dip" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:text="@string/networkanalyse_checking_desc" />
+    <com.sina.weibo.view.NetworkAnalyseProgress android:id="@id/progress" android:layout_width="230.0dip" android:layout_height="10.0dip" android:layout_marginTop="46.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/main_content_subtitle_text_color" android:ellipsize="end" android:id="@id/checking_progress_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/networkanalyse_checking_progress_desc" android:singleLine="true" />
+    <Button android:textSize="16.0sp" android:textColor="@color/main_content_text_color" android:id="@id/cancelCheck" android:background="@drawable/common_card_bg" android:layout_width="268.0dip" android:layout_height="48.0dip" android:layout_marginTop="52.0dip" android:text="@string/networkanalyse_checking_btn" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/radar_attention_dialog_background" style="@style/fill_both_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:radar="http://schemas.android.com/apk/res-auto">
+    <com.sina.weibo.view.RadarCircleView android:id="@id/radar_friend_head" style="@style/auto_size" />
+    <RelativeLayout android:visibility="invisible" android:layout_marginTop="16.0dip" style="@style/fillh_auto_size">
+        <TextView android:textSize="17.0sp" android:textColor="@color/tabbar_badge_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/attention_name" android:singleLine="true" android:layout_centerInParent="true" style="@style/auto_size" />
+        <ImageView android:id="@id/vertify" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/attention_name" android:layout_centerVertical="true" style="@style/auto_size" />
+        <ImageView android:id="@id/gender" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/vertify" android:layout_centerVertical="true" style="@style/auto_size" />
+    </RelativeLayout>
+    <TextView android:textSize="11.0sp" android:textColor="@color/main_content_subtitle_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/sub_name" android:visibility="invisible" android:layout_marginTop="5.0dip" android:singleLine="true" style="@style/fillh_auto_size" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/main_content_subtitle_text_color" android:ellipsize="end" android:gravity="center|top" android:id="@id/detail" android:paddingLeft="58.0dip" android:paddingRight="55.0dip" android:visibility="invisible" android:layout_marginTop="10.0dip" android:maxLines="2" android:lineSpacingExtra="3.0dip" style="@style/fillh_auto_size" />
+    <com.sina.weibo.view.RadarAttentionButtonView android:id="@id/button" android:visibility="invisible" android:layout_marginTop="35.0dip" style="@style/auto_size" />
+</LinearLayout>

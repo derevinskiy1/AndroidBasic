@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/detail_liked_first_item_font_size" android:textColor="@color/main_content_subtitle_text_color" android:gravity="center_vertical" android:id="@id/detail_liked_first_text" android:paddingLeft="@dimen/detail_margin" android:layout_width="fill_parent" android:layout_height="25.0dip" android:singleLine="true" />
+</RelativeLayout>

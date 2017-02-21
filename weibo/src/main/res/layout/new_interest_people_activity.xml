@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/common_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/normal_rootview" android:background="@color/common_background" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.sina.weibo.utils.CustomScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <RelativeLayout android:gravity="center_horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:id="@id/ll_interestPeople_top" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/interest_padding" android:layout_marginTop="41.0dip" android:layout_marginRight="@dimen/interest_padding">
+                    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/sign_up_add_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="34.0dip" />
+                    <com.sina.weibo.account.view.TextPageIndicator android:layout_gravity="center" android:id="@id/text_indicator" android:paddingLeft="@dimen/interest_indicator_padding" android:paddingRight="@dimen/interest_indicator_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" weibo:fillColor="@color/dot_selected_color" weibo:pageColor="@color/dot_unselected_color" weibo:radius="3.0dip" weibo:strokeWidth="0.0dip" weibo:centered="true" weibo:selectedTextColor="@color/common_yellow" weibo:unselectedTextColor="@color/common_gray_33" weibo:spacing="36.0dip" />
+                </FrameLayout>
+                <RelativeLayout android:id="@id/rl_interestPeoplePager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" android:layout_below="@id/ll_interestPeople_top">
+                    <com.sina.weibo.view.CustomViewPager android:id="@id/interestPeoplePager" android:layout_width="fill_parent" android:layout_height="@dimen/interest_pager_height" android:layout_centerInParent="true" />
+                    <RelativeLayout android:id="@id/interestPeoplePagerGuide" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="11.0dip" android:layout_centerInParent="true">
+                        <ImageView android:id="@id/interestPeopleGuideLeft" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/signup_add_arrow" />
+                        <ImageView android:id="@id/interestPeopleGuideRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/signup_add_arrow" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <TextView android:textSize="14.0sp" android:textColor="@color/common_link_blue" android:gravity="center" android:id="@id/change" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginTop="35.0dip" android:text="@string/user_guide_category_change_btn_text" android:layout_below="@id/rl_interestPeoplePager" android:layout_centerHorizontal="true" />
+                <Button android:textSize="17.0sp" android:textColor="@color/common_yellow" android:gravity="center" android:id="@id/next" android:background="@drawable/common_button_big_white_bg" android:layout_width="fill_parent" android:layout_height="@dimen/new_regist_height_bt" android:layout_marginLeft="12.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="20.0dip" android:text="@string/next" android:shadowDx="0.0" android:shadowDy="2.0" android:shadowRadius="3.0" android:layout_below="@id/change" />
+            </RelativeLayout>
+        </com.sina.weibo.utils.CustomScrollView>
+    </RelativeLayout>
+    <include android:id="@id/emptyview" android:visibility="gone" layout="@layout/new_interest_people_empty_view" />
+</FrameLayout>

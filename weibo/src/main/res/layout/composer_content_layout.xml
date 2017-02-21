@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sina.weibo.composerinde.view.dynamicgrid.DynamicGridFrameLayout android:id="@id/rootview" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/bottom_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@id/fixed_element_container" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip">
+                <ViewStub android:id="@id/viewstub_fixed_elements" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+            <com.sina.weibo.composerinde.view.ComposerToolbarPanelView android:id="@id/toolbar_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.sina.weibo.composerinde.view.InterceptTouchScrollView android:id="@id/sv_element_container" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_container">
+            <LinearLayout android:orientation="vertical" android:id="@id/element_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ViewStub android:id="@id/viewstub_elements" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </com.sina.weibo.composerinde.view.InterceptTouchScrollView>
+    </RelativeLayout>
+</com.sina.weibo.composerinde.view.dynamicgrid.DynamicGridFrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/title" android:singleLine="true" />
+        <EditText android:id="@id/caption" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/caption" android:singleLine="true" android:inputType="textCapSentences" />
+        <TextView android:textStyle="bold" android:textColor="@color/image_options_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/horizontal_alignment" />
+        <Spinner android:id="@id/alignment_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:prompt="@string/image_alignment" />
+        <TextView android:textStyle="bold" android:textColor="@color/image_options_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/width" />
+        <SeekBar android:id="@id/imageWidth" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <EditText android:layout_gravity="center|left" android:id="@id/imageWidthText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:inputType="number" android:imeOptions="actionDone" />
+        <CheckBox android:layout_gravity="left" android:id="@id/featuredImage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/featured" />
+        <CheckBox android:layout_gravity="left" android:id="@id/featuredInPost" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/featured_in_post" />
+    </LinearLayout>
+</ScrollView>

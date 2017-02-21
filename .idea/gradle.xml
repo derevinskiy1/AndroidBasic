@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AndroidStudyCode" />
+            <option value="$PROJECT_DIR$/animator" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/base64" />
+            <option value="$PROJECT_DIR$/cache" />
+            <option value="$PROJECT_DIR$/coordinator" />
+            <option value="$PROJECT_DIR$/customviewandviewgroup" />
+            <option value="$PROJECT_DIR$/database" />
+            <option value="$PROJECT_DIR$/dayandnighttheme" />
+            <option value="$PROJECT_DIR$/dialog" />
+            <option value="$PROJECT_DIR$/glidedemo2" />
+            <option value="$PROJECT_DIR$/htmljs" />
+            <option value="$PROJECT_DIR$/httpurlconnection" />
+            <option value="$PROJECT_DIR$/lottery" />
+            <option value="$PROJECT_DIR$/lottery1" />
+            <option value="$PROJECT_DIR$/lrc" />
+            <option value="$PROJECT_DIR$/mvp" />
+            <option value="$PROJECT_DIR$/myview" />
+            <option value="$PROJECT_DIR$/ndk" />
+            <option value="$PROJECT_DIR$/net" />
+            <option value="$PROJECT_DIR$/pay" />
+            <option value="$PROJECT_DIR$/segmentview" />
+            <option value="$PROJECT_DIR$/sensortest" />
+            <option value="$PROJECT_DIR$/skinchange" />
+            <option value="$PROJECT_DIR$/slidemenu" />
+            <option value="$PROJECT_DIR$/smoothimageview" />
+            <option value="$PROJECT_DIR$/sqlite" />
+            <option value="$PROJECT_DIR$/surfaceview" />
+            <option value="$PROJECT_DIR$/sweepview" />
+            <option value="$PROJECT_DIR$/swipeback" />
+            <option value="$PROJECT_DIR$/systemui" />
+            <option value="$PROJECT_DIR$/testbmob" />
+            <option value="$PROJECT_DIR$/testdrawable" />
+            <option value="$PROJECT_DIR$/testglide" />
+            <option value="$PROJECT_DIR$/translucentbardemo" />
+            <option value="$PROJECT_DIR$/viewpagerdemo" />
+            <option value="$PROJECT_DIR$/wechatpay" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

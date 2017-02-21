@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rlContent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <com.sina.weibo.view.ThemeTitleBar android:id="@id/themeTitleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ListView android:id="@id/lvThemeList" android:paddingBottom="13.0dip" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@drawable/divider_horizontal_timeline" android:layout_below="@id/themeTitleBar" />
+</RelativeLayout>

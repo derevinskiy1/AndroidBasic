@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_appinfo_head" android:background="#ffffffff" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:weibo="http://schemas.android.com/apk/res-auto">
+    <com.sina.weibo.view.RoundedImageView android:id="@id/iv_app_icon" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/preview_card_pic_loading" weibo:corner_radius="3.0dip" weibo:cover_border_width="1.0dip" weibo:cover_border_color="#0d000000" weibo:round_background="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/tv_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="天气通" />
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_desc" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/tv_category" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="生活" />
+                    <RatingBar android:layout_gravity="center" android:id="@id/rb_rating" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:rating="4.0" android:stepSize="1.0" android:isIndicator="true" style="@style/sng_ratingbar_common" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff5d5d5d" android:id="@id/tv_download_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4270次下载" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff5d5d5d" android:id="@id/tv_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="14.7M" />
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout android:id="@id/layout_progress_btn" android:clickable="true" android:layout_width="@dimen/page_info_btn_width" android:layout_height="wrap_content">
+                <ProgressBar android:id="@id/pb_downloading_bar" android:background="@drawable/market_ad_progress_green" android:layout_width="@dimen/page_info_btn_width" android:layout_height="@dimen/page_info_btn_height" android:max="1000" android:progress="0" android:indeterminateOnly="false" android:progressDrawable="@drawable/market_ad_appinfo_progressbar_normal" style="?android:attr/progressBarStyleHorizontal" />
+                <RelativeLayout android:gravity="center" android:id="@id/layout_download" android:clickable="true" android:layout_width="@dimen/page_info_btn_width" android:layout_height="@dimen/page_info_btn_height">
+                    <TextView android:textSize="@dimen/page_header_btn_text_size" android:textColor="@color/market_common_progress_txt" android:layout_gravity="center_vertical" android:id="@id/tv_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_download" />
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

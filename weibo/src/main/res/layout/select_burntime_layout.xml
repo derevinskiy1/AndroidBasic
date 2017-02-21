@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:id="@id/cancle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textSize="16.0sp" android:id="@id/ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/devideline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/common_horizontal_separator" android:scaleType="fitXY" android:layout_below="@id/ok" />
+    <com.sina.weibo.wheel.WheelView android:id="@id/wheelview" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginTop="12.0dip" android:layout_below="@id/devideline" />
+    <View android:id="@id/blank" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_below="@id/wheelview" />
+</RelativeLayout>

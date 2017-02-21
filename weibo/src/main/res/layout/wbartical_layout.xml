@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/lwb_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/lwb_view_container" android:background="@color/compose_content_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.sina.weibo.view.EditBlogView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/main_content_text_color" android:textColorHint="@color/music_content_button_text_color" android:gravity="center|left" android:id="@id/lwb_title_view" android:background="@color/compose_content_background_color" android:paddingTop="12.0dip" android:paddingBottom="6.0dip" android:nextFocusDown="@id/lwb_content_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/wbartical_edit_hint_title" android:lines="2" android:ems="30" android:lineSpacingExtra="2.0dip" android:isScrollContainer="true" android:imeOptions="actionNext" />
+        <ImageView android:id="@id/lwb_divider" android:background="@drawable/compose_statusdetail_longweibo" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lwb_cover_hint" android:background="@drawable/compose_pic_bg_add_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+            <ImageView android:id="@id/lwb_cover_hint_image" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/compose_pic_big_add_button" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/music_content_button_text_color" android:gravity="center" android:id="@id/lwb_cover_hint_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wbartical_insert_cover" />
+        </LinearLayout>
+        <com.sina.weibo.composerinde.view.WBArticalCoverView android:id="@id/lwb_cover" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+        <com.sina.weibo.composerinde.view.WBArticalContentView android:orientation="vertical" android:id="@id/lwb_content_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.storm.sensortest">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Sensor.SensorActivity"/>
+        <activity android:name=".Retrofit.activity.RetrofitActivity"/>
+        <activity android:name=".Xfermode.XFermodeActivity"/>
+        <activity android:name=".dispatch.DispatchActivity">
+        </activity>
+        <activity android:name=".RxJava.RxJavaActivity">
+        </activity>
+        <activity android:name=".okhttp3.Main2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Thread.Main3Activity"/>
+        <activity android:name=".activity.Main4Activity"/>
+        <activity android:name=".RxJava.demo.RxJava2Activity">
+        </activity>
+        <activity android:name=".dispatch.Main5Activity">
+        </activity>
+        <activity android:name=".activity.GoodActivity">
+        </activity>
+        <activity android:name=".activity.CardActivity">
+        </activity>
+        <activity android:name=".RxJavaTest.ReviewRxJavaActivity">
+        </activity>
+        <activity android:name=".RxJavaTest.RxJavaRetrofitActivity">
+        </activity>
+        <activity android:name=".Notification.NotificationActivity">
+        </activity>
+        <activity android:name=".Intent.IntentActivity">
+        </activity>
+        <activity android:name=".Intent.Intent2Activity">
+            <intent-filter>
+                <action android:name="com.action.a"/>
+                <action android:name="com.action.b"/>
+
+                <category android:name="com.category.a"/>
+                <category android:name="com.category.b"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <!-- mineType URL -->
+
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ReViewtrofit.activity.ReViewRetrofitActivity">
+        </activity>
+        <activity android:name=".ReViewtrofit.activity.RxJavaActivity">
+
+        </activity>
+        <activity android:name=".ReViewtrofit.activity.RxJavaAndReofitActivity">
+
+        </activity>
+    </application>
+
+</manifest>

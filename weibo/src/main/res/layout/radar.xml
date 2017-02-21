@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/radar_main_root" android:background="@color/main_feed_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.radar.view.RadarSwitchWrapper android:id="@id/show_wrapper" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/radar_load_wrapper" />
+        <com.sina.weibo.radar.widget.RadarViewPager android:id="@id/radar_pager" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.sina.weibo.radar.view.RadarSwitchWrapper>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.sina.weibo.radar.view.RadarCardSwipeView android:id="@id/view_swipe_card" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.sina.weibo.radar.guide.GuideView android:id="@id/view_guide" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <com.sina.weibo.radar.view.RadarTabView android:id="@id/tabView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" />
+    <include android:id="@id/radar_title_wrapper" layout="@layout/radar_title_wrapper" />
+    <ImageView android:id="@id/radar_title_ivShadowUp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/radar_title_wrapper" />
+</RelativeLayout>

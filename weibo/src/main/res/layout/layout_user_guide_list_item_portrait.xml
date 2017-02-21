@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sina.weibo.card.view.CircleImageView android:id="@id/portrait" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/avatar_default_big" app:border_width="1.0px" app:border_color="#14000000" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/common_gray_93" android:ellipsize="marquee" android:gravity="center" android:id="@id/nick" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="名字显示七个字" android:singleLine="true" />
+</LinearLayout>

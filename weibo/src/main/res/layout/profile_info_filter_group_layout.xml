@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="bottom" android:id="@id/filter_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:ellipsize="end" android:id="@id/title" android:paddingLeft="@dimen/card_normal_margin_left" android:paddingTop="@dimen/cardlist_padding_y" android:paddingBottom="@dimen/card_group_title_margin_bottom" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/icon_name" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/icon" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginBottom="5.0dip" android:scaleType="fitXY" android:layout_alignLeft="@id/icon_name" android:layout_alignBottom="@id/icon_name" />
+        <TextView android:textSize="12.0sp" android:ellipsize="end" android:id="@id/icon_name" android:paddingLeft="15.0dip" android:paddingTop="@dimen/cardlist_padding_y" android:paddingRight="10.0dip" android:paddingBottom="@dimen/card_group_title_margin_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/stub_normal_item_layout" android:layout="@layout/card_item_detail_stub_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/stub_verify_item_layout" android:layout="@layout/card_item_detail_stub_verify" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/stub_member_item_layout" android:layout="@layout/card_item_detail_stub_member" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/stub_left_right_item_layout" android:layout="@layout/card_item_detail_stub_left_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="44.0dip" />
+</RelativeLayout>

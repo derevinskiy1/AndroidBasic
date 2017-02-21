@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivPortraitRound" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/userinfo_shadow_round" android:scaleType="fitXY" android:contentDescription="@null" />
+    <com.sina.weibo.view.RoundedImageView android:id="@id/ivPortrait" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/ivPortraitMask" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="3.0dip" android:scaleType="fitXY" android:contentDescription="@null" />
+</FrameLayout>

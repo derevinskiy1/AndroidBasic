@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/settings_margin_top" android:paddingBottom="@dimen/settings_margin_top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/versionInfo" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/versionInfoContent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/assistant_versioninfo" android:layout_weight="1.0" style="@style/SettingMainText" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/version_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:src="@drawable/common_icon_arrow" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/trafficInfo" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="@dimen/settings_margin_top">
+        <TextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/trafficInfoContent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/assistant_traffic" android:layout_weight="1.0" style="@style/SettingMainText" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/traffic_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:src="@drawable/common_icon_arrow" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/fixInfo" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="@dimen/settings_margin_top">
+        <TextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/fixInfoContent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/assistant_fixtools" android:layout_weight="1.0" style="@style/SettingMainText" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/fixtools_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:src="@drawable/common_icon_arrow" />
+    </LinearLayout>
+</LinearLayout>

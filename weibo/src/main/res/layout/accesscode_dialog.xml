@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/change_code"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip">
+
+        <TextView
+            android:id="@id/tv_change_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:clickable="true"
+            android:text="@string/change_access"
+            android:textColor="@drawable/login_oversea_title_btn"
+            android:textSize="14.0sp" />
+
+        <FrameLayout
+            android:id="@id/accesscode_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15.0dip"
+            android:layout_toLeftOf="@id/tv_change_image">
+
+            <ImageView
+                android:id="@id/iv_access_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+
+            <ProgressBar
+                android:id="@id/pg_load_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/progressbar" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@id/et_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/pop_input_background"
+        android:gravity="center_vertical"
+        android:hint="@string/input_access"
+        android:paddingLeft="5.0dip"
+        android:singleLine="true"
+        android:textSize="14.0sp" />
+</LinearLayout>

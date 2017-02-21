@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/chat_room_member_item" android:clipChildren="true" android:layout_width="wrap_content" android:layout_height="46.0dip" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/scale_item" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_centerVertical="true">
+        <com.sina.weibo.weiyou.view.CircleImageView android:layout_gravity="center" android:id="@id/ivportrait" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="centerCrop" />
+    </LinearLayout>
+</RelativeLayout>

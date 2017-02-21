@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/chat_iv_content" android:layout_width="@dimen/pull_refresh_progress_size" android:layout_height="@dimen/pull_refresh_progress_size" android:layout_marginRight="@dimen/updatebar_icon_space" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center" android:id="@id/chat_pb_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tableview_loading" android:scaleType="fitCenter" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sina.weibo.appmarket.widget.MyTouchLayout android:id="@id/flPageRoot" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.view.PagePullDownView android:id="@id/pdCard" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/lvCard" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/market_sng_listview" />
+    </com.sina.weibo.view.PagePullDownView>
+    <RelativeLayout android:id="@id/rlUserInfoTitleBar" android:layout_width="fill_parent" android:layout_height="@dimen/page_title_height">
+        <ImageView android:id="@id/ivUserInfoBack" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/titlebar_icon_margin" android:scaleType="center" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0dip" android:ellipsize="end" android:gravity="center" android:id="@id/tvUserInfoTitle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:text="@string/user_info_title" android:singleLine="true" android:layout_centerInParent="true" />
+        <FrameLayout android:layout_width="@dimen/titlebar_icon_width" android:layout_height="@dimen/titlebar_icon_height" android:layout_marginRight="@dimen/titlebar_icon_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:id="@id/ivUserInfoLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="matrix" />
+        </FrameLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/ivUserInfoTitleBarShadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/page_title_height" android:scaleType="fitXY" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/market_sng_appitem_snginfo" android:gravity="bottom|center" android:id="@id/rank_empty" android:paddingTop="30.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="140.0dip" android:text="@string/market_sng_rank_empty" android:layout_alignParentBottom="true" />
+</com.sina.weibo.appmarket.widget.MyTouchLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.sina.weibo.view.RoundedImageView android:id="@id/ivItemPortrait" android:saveEnabled="true" android:layout_marginLeft="@dimen/portrait_margin_right" android:layout_marginTop="@dimen/portrait_margin_right" android:scaleType="fitXY" android:adjustViewBounds="false" weibo:corner_radius="@dimen/small_portrait_round_radius" weibo:cover_border_width="1.0px" weibo:cover_border_color="#0d000000" weibo:round_background="true" style="@style/portrait_style" />
+        <com.sina.weibo.view.MemberTextView android:textSize="15.0sp" android:textColor="@color/main_content_text_color" android:ellipsize="end" android:id="@id/tvItemName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="16.0dip" android:text="" android:singleLine="true" android:layout_toRightOf="@id/ivItemPortrait" />
+    </RelativeLayout>
+    <com.sina.weibo.feed.view.MBlogTextView android:textColor="@color/main_content_text_color" android:id="@id/tvItemContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/timeline_padding_left" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/timeline_padding_right" android:layout_marginBottom="3.0dip" android:text="" android:lineSpacingExtra="2.669983dip" />
+    <ViewStub android:id="@id/stub_weibo_image" android:layout="@layout/itemview_image" android:inflatedId="@id/weibo_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/timeline_padding_left" android:layout_marginBottom="8.0dip" />
+    <RelativeLayout android:id="@id/ll_feed_line_bottom" android:background="@drawable/timeline_card_bottom_bg" android:paddingLeft="9.0dip" android:paddingTop="7.5dip" android:paddingRight="14.0dip" android:paddingBottom="7.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.sina.weibo.feed.view.FeedFireView android:id="@id/feed_fire" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <TextView android:textSize="12.0sp" android:textColor="#ffbbbbbf" android:ellipsize="end" android:id="@id/tv_card_newsfeed_item_repost" android:layout_width="50.0dip" android:layout_height="wrap_content" android:singleLine="true" android:drawableLeft="@drawable/timeline_icon_redirect" android:drawablePadding="3.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffbbbbbf" android:ellipsize="end" android:id="@id/tv_card_newsfeed_item_comment" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:singleLine="true" android:drawableLeft="@drawable/timeline_icon_comment" android:drawablePadding="3.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffbbbbbf" android:ellipsize="end" android:id="@id/tv_card_newsfeed_item_like" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:singleLine="true" android:drawableLeft="@drawable/timeline_icon_unlike" android:drawablePadding="3.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/market_sng_textsize_13.5" android:gravity="center|left|top" android:id="@id/market_sng_gift_content" android:paddingLeft="@dimen/market_sng_gift_detail_padding_left" android:paddingTop="@dimen/market_sng_gift_detail_padding_top" android:paddingRight="@dimen/market_sng_gift_detail_padding_right" android:paddingBottom="@dimen/market_sng_gift_detail_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/market_sng_gift_detail_item_content_lineSpacingExtra" />
+</LinearLayout>

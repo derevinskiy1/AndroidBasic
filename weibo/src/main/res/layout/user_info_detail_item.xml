@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_toLeftOf="@id/ivArrow" style="@style/user_info_detail_item">
+        <TextView android:id="@id/tvName" android:text="@string/detail_nick" style="@style/user_info_detail_name" />
+        <TextView android:id="@id/tvContent" style="@style/user_info_detail_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/ivArrow" style="@style/user_info_detail_arrow" />
+</RelativeLayout>

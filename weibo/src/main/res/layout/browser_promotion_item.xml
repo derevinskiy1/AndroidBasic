@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton android:textSize="15.0sp" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height" android:button="@null" android:drawablePadding="@dimen/browser_share_image_text_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

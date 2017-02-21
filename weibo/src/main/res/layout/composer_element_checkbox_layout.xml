@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:gravity="center_vertical" android:id="@id/checkbox" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@null" />
+    <TextView android:textSize="16.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/checkbox_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="aaa" android:singleLine="true" android:layout_toRightOf="@id/checkbox" />
+</RelativeLayout>

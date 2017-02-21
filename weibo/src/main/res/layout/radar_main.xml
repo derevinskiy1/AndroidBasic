@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sina.weibo.view.RadarBackgroundView android:id="@id/radar_background" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:radar="http://schemas.android.com/apk/res-auto">
+    <com.sina.weibo.view.RadarUserView android:layout_gravity="center" android:id="@id/user_icon" radar:isRenderUserIconDirectly="true" style="@style/auto_size" />
+    <ViewStub android:id="@id/radar_placeholder" android:visibility="gone" android:layout="@layout/radar_inner_wrapper" android:inflatedId="@id/wrapper" style="@style/fill_both_size" />
+    <ViewStub android:id="@id/radar_detail_placeholder" android:visibility="gone" android:layout="@layout/radar_detail_inner_wrapper" android:inflatedId="@id/user_detail" style="@style/fill_both_size" />
+</com.sina.weibo.view.RadarBackgroundView>

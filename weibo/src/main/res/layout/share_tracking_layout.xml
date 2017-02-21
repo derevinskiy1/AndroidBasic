@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/share_tracking" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/share_relayout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/bg" android:background="@drawable/health_map_share_background" android:layout_width="fill_parent" android:layout_height="310.0dip" android:layout_marginTop="40.0dip" />
+        <com.sina.weibo.hc.view.TrackSharePortraitView android:id="@id/portrait" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+        <com.sina.weibo.hc.view.SportDataSubView android:id="@id/sportDataView" android:layout_width="fill_parent" android:layout_height="130.0dip" android:layout_marginTop="24.0dip" android:layout_below="@id/portrait" />
+        <TextView android:id="@id/wv_bottom_bar_shadow" android:background="@drawable/common_shadow_bottom" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/sportDataView" />
+        <com.amap.api.maps.MapView android:id="@id/map" android:layout_width="fill_parent" android:layout_height="130.0dip" android:layout_below="@id/wv_bottom_bar_shadow" />
+        <ImageView android:id="@id/cover_img" android:layout_width="fill_parent" android:layout_height="180.0dip" android:src="@drawable/compose_image_placeholder" android:scaleType="centerCrop" android:layout_below="@id/wv_bottom_bar_shadow" />
+    </RelativeLayout>
+    <Button android:textSize="17.0sp" android:textColor="@color/health_button_rose_red_text_color" android:gravity="center" android:id="@id/share_btn" android:background="@drawable/health_button_orange_line_bg" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="12.0dip" android:text="@string/health_tracking_share" android:layout_below="@id/share_relayout" />
+</RelativeLayout>

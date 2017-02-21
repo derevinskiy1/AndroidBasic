@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/market_sng_top_layout_type" android:layout_width="fill_parent" android:layout_height="@dimen/market_sng_gift_detail_type_height" layout="@layout/market_sng_gift_detail_public_type" />
+    <include android:id="@id/market_sng_top_gift_content" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/market_sng_gift_detail_public_content" />
+</LinearLayout>

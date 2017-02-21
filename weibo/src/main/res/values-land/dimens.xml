@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="widget_height">72.0dip</dimen>
+    <dimen name="widget_content_margin_top">10.0dip</dimen>
+    <dimen name="widget_content_margin_left">10.0dip</dimen>
+    <dimen name="widget_logo_size">30.0dip</dimen>
+    <dimen name="group_popup_height_marginbottom">100.0dip</dimen>
+    <dimen name="dialog_updateversion_width">400.0dip</dimen>
+    <dimen name="dialog_updateversion_height">293.0dip</dimen>
+    <dimen name="detail_ad_margin_top">110.0dip</dimen>
+    <dimen name="empty_guide_pic_margin_top">10.0dip</dimen>
+    <dimen name="photo_album_pop_bottom_height">145.0dip</dimen>
+</resources>

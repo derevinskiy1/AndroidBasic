@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_selected="true" android:drawable="@drawable/common_button_sort_dotted" />
+    <item android:state_enabled="false" android:drawable="@drawable/hotweibo_button_background" />
+    <item android:state_enabled="true" android:drawable="@drawable/hotweibo_button_background" />
+</selector>

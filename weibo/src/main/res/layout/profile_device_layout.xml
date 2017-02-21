@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ly_profile_device" android:background="@color/common_retweet_background" android:layout_width="fill_parent" android:layout_height="@dimen/timeline_title_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_profile_device_icon" android:layout_width="23.0dip" android:layout_height="18.0dip" android:layout_marginLeft="@dimen/card_normal_margin_left" android:layout_marginRight="@dimen/card_normal_margin_right" android:src="@drawable/login_account_security_tip_icon" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/user_info_app_name_size" android:textColor="@color/common_gray_93" android:ellipsize="end" android:id="@id/tv_profile_device_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/iv_profile_device_arrow" android:layout_toRightOf="@id/iv_profile_device_icon" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_profile_device_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/card_normal_triangle_margin_left" android:layout_marginRight="@dimen/card_normal_triangle_margin_right" android:src="@drawable/common_icon_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:id="@id/iv_profile_divider" android:background="@color/common_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

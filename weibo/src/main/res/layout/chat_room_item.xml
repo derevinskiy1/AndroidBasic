@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/contentlayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="36.0dip" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.sina.weibo.weiyou.view.CircleImageView android:id="@id/protrait" android:layout_width="36.0dip" android:layout_height="36.0dip" android:scaleType="centerCrop" android:minHeight="36.0dip" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/contentlayout" android:background="@drawable/msg_sendfrom_done_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:minHeight="36.0dip">
+            <TextView android:textSize="10.0sp" android:textColor="@color/common_gray_93" android:id="@id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_gray_93" android:id="@id/chatmessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="8.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/devide" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_below="@id/content" />
+</RelativeLayout>

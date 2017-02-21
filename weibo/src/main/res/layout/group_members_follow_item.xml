@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <RelativeLayout android:paddingLeft="@dimen/portrait_common_margin_left" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_common_height">
+        <FrameLayout android:id="@id/lyItemPortrait" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/portrait_common_margin_right" android:layout_centerVertical="true">
+            <com.sina.weibo.view.RoundedImageView android:id="@id/ivItemPortrait" android:saveEnabled="true" android:scaleType="fitXY" android:adjustViewBounds="false" weibo:corner_radius="22.0dip" weibo:cover_border_width="1.0sp" weibo:cover_border_color="#0d000000" weibo:round_background="true" style="@style/portrait_small_style" />
+            <ImageView android:id="@id/ivItemPortraitV" android:layout_marginRight="-1.0dip" android:layout_marginBottom="-1.0dip" style="@style/portrait_avatar_style" />
+        </FrameLayout>
+        <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/tvButton" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginRight="38.0dip" android:minWidth="70.0dip" android:text="@string/remove_from_group" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="22.0dip" android:layout_toLeftOf="@id/tvButton" android:layout_toRightOf="@id/lyItemPortrait" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/list_item_one_line_text_size" android:ellipsize="end" android:id="@id/tvItemName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+            <TextView android:textSize="12.0sp" android:ellipsize="end" android:id="@id/tvItemRemark" android:paddingTop="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/ivDivider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/item_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/common_search_root" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0sp" android:gravity="center" android:id="@id/btnCancel" android:layout_width="wrap_content" android:layout_height="44.0dip" android:layout_marginRight="@dimen/search_bar_margin" android:text="@string/cancel" android:singleLine="true" android:layout_alignParentRight="true" />
+        <FrameLayout android:id="@id/lySearchInput" android:layout_width="fill_parent" android:layout_height="@dimen/search_bar_height" android:layout_marginLeft="@dimen/search_bar_margin" android:layout_marginRight="@dimen/search_bar_margin" android:layout_toLeftOf="@id/btnCancel" android:layout_centerVertical="true">
+            <LinearLayout android:layout_gravity="center|left" android:orientation="horizontal" android:id="@id/hint_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/hintIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="6.0dip" />
+                <TextView android:textSize="14.0sp" android:layout_gravity="center_vertical" android:id="@id/tvSearchText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/ivSearchIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="6.0dip" />
+                <EditText android:textSize="14.0sp" android:layout_gravity="center_vertical" android:id="@id/etSearchText" android:background="@null" android:paddingRight="@dimen/square_search_edit_padding_right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/search_contact_hint" android:singleLine="true" android:imeOptions="actionSearch" style="@null" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center|right" android:id="@id/ll_btnclear" android:paddingLeft="30.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/ivDelete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_clear_btn" android:scaleType="center" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

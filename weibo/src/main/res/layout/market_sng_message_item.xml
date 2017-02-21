@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/vgRoot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:weibo="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/market_padding_10" android:paddingBottom="@dimen/market_padding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <RelativeLayout android:id="@id/lyNoticeItemPortrait" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_padding_medium_8dp" android:layout_marginRight="@dimen/market_padding_medium_8dp">
+            <com.sina.weibo.view.RoundedImageView android:id="@id/iv_sngmsg_item_icon" android:saveEnabled="true" android:layout_width="@dimen/market_sng_message_item_icon_width" android:layout_height="@dimen/market_sng_message_item_icon_width" android:scaleType="fitXY" android:adjustViewBounds="false" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" weibo:corner_radius="@dimen/message_box_portrait_round" weibo:round_background="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/market_sng_message_item_margin_message" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:id="@id/lyNoticeRightLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/market_sng_message_item_margin_content" android:layout_alignParentTop="true">
+                <TextView android:textSize="@dimen/market_sng_message_item_fontsize_content" android:textColor="@color/main_content_subtitle_text_color" android:ellipsize="end" android:gravity="top" android:id="@id/tv_sngmsg_item_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_sngmsg_item_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/market_sng_message_item_margin_message" android:layout_below="@id/lyNoticeRightLayout">
+                <TextView android:textSize="@dimen/market_sng_message_item_fontsize_time" android:textColor="@color/main_content_subtitle_text_color" android:ellipsize="end" android:id="@id/tv_sngmsg_item_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+                <TextView android:textSize="@dimen/market_sng_message_item_fontsize_time" android:textColor="@color/main_content_subtitle_text_color" android:ellipsize="end" android:id="@id/tv_sngmsg_item_source" android:paddingLeft="@dimen/market_padding_6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/market_sng_message_item_fontsize_time" android:textColor="@color/main_content_subtitle_text_color" android:ellipsize="end" android:id="@id/tv_sngmsg_item_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_sng_btn_startgame" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center|right" android:layout_gravity="right" android:orientation="vertical" android:id="@id/unread_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/iv_sngmsg_item_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/triangle" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/iv_sngmsg_item_line" android:background="@drawable/divider_horizontal_timeline" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

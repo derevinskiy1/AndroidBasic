@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="square_pic_width">35.0dip</dimen>
+    <dimen name="messagecomposer_title_margin_top">14.0dip</dimen>
+    <dimen name="messagecompoesr_title_margin_bottom">10.0dip</dimen>
+    <dimen name="baselayout_title_height">46.659973dip</dimen>
+    <dimen name="infopage_title_height">48.329987dip</dimen>
+    <dimen name="navigater_startbtn_margin_bootom">33.299988dip</dimen>
+    <dimen name="crown_margin_top_in_feedlist">1.0dip</dimen>
+    <dimen name="group_friend_guide_margin_top">40.659973dip</dimen>
+</resources>

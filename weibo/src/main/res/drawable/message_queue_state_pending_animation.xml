@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="300" android:drawable="@drawable/messages_queue_state_pending_animation1" />
+    <item android:duration="300" android:drawable="@drawable/messages_queue_state_pending_animation2" />
+    <item android:duration="300" android:drawable="@drawable/messages_queue_state_pending_animation3" />
+</animation-list>

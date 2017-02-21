@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/list_item_common_height"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <FrameLayout android:id="@id/lyItemPortrait" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/portrait_common_margin_left" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/portrait_common_margin_right">
+        <com.sina.weibo.view.RoundedImageView android:id="@id/ivItemPortrait" android:saveEnabled="true" android:scaleType="fitXY" android:adjustViewBounds="false" weibo:corner_radius="@dimen/small_portrait_round_radius" weibo:cover_border_width="1.0px" weibo:cover_border_color="#0d000000" weibo:round_background="true" style="@style/portrait_small_style" />
+        <ImageView android:id="@id/ivItemPortraitV" style="@style/portrait_avatar_style" />
+    </FrameLayout>
+    <TextView android:textSize="11.0sp" android:textColor="@color/getfriend_contacts_invite_text" android:gravity="center" android:id="@id/btn" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0sp" android:layout_marginBottom="10.0dip" android:src="@drawable/common_button_white_bg" android:text="@string/btn_delete_from_blacklist" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0sp" android:typeface="monospace" android:id="@id/tv_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btn" android:layout_toRightOf="@id/lyItemPortrait" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/market_sng_giftbag_header_line_top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/market_sng_giftbag_header_category_event_layout" android:layout_width="fill_parent" android:layout_height="@dimen/market_sng_giftbag_header_category_event_layout_height">
+        <TextView android:textSize="@dimen/market_sng_giftbag_list_category_text_size" android:gravity="center_vertical" android:id="@id/market_sng_giftbag_header_category_event_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/market_padding_medium_8dp" android:text="@string/market_sng_giftbag_category_event" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <View android:id="@id/market_sng_main_type_tag_event" android:layout_width="@dimen/market_sng_tag_width" android:layout_height="@dimen/market_sng_tag_height" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_sngmsg_item_line1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/market_sng_giftbag_head_items_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/market_sng_giftbag_header_category_giftbag_layout" android:layout_width="fill_parent" android:layout_height="@dimen/market_sng_giftbag_header_category_giftbag_layout_height" android:layout_marginTop="@dimen/market_sng_giftbag_margin_event">
+        <TextView android:textSize="@dimen/market_sng_giftbag_list_category_text_size" android:gravity="center_vertical" android:id="@id/market_sng_giftbag_header_category_giftbag_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/market_padding_medium_8dp" android:text="@string/market_sng_giftbag_category_giftbag" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <View android:id="@id/market_sng_main_type_tag_giftbag" android:layout_width="@dimen/market_sng_tag_width" android:layout_height="@dimen/market_sng_tag_height" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_sngmsg_item_line2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

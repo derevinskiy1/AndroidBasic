@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/settings_margin_top" android:paddingBottom="@dimen/settings_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/audioLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height">
+        <TextView android:textColor="@color/moreitem_text_color" android:id="@id/tvAudio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_remind_ring" android:layout_centerVertical="true" style="@style/SettingMainText" />
+        <com.sina.weibo.view.SwitchButton android:id="@id/audioBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_text_padding_right" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/audioMessageLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top" android:layout_marginTop="@dimen/settings_margin_top">
+        <TextView android:textColor="@color/moreitem_text_color" android:gravity="center_vertical" android:id="@id/tvAudioMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/settings_margin_left" android:text="@string/audio_message" android:layout_centerVertical="true" style="@style/SettingMainText" />
+        <com.sina.weibo.view.SwitchButton android:id="@id/audioMessageBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_text_padding_right" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/divider1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <RelativeLayout android:id="@id/audioOthersLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top">
+        <TextView android:textColor="@color/moreitem_text_color" android:id="@id/tvAudioOthers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/audio_others" android:layout_centerVertical="true" style="@style/SettingMainText" />
+        <com.sina.weibo.view.SwitchButton android:id="@id/audioOthersBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_text_padding_right" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/vibratorLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height" android:layout_marginTop="@dimen/settings_margin_top">
+        <TextView android:textColor="@color/moreitem_text_color" android:id="@id/tvVibrator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_vibrator" android:layout_centerVertical="true" style="@style/SettingMainText" />
+        <com.sina.weibo.view.SwitchButton android:id="@id/vibratorBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_text_padding_right" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="@dimen/group_manage_page_item_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/lyItemPortrait" android:layout_width="@dimen/group_manage_page_item_width" android:layout_height="@dimen/group_manage_page_item_portrait_height">
+        <com.sina.weibo.view.GroupCircleImageView android:layout_gravity="center" android:id="@id/ivItemPortrait" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="3.0dip" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/ivItemPortraitV" android:layout_marginRight="9.0dip" android:layout_marginBottom="5.0dip" style="@style/portrait_avatar_style" />
+        <ImageView android:id="@id/ivItemIdentity" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:scaleType="fitStart" />
+        <ImageView android:id="@id/ivItemIdentityHost" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="7.0dip" android:scaleType="fitStart" />
+        <ImageView android:id="@id/iv_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" />
+    </FrameLayout>
+    <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/tvNick" android:layout_width="62.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_below="@id/lyItemPortrait" />
+</merge>

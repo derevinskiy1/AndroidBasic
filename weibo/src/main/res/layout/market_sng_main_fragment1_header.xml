@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.sina.weibo.appmarket.sng.widget.InterceptorViewPager android:id="@id/market_sng_main_vp_banner" android:layout_width="fill_parent" android:layout_height="160.0dip" />
+        <LinearLayout android:gravity="center|top" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/market_sng_main_banner_layout_point" android:paddingBottom="@dimen/market_padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/market_sng_main_toplayout1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/market_sng_main_toplayout2_margintop" />
+    <include android:id="@id/market_sng_main_toplayout2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/market_sng_main_toplayout2_margintop" layout="@layout/market_sng_main_fragment1_header_top1" />
+</LinearLayout>

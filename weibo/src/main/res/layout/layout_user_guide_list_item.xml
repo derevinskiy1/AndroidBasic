@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/user_guide_category_list_item_selector" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="105.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="@color/common_gray_33" android:gravity="center|left" android:id="@id/list_item_title" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="搞笑" />
+    <CheckBox android:id="@id/checkBox" android:background="@drawable/user_guide_checkbox_selector" android:layout_width="20.0dip" android:layout_height="20.0dip" android:checked="false" android:button="@null" android:layout_alignBaseline="@id/list_item_title" android:layout_alignParentRight="true" />
+    <TextView android:id="@id/divider" android:background="#ffdfdfdf" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/list_item_title" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_users" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divider" />
+</RelativeLayout>

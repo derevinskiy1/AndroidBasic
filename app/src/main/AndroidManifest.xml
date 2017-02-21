@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.storm.ui">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".SwapebackActivity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".StatusBarActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".RxjavaActivity"/>
+        <activity android:name=".HandlerThreadActivity"/>
+
+        <service
+            android:name=".MyIntentService"
+            android:exported="false"/>
+
+        <activity android:name=".ColorMatrixActivity">
+        </activity>
+        <activity android:name=".TestColorMatrixActivity"/>
+        <activity android:name=".BundleActivity"/>
+        <activity android:name=".TestStringActivity"/>
+        <activity android:name=".SlidingPanActivity">
+        </activity>
+        <activity android:name=".Base64Activity"/>
+        <activity android:name=".PorterDuffXfermodeActivity"/>
+        <activity android:name=".CameraTestActivity"/>
+        <activity android:name=".Main3Activity"/>
+        <activity
+            android:name=".ClipDrawableActivity"
+            android:label="@string/title_activity_clip_drawable"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".LayoutActivity">
+        </activity>
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="10">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".MyReceiver1"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="0">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".CameraActivity">
+        </activity>
+        <activity
+            android:name=".ShippingActivity"
+            android:label="购物">
+        </activity>
+        <activity android:name=".RecyclerView.RecyclerViewActivity">
+        </activity>
+        <activity android:name=".memory.OutOfMemoryActivity">
+
+        </activity>
+        <activity android:name=".CounterDownActivity">
+        </activity>
+        <activity android:name=".ViewFlipperActivity">
+        </activity>
+        <activity android:name=".AsyncTaskActivity">
+        </activity>
+
+        <provider
+            android:name=".MyContentProvider"
+            android:authorities="com.setven.contentprovider"
+            android:enabled="true"
+            android:exported="true">
+        </provider>
+
+        <activity android:name=".ContextActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

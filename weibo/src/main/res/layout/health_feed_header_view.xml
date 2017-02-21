@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_title_step_with_unit" />
+        <TextView android:textSize="28.0sp" android:textColor="#ffffffff" android:id="@id/stepCountView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="---" android:includeFontPadding="false" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.sina.weibo.hc.view.DashChart2 android:id="@id/scoreView" android:layout_width="120.0dip" android:layout_height="120.0dip" />
+        <com.sina.weibo.hc.view.DashButton android:id="@id/activateButton" android:visibility="gone" android:layout_width="120.0dip" android:layout_height="120.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_title_calories_with_unit" />
+        <TextView android:textSize="28.0sp" android:textColor="#ffffffff" android:id="@id/caloriesView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="---" android:includeFontPadding="false" />
+    </LinearLayout>
+</merge>

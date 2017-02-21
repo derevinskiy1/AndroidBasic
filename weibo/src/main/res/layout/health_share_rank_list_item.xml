@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="italic" android:id="@id/share_rank_list_item_index" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="TextView" android:layout_centerVertical="true" />
+    <com.sina.weibo.view.PortraitView android:id="@id/share_rank_list_item_portrait" android:layout_width="@dimen/health_share_ranklist_portrait_size" android:layout_height="@dimen/health_share_ranklist_portrait_size" android:layout_marginLeft="12.0dip" android:src="@drawable/portrait" android:layout_toRightOf="@id/share_rank_list_item_index" android:layout_centerVertical="true" />
+    <TextView android:textSize="12.0dip" android:textColor="#ff929292" android:ellipsize="end" android:id="@id/share_rank_list_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="TextView" android:singleLine="true" android:layout_toLeftOf="@id/share_rank_list_item_data" android:layout_toRightOf="@id/share_rank_list_item_portrait" android:layout_centerVertical="true" />
+    <TextView android:textSize="12.0dip" android:textColor="#ff929292" android:id="@id/share_rank_list_item_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="18.0dip" android:text="TextView" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:background="@drawable/health_common_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginRight="8.0dip" android:layout_alignLeft="@id/share_rank_list_item_portrait" android:layout_alignParentBottom="true" />
+</merge>

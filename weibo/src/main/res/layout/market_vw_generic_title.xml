@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="@dimen/baselayout_title_height"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <FrameLayout android:id="@id/fl_title_left" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/fl_title_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <FrameLayout android:id="@id/fl_title_right2" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <FrameLayout android:id="@id/fl_title_right1" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/fl_title_right2" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:gravity="center" android:id="@id/fl_title_middle" android:layout_width="180.0dip" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

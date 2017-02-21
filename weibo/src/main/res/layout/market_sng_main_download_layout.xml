@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/market_sng_main_download_progress" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="1000" android:indeterminateOnly="false" android:progressDrawable="@drawable/market_sng_download_progress_drawable" style="?android:attr/progressBarStyleHorizontal" />
+    <Button android:textSize="@dimen/market_sng_textsize_13" android:gravity="center" android:id="@id/market_sng_main_download_btn" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+</FrameLayout>

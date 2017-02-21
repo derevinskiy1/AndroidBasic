@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_history_page" android:background="@drawable/market_selector_default_item_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_history_list_block" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_history_item_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="11.0dip" android:src="@drawable/market_history_icon" />
+        <TextView android:textSize="@dimen/market_font_16" android:ellipsize="end" android:id="@id/tv_history_item_name" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingBottom="11.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/iv_history_item_icon" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_history_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/rl_history_list_block" android:layout_alignParentBottom="true" />
+</RelativeLayout>

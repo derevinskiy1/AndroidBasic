@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/recommend_top" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/recommend_left_divider" android:layout_width="@dimen/profile_info_recommend_divider_width" android:layout_height="wrap_content" />
+        <TextView android:textSize="13.0sp" android:ellipsize="end" android:id="@id/recommend_title" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_info_recommend_divider_width" android:layout_marginRight="@dimen/profile_info_recommend_divider_width" android:singleLine="true" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/recommend_right_divider" android:layout_width="@dimen/profile_info_recommend_divider_width" android:layout_height="wrap_content" />
+    </FrameLayout>
+</merge>

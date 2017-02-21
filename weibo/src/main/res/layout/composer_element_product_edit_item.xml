@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ll_remove" android:background="@color/common_card_background" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_remove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_discover_icon_delete" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_seperator_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@color/common_line" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_product_edit_item" android:background="@color/common_card_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_specification" android:layout_width="fill_parent" android:layout_height="@dimen/product_composer_edit_item_height">
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_gray_63" android:layout_gravity="center_vertical" android:id="@id/tv_specification" android:layout_width="@dimen/product_composer_edit_item_name_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/product_composer_edit_item_name_margin_left" android:text="@string/product_composer_edit_item_spec" android:singleLine="true" />
+            <EditText android:textColor="@color/common_gray_33" android:textColorHint="@color/common_404_text" android:layout_gravity="center_vertical" android:id="@id/et_specification" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/product_composer_edit_item_spec_hint" android:inputType="none" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_separator1" android:background="@color/common_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_price" android:background="@color/common_card_background" android:layout_width="fill_parent" android:layout_height="@dimen/product_composer_edit_item_height">
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_gray_63" android:layout_gravity="center_vertical" android:id="@id/tv_price" android:layout_width="@dimen/product_composer_edit_item_name_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/product_composer_edit_item_name_margin_left" android:text="@string/product_composer_edit_item_price" android:singleLine="true" />
+            <EditText android:textColor="@color/common_gray_33" android:textColorHint="@color/common_404_text" android:layout_gravity="center_vertical" android:id="@id/et_price" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/product_composer_edit_item_price_hint" android:inputType="number" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_separator2" android:background="@color/common_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_number" android:background="@color/common_card_background" android:layout_width="fill_parent" android:layout_height="@dimen/product_composer_edit_item_height">
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_gray_63" android:layout_gravity="center_vertical" android:id="@id/tv_number" android:layout_width="@dimen/product_composer_edit_item_name_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/product_composer_edit_item_name_margin_left" android:text="@string/product_composer_edit_item_num" android:singleLine="true" />
+            <EditText android:textColor="@color/common_gray_33" android:textColorHint="@color/common_404_text" android:layout_gravity="center_vertical" android:id="@id/et_number" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/product_composer_edit_item_num_hint" android:digits="0123456789" android:inputType="number" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/fanslist_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/lyItemPortrait" android:layout_width="@dimen/message_group_portrait_width" android:layout_height="@dimen/message_group_portrait_width" android:layout_marginLeft="@dimen/portrait_common_margin_left" android:layout_marginRight="@dimen/portrait_common_margin_right" android:layout_centerVertical="true" />
+    <com.sina.weibo.view.FansGroupItemStateBtn android:id="@id/stateBtn" android:layout_width="76.0dip" android:layout_height="@dimen/fanslist_item_height" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/contentlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/stateBtn" android:layout_toRightOf="@id/lyItemPortrait" android:layout_centerVertical="true">
+        <TextView android:textSize="15.0sp" android:textColor="@color/main_content_text_color" android:ellipsize="end" android:id="@id/tvItemName" android:paddingRight="@dimen/nick_name_padding_right_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+        <TextView android:textSize="12.0sp" android:ellipsize="end" android:id="@id/tvItemHost" android:paddingRight="@dimen/nick_name_padding_right_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="10.0sp" android:ellipsize="end" android:id="@id/tvItemCount" android:paddingRight="@dimen/nick_name_padding_right_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

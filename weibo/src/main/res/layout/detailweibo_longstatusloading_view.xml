@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/ls_progressbar" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:indeterminate="true" android:indeterminateDrawable="@anim/new_progressbar_style" />
+    <com.sina.weibo.feed.view.MBlogTextView android:textSize="@dimen/universal_textsize_12" android:textColor="@color/common_gray_93" android:gravity="center" android:id="@id/ls_reloadtext" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:bufferType="spannable" />
+    <TextView android:textSize="@dimen/universal_textsize_12" android:textColor="@color/common_gray_93" android:gravity="center" android:id="@id/ls_deltext" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/detailweibo_longstatusdeleted_text" />
+</merge>

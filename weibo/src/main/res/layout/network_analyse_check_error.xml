@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="76.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/main_content_text_color" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/networkanalyse_check_err_title" android:singleLine="true" />
+    <Button android:textSize="18.0sp" android:textColor="@color/main_button_text_color_for_deep_color_button" android:id="@id/checkErrorSendBtn" android:background="@drawable/common_button_big_green_bg" android:layout_width="268.0dip" android:layout_height="48.0dip" android:layout_marginTop="38.0dip" android:text="@string/networkanalyse_check_err_send_btn" android:shadowColor="@color/login_btn_shadow_color" android:shadowDx="0.0" android:shadowDy="-1.0" android:shadowRadius="1.0" />
+    <Button android:textSize="16.0sp" android:textColor="@color/main_content_text_color" android:id="@id/checkErrorViewBtn" android:background="@drawable/common_card_bg" android:layout_width="268.0dip" android:layout_height="48.0dip" android:layout_marginTop="10.0dip" android:text="@string/networkanalyse_check_err_view_btn" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/main_content_subtitle_text_color" android:gravity="center" android:id="@id/checkErrorViewDesc" android:layout_width="268.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/networkanalyse_check_err_btn_desc" />
+</LinearLayout>

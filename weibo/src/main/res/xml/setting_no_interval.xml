@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/setting_title_generic_setting">
+        <ListPreference android:entries="@array/entries_language" android:title="@string/setting_title_language" android:key="@string/setting_key_switch_language" android:summary="@string/setting_summary_language" android:defaultValue="@string/language_value_auto" android:entryValues="@array/values_language" />
+        <CheckBoxPreference android:title="@string/setting_autoload_more" android:key="autoload_more" android:summary="@string/setting_autoload_more_desc" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/setting_screenorientation" android:key="screenorientation" android:summary="@string/setting_screenorientation_desc" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/setting_fast_scroll_bar" android:key="fast_scroll_bar" android:summary="@string/setting_fast_scroll_bar_desc" android:defaultValue="true" />
+        <Preference android:persistent="false" android:title="@string/preferences_clear_cache_title" android:key="clear_cache" android:summary="@string/preferences_clear_cache_summary" />
+        <CheckBoxPreference android:title="@string/setting_title_remark" android:key="remark" android:summary="@string/setting_summary_remark" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/setting_url_open_internal" android:key="url_open_internal" android:summary="@string/setting_url_open_internal_desc" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/setting_bind_uc" android:key="bind_uc" android:summary="@string/setting_bind_uc_desc" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setting_title_picture_setting">
+        <CheckBoxPreference android:title="@string/setting_title_auto_opt" android:key="auto_opt" android:summary="@string/setting_summary_auto_opt" android:defaultValue="true" android:disableDependentsState="true" />
+        <ListPreference android:entries="@array/entries_image_size" android:title="@string/setting_title_upload" android:key="upload_image_size_v2" android:summary="@string/setting_summary_upload" android:dependency="auto_opt" android:defaultValue="ThreeMP" android:entryValues="@array/values_upload_image_size" />
+        <ListPreference android:entries="@array/entries_download_image_size" android:title="@string/setting_title_doownload" android:key="download_image_quality" android:summary="@string/setting_summary_doownload" android:dependency="auto_opt" android:defaultValue="@string/download_image_quality_high" android:entryValues="@array/values_download_image_size" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setting_title_auto_remind_setting">
+        <CheckBoxPreference android:title="@string/setting_title_auto_remind" android:key="auto_remind" android:defaultValue="true" android:summaryOn="@string/setting_summary_on_auto_remind" android:summaryOff="@string/setting_summary_off_auto_remind" />
+        <com.sina.weibo.view.SlientPeriodPreference android:title="@string/setting_slient_period" android:key="slient_period" android:dependency="auto_remind" android:defaultValue="0,0" />
+        <Preference android:persistent="false" android:title="@string/pref_setting_notify" android:key="remind_category" android:summary="@string/pref_setting_notify_summary" android:dependency="auto_remind" />
+        <CheckBoxPreference android:title="@string/setting_title_audio" android:key="audio" android:dependency="auto_remind" android:defaultValue="true" android:summaryOn="@string/setting_summary_on_audio" android:summaryOff="@string/setting_summary_off_audio" />
+        <CheckBoxPreference android:title="@string/setting_vibrator" android:key="vibrator" android:dependency="auto_remind" android:defaultValue="true" android:summaryOn="@string/setting_summary_on_vibrator" android:summaryOff="@string/setting_summary_off_vibrator" />
+    </PreferenceCategory>
+</PreferenceScreen>

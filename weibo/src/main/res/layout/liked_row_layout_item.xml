@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/liked_row_layout_item_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <FrameLayout android:id="@id/cmtitem_lyportrait" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip">
+        <com.sina.weibo.view.RoundedImageView android:id="@id/cmtitem_portrait" android:saveEnabled="true" android:scaleType="fitXY" android:adjustViewBounds="false" weibo:corner_radius="@dimen/detail_portrait_round_radius" weibo:cover_border_width="@dimen/detail_portrait_border" weibo:cover_border_color="@color/detail_portrait_border_color" weibo:round_background="true" style="@style/portrait_style" />
+        <ImageView android:id="@id/cmtitem_portrait_mask" style="@style/portrait_avatar_style" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/cmtitem_lyportrait_text" android:layout_width="wrap_content" android:layout_height="53.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="8.0dip" android:layout_toRightOf="@id/cmtitem_lyportrait" android:layout_centerVertical="true">
+        <com.sina.weibo.view.MemberTextView android:textSize="14.0sp" android:textColor="@color/main_content_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvItemNickname" android:paddingRight="@dimen/comment_nick_name_padding_right_normal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" />
+    </FrameLayout>
+    <ImageView android:id="@id/cmtlist_custom_diveder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_below="@id/cmtitem_lyportrait_text" />
+</RelativeLayout>

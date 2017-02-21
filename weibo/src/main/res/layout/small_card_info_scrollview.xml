@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sina.weibo.view.SmallCardInfoHorizontalScrollView android:paddingLeft="@dimen/timeline_padding_left" android:paddingRight="@dimen/timeline_padding_left" android:paddingBottom="7.0dip" android:scrollbars="none" android:fadingEdgeLength="1.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@android:color/transparent"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

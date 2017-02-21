@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/circle_image_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.sina.weibo.card.view.CircleImageView android:layout_gravity="center" android:id="@id/friend_portrait" android:layout_width="@dimen/interest_grid_item_width" android:layout_height="@dimen/interest_grid_item_width" android:src="@drawable/avatar_default" app:border_width="0.0dip" app:border_color="@color/white" />
+        <com.sina.weibo.card.view.CircleImageView android:layout_gravity="center" android:id="@id/portrait_mask" android:layout_width="@dimen/interest_grid_item_width" android:layout_height="@dimen/interest_grid_item_width" android:src="@color/portrait_state_focused" app:border_width="0.0dip" app:border_color="@color/white" />
+        <ImageView android:layout_gravity="center" android:id="@id/check_flag" android:layout_width="27.0dip" android:layout_height="20.0dip" android:src="@drawable/signup_add_check" android:scaleType="fitXY" />
+    </FrameLayout>
+    <TextView android:textSize="10.0sp" android:textColor="@color/common_gray_63" android:ellipsize="marquee" android:gravity="center" android:id="@id/friend_nick" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="名字显示七个字" android:singleLine="true" />
+</LinearLayout>

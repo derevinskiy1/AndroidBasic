@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/browser_promotion_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <com.sina.weibo.view.BorderImageView android:id="@id/browser_promotion_pic" android:layout_width="@dimen/browser_share_image_width" android:layout_height="@dimen/browser_share_image_width" android:layout_centerVertical="true" weibo:borderColor="#19000000" weibo:borderWidth="1.0px" />
+    <ImageView android:gravity="center" android:id="@id/browser_promotion_check" android:visibility="gone" android:clickable="false" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="@dimen/browser_share_image_select_padding" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/browser_promotion_download" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="31.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/browser_share_image_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/browser_promotion_download" android:layout_toRightOf="@id/browser_promotion_pic" android:layout_centerVertical="true">
+        <TextView android:textSize="15.0sp" android:id="@id/browser_promotion_name" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:id="@id/browser_promotion_context" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

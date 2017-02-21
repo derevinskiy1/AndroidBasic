@@ -1,0 +1,18 @@
+1.如何退出Activity?如何安全退出已调用多个Activity的Application?
+2.AIDL的全称是什么？如何工作?
+3.说说mvc模式的原理，它在android中的运用,android的官方建议应用程序的开发采用mvc模式。何谓mvc？
+4.handler机制的原理
+5.如何避免ANR？
+6.让你说出一个自定义控件的流程。
+7.关于一个界面中中间使用了scrollView布局后，如果该布局内的控件太长，导致该布局下面的控件无法显示的问题。
+8.关于 has leaked Window；。。。。。报错的问题 //需要在activity中ondestroy中dialog.cancel();
+9请解释下在单线程模型中Message,Handler,Message Queue,Looper之间的关系。
+拿主线程来说，主线程启动时会调用Looper.prepare()方法，会初始化一个Looper，放入Threadlocal中，接着调用Looper.loop()不断遍历Message Queue，
+Handler的创建依赖与当前线程中的Looper，如果当前线程没有Looper则必须调用Looper.prepare()。Handler , sendMessage到MessageQueue，Looper不断
+从MessageQueue中取出消息，回调handleMessage方法.
+3、内存溢出和内存泄漏有什么区别？何时会产生内存泄漏？内存优化有哪些方法？
+内存溢出通俗理解就是软件（应用）运行需要的内存，超出了它可用的最大内存。
+内存泄漏就是我们对某一内存空间的使用，使用完成后没有释放。
+内存优化：Android中容易内存溢出的部分，就是图片的加载，我们可以使用图片的压缩加上使用LruCache缓存的目的来控制图片所能够使用的内存。
+还有对于比较耗资源的对象及时的关闭，例如Database Conn , 各种传感器 ， Service 等等。
+adapter.notifyDataSetChanged();

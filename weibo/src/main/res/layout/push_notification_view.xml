@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/notification_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/thumbnail_view" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/widgets_image_default" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/notification_content_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_toRightOf="@id/thumbnail_view" android:layout_centerVertical="true">
+        <TextView android:textAppearance="@style/NotificationTitle" android:ellipsize="end" android:gravity="bottom" android:id="@id/notification_title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textAppearance="@style/NotificationText" android:ellipsize="end" android:id="@id/notification_content" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:singleLine="true" android:layout_toLeftOf="@id/place_holder" android:layout_below="@id/notification_title" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/place_holder" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/widgets_icon_logo" android:layout_alignBottom="@id/notification_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

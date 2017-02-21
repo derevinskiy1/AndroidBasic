@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/topic_suggestion_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.view.CommonSearchView android:id="@id/search_view_Edit" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/rlSearchBody" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0sp" android:gravity="center" android:id="@id/cancel_btn" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/cancel" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <include android:id="@id/lySearchPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/cancel_btn" layout="@layout/contacts_search_view" />
+    </RelativeLayout>
+    <TextView android:id="@id/search_shadows" android:background="@drawable/common_shadow_bottom" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/lvTopic" android:background="@android:color/white" android:fadingEdge="none" android:fadingEdgeLength="0.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:scrollingCache="false" android:divider="@null" />
+        <LinearLayout android:gravity="center" android:id="@id/ly_received_error" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/ivErrorIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:src="@drawable/empty_failed" />
+                <TextView android:textSize="14.0sp" android:gravity="center_horizontal" android:id="@id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_prompt_bad_network_ui" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:lineSpacingMultiplier="1.1" />
+                <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btRetry" android:layout_width="142.0dip" android:layout_height="46.0dip" android:layout_marginTop="10.0dip" android:text="@string/channel_data_error" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:lineSpacingMultiplier="1.1" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/search_half_transparent" android:background="@drawable/navigationbar_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

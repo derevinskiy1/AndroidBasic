@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/market_sng_main_toplayout2_margintop" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/market_sng_main_head_layout_type" android:layout_width="fill_parent" android:layout_height="@dimen/market_sng_type_height" layout="@layout/market_sng_main_public_type" />
+    <ImageView android:id="@id/market_sng_hot_line" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/market_sng_game_line" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/market_sng_hot_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/market_sng_main_header_top_group1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_sng_main_head_item_marginleft" android:layout_marginTop="@dimen/market_sng_main_head_item_margintop" android:layout_marginBottom="@dimen/market_sng_main_head_item_marginbottom" android:layout_weight="1.0" layout="@layout/market_sng_main_header_top_item" />
+        <include android:id="@id/market_sng_main_header_top_group2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_sng_main_head_item_margin" android:layout_marginTop="@dimen/market_sng_main_head_item_margintop" android:layout_marginBottom="@dimen/market_sng_main_head_item_marginbottom" android:layout_weight="1.0" layout="@layout/market_sng_main_header_top_item" />
+        <include android:id="@id/market_sng_main_header_top_group3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_sng_main_head_item_margin" android:layout_marginTop="@dimen/market_sng_main_head_item_margintop" android:layout_marginRight="@dimen/market_sng_main_head_item_marginright" android:layout_marginBottom="@dimen/market_sng_main_head_item_marginbottom" android:layout_weight="1.0" layout="@layout/market_sng_main_header_top_item" />
+    </LinearLayout>
+</LinearLayout>

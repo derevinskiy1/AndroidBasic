@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center|left" android:id="@id/showStrangerTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/message_box_setting_show_stranger_title" style="@style/SettingTitleText" />
+        <RadioGroup android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rgShowStranger" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RadioButton android:textSize="16.0sp" android:id="@id/rbShowStrangerAll" android:background="@drawable/common_card_top_bg" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height" android:button="@null" android:text="@string/pref_outter_setting_type_all" android:drawableRight="@drawable/check_box_bg" />
+            <ImageView android:id="@id/divider1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <RadioButton android:textSize="16.0sp" android:id="@id/rbShowStrangerAttention" android:background="@drawable/common_card_bottom_bg" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height" android:button="@null" android:text="@string/pref_outter_setting_type_my_attentions" android:drawableRight="@drawable/check_box_bg" />
+        </RadioGroup>
+        <TextView android:textSize="12.0sp" android:gravity="center|left" android:id="@id/alert_text" android:paddingLeft="@dimen/settings_item_padding_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/strangerInnerSettingsLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top" android:layout_marginTop="@dimen/settings_margin_top">
+            <TextView android:gravity="center_vertical" android:id="@id/strangerInnerSettingsText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/message_box_setting_stranger_message" android:layout_centerVertical="true" style="@style/SettingMainText" />
+            <com.sina.weibo.view.SwitchButton android:id="@id/strangerInnerSettingsCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:id="@id/hint1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pref_inner_setting_hint" style="@style/SettingExplainText" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <FrameLayout android:id="@id/lyPortrait" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_centerVertical="true">
+        <com.sina.weibo.view.RoundedImageView android:id="@id/iv_portrait_icon" android:saveEnabled="true" android:layout_width="70.0dip" android:layout_height="70.0dip" android:scaleType="centerCrop" android:adjustViewBounds="false" weibo:corner_radius="35.0dip" weibo:cover_border_width="1.0dip" weibo:cover_border_color="#0d000000" weibo:round_background="true" />
+    </FrameLayout>
+    <ImageView android:id="@id/iv_portrait_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-6.0dip" android:layout_marginBottom="-4.0dip" android:layout_alignRight="@id/lyPortrait" android:layout_alignBottom="@id/lyPortrait" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/ivSeparator" android:layout_toRightOf="@id/lyPortrait" android:layout_centerVertical="true">
+        <com.sina.weibo.view.MemberTextView android:textSize="15.0sp" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:singleLine="true" />
+        <TextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/tv_card_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="24.0dip" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

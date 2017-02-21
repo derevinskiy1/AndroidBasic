@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="60.0dip" android:minHeight="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/filtermarket_icon_view" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="12.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/filtermarket_icon_corner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxWidth="48.0dip" android:maxHeight="48.0dip" android:layout_alignLeft="@id/filtermarket_icon_view" android:layout_alignTop="@id/filtermarket_icon_view" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/main_content_text_color" android:gravity="center" android:id="@id/filtermarket_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="月色" android:layout_toRightOf="@id/filtermarket_icon_view" android:layout_centerVertical="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="12.0sp" android:textColor="@color/main_assistant_text_color" android:gravity="center" android:id="@id/filter_item_click" android:background="@drawable/skin_usebutton_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="70.0dip" android:text="免费" android:layout_centerInParent="true" />
+        <ProgressBar android:id="@id/pb_downloading" android:paddingLeft="0.5dip" android:paddingRight="0.5dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="5.0dip" android:layout_alignParentBottom="true" android:layout_centerInParent="true" style="@style/skin_download_progressbar_style" />
+    </RelativeLayout>
+</RelativeLayout>

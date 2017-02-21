@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/visitor_login" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/main_button_text_color_for_deep_color_button" android:ellipsize="middle" android:layout_gravity="center" android:id="@id/tv_login" android:paddingTop="@dimen/visitor_dialog_foot_padding" android:paddingBottom="@dimen/visitor_dialog_foot_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/visitor_hasaccount_login" android:maxLines="1" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/triangle" android:paddingTop="@dimen/visitor_dialog_foot_padding" android:paddingBottom="@dimen/visitor_dialog_foot_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/triangle" />
+</LinearLayout>

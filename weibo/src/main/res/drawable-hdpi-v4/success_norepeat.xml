@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/success1" />
+    <item android:duration="100" android:drawable="@drawable/success2" />
+    <item android:duration="100" android:drawable="@drawable/success3" />
+    <item android:duration="100" android:drawable="@drawable/success4" />
+    <item android:duration="100" android:drawable="@drawable/success5" />
+    <item android:duration="100" android:drawable="@drawable/success6" />
+    <item android:duration="100" android:drawable="@drawable/success7" />
+    <item android:duration="100" android:drawable="@drawable/success8" />
+    <item android:duration="100" android:drawable="@drawable/success9" />
+    <item android:duration="100" android:drawable="@drawable/success10" />
+    <item android:duration="100" android:drawable="@drawable/success11" />
+    <item android:duration="100" android:drawable="@drawable/success12" />
+    <item android:duration="100" android:drawable="@drawable/success13" />
+    <item android:duration="100" android:drawable="@drawable/success14" />
+    <item android:duration="100" android:drawable="@drawable/success15" />
+    <item android:duration="100" android:drawable="@drawable/success17" />
+    <item android:duration="100" android:drawable="@drawable/success18" />
+    <item android:duration="100" android:drawable="@drawable/success19" />
+    <item android:duration="100" android:drawable="@drawable/success20" />
+</animation-list>

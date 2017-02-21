@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/flPageRoot" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.page.view.MultCoverPullDownView android:id="@id/pdCard" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tb_profile">
+        <ListView android:id="@id/lvCard" android:fadingEdge="none" android:fadingEdgeLength="0.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:scrollingCache="false" android:divider="@null" android:dividerHeight="0.0dip" android:fastScrollEnabled="true" />
+    </com.sina.weibo.page.view.MultCoverPullDownView>
+    <com.sina.weibo.page.view.ProfileMenuBarView android:id="@id/tb_profile" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/page_toolbar_height_default" android:layout_alignParentBottom="true" />
+    <com.sina.weibo.page.view.ProfileInfoTabsView android:id="@id/tabsView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/rlUserInfoTitleBar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/page_title_height">
+        <ImageView android:id="@id/ivUserInfoBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/titlebar_icon_margin" android:scaleType="center" android:layout_centerVertical="true" android:contentDescription="@string/acc_back" />
+        <ImageView android:id="@id/ivUserInfoSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/page_title_icon_marginleftright" android:scaleType="center" android:layout_toLeftOf="@id/rightBtns" android:layout_centerVertical="true" android:contentDescription="@string/acc_serach" />
+        <FrameLayout android:id="@id/rightBtns" android:layout_width="@dimen/titlebar_icon_width" android:layout_height="@dimen/titlebar_icon_height" android:layout_marginRight="@dimen/titlebar_icon_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:id="@id/ivUserInfoOptions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:contentDescription="@string/acc_more_oper" />
+            <ImageView android:layout_gravity="center" android:id="@id/ivUserInfoLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="matrix" android:contentDescription="@string/acc_loading" />
+        </FrameLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/ivUserInfoTitleBarShadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/page_title_height" android:scaleType="fitXY" />
+    <FrameLayout android:id="@id/video_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

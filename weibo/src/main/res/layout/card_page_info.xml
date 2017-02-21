@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/profile_cover_shadow" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_above="@id/ivShield" />
+    <FrameLayout android:id="@id/lyNick" android:layout_width="wrap_content" android:layout_height="@dimen/page_info_nick_height" android:layout_marginTop="3.0dip" android:layout_marginRight="16.0dip" android:layout_toRightOf="@id/ivPortrait" android:layout_alignTop="@id/ivPortrait">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:ellipsize="end" android:gravity="left" android:layout_gravity="center|left" android:id="@id/tvNick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </FrameLayout>
+    <ImageView android:id="@id/ivShield" android:layout_width="fill_parent" android:layout_height="@dimen/cover_marginbottom" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/ivPortrait" android:background="@drawable/userinfo_shadow_me_pic" android:layout_width="@dimen/user_info_portrait_shadow_width" android:layout_height="@dimen/user_info_portrait_shadow_width" android:layout_marginLeft="13.0dip" android:layout_marginTop="@dimen/page_info_portrait_shadow_margintop" android:layout_marginRight="12.0dip" android:src="@drawable/preview_card_pic_loading" android:scaleType="centerCrop" />
+    <RelativeLayout android:id="@id/lyBtns" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="16.0dip" android:layout_below="@id/lyNick" android:layout_alignLeft="@id/lyNick">
+        <com.sina.weibo.view.CardPageHeaderButton android:id="@id/lyConfigBtn" android:clickable="true" android:layout_width="@dimen/page_info_btn_width" android:layout_height="@dimen/page_info_btn_height" android:layout_marginRight="@dimen/page_info_btn_margin" />
+        <com.sina.weibo.view.CardPageHeaderButton android:id="@id/lyLikeBtn" android:clickable="true" android:layout_width="@dimen/page_info_btn_width" android:layout_height="@dimen/page_info_btn_height" android:layout_toRightOf="@id/lyConfigBtn" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/lyDescription" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/page_description_height" android:layout_marginLeft="3.0dip" android:layout_marginTop="-3.0dip" android:layout_marginRight="11.5dip" android:layout_below="@id/ivPortrait" android:layout_alignLeft="@id/ivPortrait">
+        <TextView android:textSize="12.0sp" android:textColor="@color/main_content_subtitle_text_color" android:ellipsize="end" android:id="@id/tvDescription" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/userinfo_sina_vip" android:singleLine="true" android:layout_toLeftOf="@id/ivInfoTriangle" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/ivInfoTriangle" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</merge>

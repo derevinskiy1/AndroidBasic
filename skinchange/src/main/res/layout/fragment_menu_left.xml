@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.skinchange.MenuLeftFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_innerChanger01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/innerImg"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="4dp"
+                android:src="@mipmap/c"/>
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/innerImg"
+                android:text="应用内换肤(red)"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_innerChanger02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/innerImg02"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="4dp"
+                android:src="@mipmap/c"/>
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/innerImg02"
+                android:text="应用内换肤(green)"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_innerChanger03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/innerImg03"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="4dp"
+                android:src="@mipmap/c"/>
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/innerImg03"
+                android:text="应用内换肤(red)"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_innerChanger04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/innerImg04"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="4dp"
+                android:src="@mipmap/c"/>
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/innerImg04"
+                android:text="插件式开发"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_innerChanger05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/innerImg05"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="4dp"
+                android:src="@mipmap/c"/>
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/innerImg05"
+                android:text="应用内换肤(red)"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

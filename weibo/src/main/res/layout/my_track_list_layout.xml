@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.view.PullDownView android:id="@id/pd_blog_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/lvUser" android:fadingEdge="none" android:fadingEdgeLength="0.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:scrollingCache="false" android:divider="@null" android:dividerHeight="0.0dip" android:layout_weight="0.0" />
+    </com.sina.weibo.view.PullDownView>
+    <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/start_run" android:background="@drawable/health_button_red_bg" android:layout_width="74.0dip" android:layout_height="74.0dip" android:layout_marginBottom="14.0dip" android:text="@string/health_button_start_running_text" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/imageview" android:background="@drawable/health_run_history_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_centerInParent="true" />
+</RelativeLayout>

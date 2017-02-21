@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.view.CommonSearchView android:id="@id/search_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.sina.weibo.view.PullDownView android:id="@id/pd_blog_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/lvUser" android:fadingEdge="none" android:fadingEdgeLength="0.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:scrollingCache="false" android:divider="@drawable/divider_horizontal_timeline" android:dividerHeight="1.0dip" android:layout_weight="0.0" />
+    </com.sina.weibo.view.PullDownView>
+</LinearLayout>

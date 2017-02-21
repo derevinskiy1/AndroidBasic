@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/lv_header" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="5.0dip">
+        <com.sina.weibo.view.RoundedImageView android:id="@id/lv_portrait" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/portrait_common_margin_left" android:layout_marginRight="@dimen/portrait_common_margin_right" android:text="@string/message_feed_group_chat" android:layout_centerVertical="true" weibo:corner_radius="20.0dip" weibo:round_background="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/main_content_text_color" android:ellipsize="end" android:id="@id/lv_chat_to" android:paddingRight="@dimen/nick_name_padding_right_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fans_group_btn_chat" android:singleLine="true" android:layout_toRightOf="@id/lv_portrait" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/lv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/devideline" android:layout_width="fill_parent" android:layout_height="0.5px" android:src="@drawable/common_horizontal_separator" android:scaleType="fitXY" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/privatechat_layout" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.sina.weibo.view.RoundedImageView android:id="@id/private_portait" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/portrait_common_margin_left" android:layout_marginRight="@dimen/portrait_common_margin_right" android:text="@string/private_msg_chat" android:layout_centerVertical="true" weibo:corner_radius="20.0dip" weibo:round_background="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/main_content_text_color" android:ellipsize="end" android:id="@id/private_chat_to" android:paddingRight="@dimen/nick_name_padding_right_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/private_msg_chat" android:singleLine="true" android:layout_toRightOf="@id/private_portait" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/private_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:gravity="center_vertical" android:id="@id/lv_fansgrouplist_title" android:clickable="false" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="@dimen/portrait_common_margin_left" android:text="@string/message_feed_group_chat" />
+</LinearLayout>

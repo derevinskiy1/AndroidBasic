@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wheel="http://schemas.android.com/apk/res-auto">
+    <com.alipay.android.app.template.view.widget.CustomProgressWheel android:id="@id/template_progress_wheel" android:layout_width="wrap_content" android:layout_height="wrap_content" wheel:matProg_progressIndeterminate="true" wheel:matProg_barColor="#ff00aaee" wheel:matProg_circleRadius="35.0dip" />
+    <ImageView android:id="@id/template_pay_success" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

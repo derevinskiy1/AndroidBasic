@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:attr="http://schemas.android.com/apk/res-auto">
+    <com.sina.weibo.view.PullDownView android:id="@id/market_sng_pdv" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/market_sng_lv" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/market_sng_listview" />
+    </com.sina.weibo.view.PullDownView>
+    <com.sina.weibo.appmarket.widget.ReloadView android:id="@id/market_sng_reload" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

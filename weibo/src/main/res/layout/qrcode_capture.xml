@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/preview_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.sina.weibo.qrcode.ViewfinderView android:id="@id/viewfinder_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <SeekBar android:layout_gravity="top" android:id="@id/seekbar_zoom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/openLight" android:background="@drawable/qrcode_button_background" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/qrcode_flash_light_height" android:layout_marginBottom="@dimen/qrcode_flash_light_margin_bottom">
+                <TextView android:textSize="15.0sp" android:textColor="@color/main_button_text_color_for_deep_color_button" android:id="@id/tvMyQrCode" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/getfriend_qrcode" android:maxLines="1" android:layout_centerVertical="true" />
+                <TextView android:id="@id/lightIcon" android:background="@drawable/qrcode_light_button_icon" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="13.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffaaaaaa" android:ellipsize="end" android:id="@id/lightTxt" android:paddingRight="13.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flash_light_open" android:singleLine="true" android:layout_toRightOf="@id/lightIcon" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ffaaaaaa" android:ellipsize="end" android:id="@id/save_photo_sdcard" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:text="保存照片至SD" android:singleLine="true" />
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:id="@id/rlQrCodeTitleBar" android:layout_width="fill_parent" android:layout_height="@dimen/page_title_height">
+        <TextView android:textSize="16.0sp" android:textColor="@color/left_close_text_color" android:id="@id/ivQrCodeBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_item_margin" android:scaleType="center" android:text="@string/close" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:ellipsize="end" android:gravity="center" android:id="@id/tvQrCodeTitle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:text="@string/feed_qrcode_search" android:singleLine="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/left_close_text_color" android:layout_gravity="center" android:id="@id/tvQrCodeRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/common_item_margin" android:scaleType="center" android:text="@string/qrcode_right_title" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:layout_gravity="center" android:id="@id/ivUserInfoLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="matrix" />
+    </RelativeLayout>
+    <ImageView android:id="@id/ivUserInfoTitleBarShadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/page_title_height" android:scaleType="fitXY" />
+</FrameLayout>

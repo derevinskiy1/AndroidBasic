@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:paddingBottom="9.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioGroup android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/videoAutoPlayMode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/settings_margin_top">
+            <RadioButton android:id="@id/videoAutoPlayModeAll" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top" android:button="@null" android:text="@string/setting_video_auto_play_all" android:drawableRight="@drawable/check_box_bg" />
+            <ImageView android:id="@id/divider1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <RadioButton android:id="@id/videoAutoPlayModeWifi" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top" android:button="@null" android:text="@string/setting_video_auto_play_wifi" android:drawableRight="@drawable/check_box_bg" />
+            <ImageView android:id="@id/divider2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <RadioButton android:id="@id/videoAutoPlayModeNone" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top" android:button="@null" android:text="@string/setting_video_auto_play_none" android:drawableRight="@drawable/check_box_bg" />
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>

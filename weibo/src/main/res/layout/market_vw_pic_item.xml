@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/pic_layout" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/market_recomment_item_distance_inner_h">
+        <ImageView android:id="@id/iv_pic" android:layout_width="@dimen/market_card_item_pic_width" android:layout_height="@dimen/market_card_item_pic_height" android:scaleType="fitXY" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</LinearLayout>

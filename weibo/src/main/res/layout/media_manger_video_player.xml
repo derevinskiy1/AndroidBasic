@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/media_video_player_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextureView android:id="@id/surface_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <FrameLayout android:id="@id/media_waiting_sina_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginBottom="14.0dip">
+                <ImageView android:background="@null" android:layout_width="64.0dip" android:layout_height="64.0dip" />
+                <ImageView android:id="@id/meida_sina_loading_img" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/videoplayer_loading" />
+            </FrameLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_card_background" android:id="@id/media_sina_loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/media_video_ready_to_play" />
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView android:id="@id/video_cover_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/video_loading" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:background="@drawable/videoplayer_playerloading_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/media_activity_sina_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/videoplayer_loading" />
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/video_fragment_play_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/multimedia_videocard_play" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="bottom" android:id="@id/video_fragment_music_icon" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+        <TextView android:textSize="11.0dip" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@id/video_fragment_bottom_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:includeFontPadding="false" />
+    </LinearLayout>
+    <com.sina.weibo.video.view.MediaControlView android:id="@id/media_control_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.sina.weibo.video.view.PlayCompletionActionView android:gravity="center" android:orientation="vertical" android:id="@id/media_video_play_completion_action_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/media_video_debug_view" android:background="#cc000000" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="#ff00ff00" android:id="@id/media_video_debug_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff0000ff" android:layout_gravity="right" android:id="@id/media_video_debug_detail_btn" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看详情" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/remindLikeLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height" android:layout_marginTop="@dimen/settings_margin_top">
+            <TextView android:gravity="center_vertical" android:id="@id/remindLikeText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pref_inner_setting_like_from_setting" android:layout_centerVertical="true" style="@style/SettingMainText" />
+            <com.sina.weibo.view.SwitchButton android:id="@id/remindLikeCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_text_padding_right" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/divider1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/remindStrangerLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height">
+            <TextView android:gravity="center_vertical" android:id="@id/remindStrangerText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pref_inner_setting_stranger_message" android:layout_centerVertical="true" style="@style/SettingMainText" />
+            <com.sina.weibo.view.SwitchButton android:id="@id/remindStrangerCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_text_padding_right" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:id="@id/innerSettingHint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pref_inner_setting_hint" style="@style/SettingExplainText" />
+        <RelativeLayout android:id="@id/remindFrequencyLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/settings_margin_top" android:minHeight="@dimen/settings_item_height">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <TextView android:ellipsize="end" android:id="@id/remindFrequencyText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/setting_remind_frequency" android:singleLine="true" android:layout_weight="2.0" style="@style/SettingMainText" />
+                <TextView android:gravity="right" android:id="@id/remindFrequencyCurrent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" style="@style/SettingSubText" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

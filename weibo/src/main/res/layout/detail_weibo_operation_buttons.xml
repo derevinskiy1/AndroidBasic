@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.feed.view.DetailWeiboOperationButton android:id="@id/detail_left_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageView android:id="@id/iv_detail_leftLine" android:paddingBottom="1.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.sina.weibo.feed.view.DetailWeiboOperationButton android:id="@id/detail_mid_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageView android:id="@id/iv_detail_rightLine" android:paddingBottom="1.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.sina.weibo.feed.view.DetailWeiboOperationButton android:id="@id/detail_right_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</merge>

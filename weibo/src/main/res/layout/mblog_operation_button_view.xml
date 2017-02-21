@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/rl_card_operation_button" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/lyButton" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/ivButton" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitXY" android:contentDescription="@string/page_like" />
+        <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/tvButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/pbLoading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall" />
+</merge>

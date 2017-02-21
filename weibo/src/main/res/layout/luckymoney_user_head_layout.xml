@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <FrameLayout android:id="@id/user_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center" android:id="@id/ivPortraitRound" android:background="@drawable/redpacket_yellow_head" android:layout_width="70.0dip" android:layout_height="70.0dip" android:scaleType="fitXY" />
+        <RelativeLayout android:layout_gravity="center" android:id="@id/header_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.sina.weibo.view.RoundedImageView android:layout_gravity="center" android:id="@id/user_image" android:background="@null" android:layout_width="@dimen/luckymoney_userhead_size" android:layout_height="@dimen/luckymoney_userhead_size" android:src="@drawable/portrait" android:scaleType="fitXY" weibo:corner_radius="31.0dip" weibo:cover_border_width="1.0px" weibo:cover_border_color="#0dffffff" weibo:round_background="true" />
+            <ImageView android:id="@id/user_avatar_vip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/luckymoney_avatar_vip_margin" android:layout_marginBottom="@dimen/luckymoney_avatar_vip_margin" android:layout_alignRight="@id/user_image" android:layout_alignBottom="@id/user_image" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/ivPortraitRoundError" android:background="@drawable/redpacket_red_head" android:layout_width="70.0dip" android:layout_height="70.0dip" android:scaleType="fitXY" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/user_name_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/luckymoney_middle_margin" android:layout_below="@id/user_header" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/about_phone_textsize" android:textColor="@color/luckymoney_usernickname" android:ellipsize="end" android:id="@id/user_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/luckymoney_username_width" android:singleLine="true" />
+        <TextView android:textSize="@dimen/about_phone_textsize" android:textColor="@color/luckymoney_usernickname" android:id="@id/user_nickname_behind" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lucky_money" />
+    </LinearLayout>
+</RelativeLayout>

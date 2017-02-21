@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/trafficItem" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:layout_gravity="center" android:id="@id/type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="统计类型" android:layout_weight="2.0" />
+        <TextView android:gravity="right" android:layout_gravity="center" android:id="@id/column1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:text="今日" />
+        <TextView android:gravity="right" android:layout_gravity="center" android:id="@id/column2" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="七天" />
+    </LinearLayout>
+</LinearLayout>

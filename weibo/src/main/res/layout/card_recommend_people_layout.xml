@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/titletop" android:paddingLeft="@dimen/timeline_padding_left" android:paddingRight="@dimen/timeline_padding_right" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/timeline_title_height" android:singleLine="true" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/userinfolayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/titletop">
+        <RelativeLayout android:id="@id/portraitgrp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <ImageView android:id="@id/portrait" android:layout_width="34.0dip" android:layout_height="34.0dip" android:scaleType="fitXY" />
+            <ImageView android:id="@id/portrait_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" android:layout_alignRight="@id/portrait" android:layout_alignBottom="@id/portrait" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/namelayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_toLeftOf="@id/card_button" android:layout_toRightOf="@id/portraitgrp" android:layout_centerVertical="true">
+            <TextView android:textSize="15.0sp" android:ellipsize="end" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:singleLine="true" />
+        </RelativeLayout>
+        <com.sina.weibo.view.CardOperationButtonView android:id="@id/card_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:ellipsize="end" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:maxLines="2" android:layout_below="@id/userinfolayout" android:lineSpacingExtra="1.1999817dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/picgrp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/desc">
+        <RelativeLayout android:id="@id/pic1layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/pic1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+            <ImageView android:id="@id/giftag1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/pic1" android:layout_alignBottom="@id/pic1" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/pic2layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <ImageView android:id="@id/pic2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+            <ImageView android:id="@id/giftag2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/pic2" android:layout_alignBottom="@id/pic2" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/pic3layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/pic3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+            <ImageView android:id="@id/giftag3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/pic3" android:layout_alignBottom="@id/pic3" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/picgrp" />
+</RelativeLayout>

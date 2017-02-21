@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/market_sng_avtivity_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/item_activity_image" android:layout_width="@dimen/market_sng_avtivity_icon_width" android:layout_height="@dimen/market_sng_avtivity_icon_width" android:layout_marginLeft="@dimen/market_recomment_item_distance_inner_h" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/market_font_middium" android:textColor="@color/market_sng_green_color" android:ellipsize="end" android:gravity="top" android:id="@id/item_activity_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/market_sng_ativity_marginright" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/market_font_bigger" android:textColor="@color/market_sng_appitem_appname" android:ellipsize="end" android:gravity="top" android:id="@id/item_activity_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_padding_medium" android:singleLine="true" android:layout_toLeftOf="@id/item_activity_action" android:layout_toRightOf="@id/item_activity_image" android:layout_centerVertical="true" />
+</RelativeLayout>

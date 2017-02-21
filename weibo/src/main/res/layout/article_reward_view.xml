@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/article_reward_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/reward_line_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+        <TextView android:textSize="@dimen/universal_textsize_12" android:textColor="@color/common_gray_93" android:id="@id/reward_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:layout_centerInParent="true" />
+        <View android:id="@id/reward_line_left" android:background="@color/common_line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="16.0dip" android:layout_toLeftOf="@id/reward_tip" android:layout_centerVertical="true" />
+        <View android:id="@id/reward_line_right" android:background="@color/common_line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="20.0dip" android:layout_toRightOf="@id/reward_tip" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/reward_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/headlines_button_reward_selector" />
+    <TextView android:textSize="@dimen/universal_textsize_12" android:textColor="@color/common_gray_93" android:id="@id/reward_users_button" android:background="@color/common_retweet_background" android:paddingLeft="8.0dip" android:paddingTop="6.0dip" android:paddingRight="8.0dip" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:singleLine="true" />
+</LinearLayout>

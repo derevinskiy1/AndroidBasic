@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/itemcontent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_feed_fire_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/visitordiscover_feed_icon_hot" />
+    <ImageView android:id="@id/iv_feed_fire_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/visitordiscover_feed_icon_hot" />
+    <ImageView android:id="@id/iv_feed_fire_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/visitordiscover_feed_icon_hot" />
+    <ImageView android:id="@id/iv_feed_fire_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/visitordiscover_feed_icon_hot" />
+    <ImageView android:id="@id/iv_feed_fire_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/visitordiscover_feed_icon_hot" />
+</LinearLayout>

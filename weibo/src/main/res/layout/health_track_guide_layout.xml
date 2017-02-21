@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/main_action_sheet_background_color" android:paddingTop="@dimen/baselayout_title_height" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/health_guide_location" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_33" android:gravity="center" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/health_guide_open_gps" />
+    </LinearLayout>
+    <Button android:textSize="18.0sp" android:textColor="@color/health_button_orange_text_color" android:gravity="center" android:id="@id/guide_open_gps" android:background="@drawable/health_circle_button_orange_big" android:layout_width="210.0dip" android:layout_height="46.0dip" android:layout_marginBottom="60.0dip" android:text="@string/health_button_open" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/guidePages" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/iv_guideIndex" android:paddingBottom="40.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/guide_swipe" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

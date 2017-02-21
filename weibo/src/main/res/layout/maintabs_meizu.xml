@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TabWidget android:id="@android:id/tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="bottom" android:id="@id/iv_bottom_shadow" android:background="@drawable/common_shadow_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/toolbar_height" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/main_radio" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height">
+        <com.sina.weibo.view.TabView android:tag="radio_button0" android:drawableTop="@drawable/tabbar_home" android:contentDescription="@string/main_home" weibo:textSize="@dimen/bottom_tab_font_size" weibo:drawablePadding="@dimen/bottom_tab_padding_drawable" weibo:toastTextSize="@dimen/bottom_tab_toast_font_size" weibo:text="@string/main_home" weibo:toastBackgroundType="0" style="@style/main_tab_bottom" />
+        <com.sina.weibo.view.TabView android:tag="radio_button1" android:drawableTop="@drawable/tabbar_message_center" android:contentDescription="@string/main_news" weibo:textSize="@dimen/bottom_tab_font_size" weibo:drawablePadding="@dimen/bottom_tab_padding_drawable" weibo:toastTextSize="@dimen/bottom_tab_toast_font_size" weibo:text="@string/main_news" weibo:toastBackgroundType="0" style="@style/main_tab_bottom" />
+        <ImageView android:id="@id/rl_composer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/tabbar_icon_compose_add_meizu" android:layout_weight="1.0" android:layout_centerInParent="true" />
+        <com.sina.weibo.view.TabView android:tag="radio_button2" android:drawableTop="@drawable/tabbar_discover" android:contentDescription="@string/menu_search" weibo:textSize="@dimen/bottom_tab_font_size" weibo:drawablePadding="@dimen/bottom_tab_padding_drawable" weibo:toastTextSize="@dimen/bottom_tab_toast_font_size" weibo:text="@string/menu_search" weibo:toastBackgroundType="0" style="@style/main_tab_bottom" />
+        <com.sina.weibo.view.TabView android:tag="radio_button3" android:drawableTop="@drawable/tabbar_profile" android:contentDescription="@string/main_my_info" weibo:textSize="@dimen/bottom_tab_font_size" weibo:drawablePadding="@dimen/bottom_tab_padding_drawable" weibo:toastTextSize="@dimen/bottom_tab_toast_font_size" weibo:text="@string/main_me" weibo:toastBackgroundType="0" style="@style/main_tab_bottom" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/video_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</TabHost>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lyLogin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:facebook="http://schemas.android.com/apk/res-auto">
+    <com.facebook.widget.LoginButton android:id="@id/login_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" facebook:confirm_logout="false" facebook:fetch_user_info="false" facebook:login_text="@string/com_facebook_loginview_log_in_button" facebook:logout_text="@string/com_facebook_loginview_log_in_button" />
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/common_link_blue" android:id="@id/bnRegist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_new_reg" />
+        <ImageView android:id="@id/vDivider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/login_line" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/common_link_blue" android:id="@id/forget_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_forget_password" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/common_link_blue" android:id="@id/qq_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_via_qq" />
+    </LinearLayout>
+</LinearLayout>

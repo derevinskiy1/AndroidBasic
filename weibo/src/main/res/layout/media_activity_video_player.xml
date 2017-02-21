@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/media_video_player_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.media.player.VideoView android:id="@id/surface_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/video_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <FrameLayout android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginBottom="14.0dip">
+            <ImageView android:background="@null" android:layout_width="64.0dip" android:layout_height="64.0dip" />
+            <ImageView android:id="@id/media_activity_sina_small" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/videoplayer_loading" />
+        </FrameLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/common_card_background" android:id="@id/video_loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/media_video_small_loading_text" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/video_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

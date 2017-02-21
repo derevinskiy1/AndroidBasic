@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NativeWheelActivity" >
+
+    <include
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45.0dip"
+        android:layout_alignParentTop="true"
+        layout="@layout/act_home"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="30dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl_sudoku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/imageViewSudoku"
+                    android:layout_width="300dip"
+                    android:layout_height="300dip"
+                    android:src="@drawable/ic_launcher" />
+
+                <ImageView
+                    android:id="@+id/imageViewSelect"
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_launcher"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/buttonStart"
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_launcher" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/ic_launcher"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/textViewPresentSetup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fe5e3a"
+                    android:text=" 奖项设置：   "
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textViewFirst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewPresentSetup"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="一等奖："
+                    android:textColor="#ff2969" />
+
+                <TextView
+                    android:id="@+id/textViewSecond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewFirst"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="二等奖："
+                    android:textColor="#ff5e3a" />
+
+                <TextView
+                    android:id="@+id/textViewThird"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewSecond"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="三等奖："
+                    android:textColor="#ffcd02" />
+
+                <TextView
+                    android:id="@+id/textViewFirstPresent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textViewFirst"
+                    android:layout_toRightOf="@+id/textViewFirst"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:singleLine="false"
+                    android:text=""
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textViewSecondPresent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textViewSecond"
+                    android:layout_toRightOf="@+id/textViewSecond"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:singleLine="false"
+                    android:text=""
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textViewThirdPresent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textViewThird"
+                    android:layout_toRightOf="@+id/textViewThird"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:singleLine="false"
+                    android:text=""
+                    android:textColor="#000000" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/ic_launcher"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/textViewEventSetup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fe5e3a"
+                    android:text=" 活动说明：   "
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textViewCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewEventSetup"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#ff0000" />
+
+                <TextView
+                    android:id="@+id/textViewBless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewCount"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="亲，欢迎参加广告点抽奖活动，祝君好运哦!!"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

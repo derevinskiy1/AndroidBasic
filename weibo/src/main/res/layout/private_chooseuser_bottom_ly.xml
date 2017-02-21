@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/private_choose_root" android:background="@null" android:layout_width="40.0dip" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:weibo="http://schemas.android.com/apk/res-auto">
+    <com.sina.weibo.view.RoundedImageView android:layout_gravity="center_vertical" android:id="@id/imageview_original" android:saveEnabled="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/portrait" android:scaleType="fitXY" android:adjustViewBounds="false" weibo:corner_radius="20.0dip" weibo:cover_border_width="1.0px" weibo:cover_border_color="#0d000000" weibo:round_background="true" />
+    <com.sina.weibo.view.RoundedImageView android:layout_gravity="center_vertical" android:id="@id/imageview_original_mask" android:visibility="gone" android:saveEnabled="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="fitXY" android:adjustViewBounds="false" weibo:corner_radius="20.0dip" weibo:cover_border_width="1.0px" weibo:cover_border_color="#0d000000" />
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/imageview_cha" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/message_group_creat_icon_remove" />
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/ivItemPortraitV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:src="@null" />
+</FrameLayout>

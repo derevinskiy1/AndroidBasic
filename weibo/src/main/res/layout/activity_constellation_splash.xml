@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tendency="http://schemas.android.com/apk/res-auto" xmlns:weibo="http://schemas.android.com/apk/res-auto">
+    <com.sina.weibo.view.RoundedImageView android:id="@id/image_portrait" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="100.0dip" android:src="@drawable/portrait" android:scaleType="fitXY" android:layout_centerHorizontal="true" weibo:corner_radius="40.0dip" weibo:border_width="2.0dip" weibo:border_color="#ffffffff" weibo:cover_border_width="1.0px" weibo:cover_border_color="#0d000000" weibo:round_background="true" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/main_content_button_text_color" android:gravity="center_horizontal" android:id="@id/tv_description" android:paddingTop="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/splash_welcome_back" android:layout_below="@id/image_portrait" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/common_gray_93_half_transparency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="22.0dip" android:text="@string/horoscope_from" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/scope" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="87.0dip" android:src="@drawable/horoscope_background" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/constellationrl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/scope">
+        <TextView android:textSize="10.0sp" android:textColor="@color/common_gray_93" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="85.0dip" android:layout_marginBottom="2.0dip" android:layout_alignParentBottom="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tendencyll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_above="@id/tips" android:layout_alignLeft="@id/tips">
+            <TextView android:textSize="10.0sp" android:textColor="@color/common_gray_93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/luck_tendency_this_week" />
+            <com.sina.weibo.view.TendencyView android:id="@id/tendency" android:layout_width="wrap_content" android:layout_height="wrap_content" weibo:drawable_style_fill="@drawable/horoscope_star" weibo:drawable_style_stroke="@drawable/horoscope_star2" weibo:tendency_gap="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_above="@id/tendencyll" android:layout_alignLeft="@id/tendencyll">
+            <ImageView android:id="@id/icon" android:layout_width="16.0sp" android:layout_height="16.0sp" android:layout_marginRight="7.0dip" android:scaleType="fitXY" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_yellow" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

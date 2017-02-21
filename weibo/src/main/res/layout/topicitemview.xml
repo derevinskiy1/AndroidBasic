@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/list_item_one_line_small_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/list_item_one_line_text_size" android:textColor="#ff0099cc" android:layout_gravity="center_vertical" android:id="@id/tvTopicItemName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" />
+</FrameLayout>

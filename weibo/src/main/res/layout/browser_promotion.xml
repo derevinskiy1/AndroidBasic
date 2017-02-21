@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbarStyle="outsideOverlay" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingRight="@dimen/prompt_dialog_content_right_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/browser_promotion_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RadioGroup android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/browser_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

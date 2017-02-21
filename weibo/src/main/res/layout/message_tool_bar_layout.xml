@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/message_toolbar_button_text_color" android:gravity="center" android:id="@id/addBlackList" android:background="@drawable/message_list_toolbar_button" android:layout_width="fill_parent" android:layout_height="36.0dip" android:text="@string/shield" android:layout_weight="1.0" />
+    <ImageView android:id="@id/sep1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/messages_topbutton_split" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/message_toolbar_button_text_color" android:gravity="center" android:id="@id/follow" android:background="@drawable/message_list_toolbar_button" android:layout_width="fill_parent" android:layout_height="36.0dip" android:text="@string/wv_page_visit_home" android:layout_weight="1.0" />
+    <ImageView android:id="@id/sep2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/messages_topbutton_split" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/message_toolbar_button_text_color" android:gravity="center" android:id="@id/setting" android:background="@drawable/message_list_toolbar_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="36.0dip" android:text="@string/message_guide_message_settings" android:layout_weight="1.0" />
+</LinearLayout>

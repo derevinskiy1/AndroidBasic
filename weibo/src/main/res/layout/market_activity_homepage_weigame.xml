@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_homepage" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:attr="http://schemas.android.com/apk/res/com.sina.weibo">
+    <com.sina.weibo.appmarket.widget.TitleBar android:id="@id/tb_title" android:layout_width="fill_parent" android:layout_height="@dimen/baselayout_title_height" attr:left_type="1" attr:right_type2="2" attr:middle_text="@string/market_title_activity_weigame" />
+    <com.sina.weibo.appmarket.widget.TitlePageIndicator android:id="@id/pageIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/pager" android:background="@color/market_common_base_nocard_page_bg" android:persistentDrawingCache="animation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:flipInterval="30" />
+</LinearLayout>

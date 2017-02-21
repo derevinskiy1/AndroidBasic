@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/market_sng_game_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/market_sng_layout_content" android:background="@color/market_sng_game_window_bottom_bg" android:padding="@dimen/market_sng_dimen_window_padding" android:layout_width="fill_parent" android:layout_height="310.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/market_sng_layout_top1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/market_sng_layout_danmaku" android:background="@drawable/market_sng_danmaku_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+                <ImageView android:id="@id/market_sng_icon_danmaku" android:layout_width="@dimen/market_sng_float_icon_width1" android:layout_height="@dimen/market_sng_float_icon_height1" android:src="@drawable/market_sng_icon_danmaku_open" android:scaleType="fitXY" android:layout_centerInParent="true" />
+                <TextView android:id="@id/market_sng_tv_danmaku" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_sng_game_danmaku_open" android:layout_alignParentBottom="true" style="@style/market_sng_float_textview_l" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/market_sng_layout_savedesk" android:background="@drawable/market_sng_savedesk_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/market_sng_dimen_window_padding" android:layout_weight="2.0">
+                <ImageView android:layout_width="@dimen/market_sng_float_icon_width1" android:layout_height="@dimen/market_sng_float_icon_height1" android:src="@drawable/market_sng_icon_savedesk" android:scaleType="fitXY" android:layout_centerInParent="true" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_sng_game_savedesk" android:layout_alignParentBottom="true" style="@style/market_sng_float_textview_l" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/market_sng_layout_topgroup" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/market_sng_dimen_window_padding" android:layout_weight="1.0">
+                <RelativeLayout android:gravity="center" android:id="@id/market_sng_layout_close" android:background="@drawable/market_sng_close_selector" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/market_sng_img_finishgame" android:layout_width="@dimen/market_sng_float_icon_width2" android:layout_height="@dimen/market_sng_float_icon_height2" android:src="@drawable/market_sng_icon_finishgame" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_sng_game_closegame" android:layout_below="@id/market_sng_img_finishgame" android:layout_centerHorizontal="true" style="@style/market_sng_float_textview_s" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:id="@id/market_sng_layout_readcomment" android:background="@drawable/market_sng_floatgeneral_selector" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/market_sng_dimen_window_padding" android:layout_weight="1.0">
+                    <ImageView android:id="@id/market_sng_img_readcomments" android:layout_width="@dimen/market_sng_float_icon_width2" android:layout_height="@dimen/market_sng_float_icon_height2" android:src="@drawable/market_sng_icon_readcomments" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_sng_game_readcomments" android:layout_below="@id/market_sng_img_readcomments" android:layout_centerHorizontal="true" style="@style/market_sng_float_textview_s" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/market_sng_dimen_window_padding" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/market_sng_layout_senddanmaku" android:background="@drawable/market_sng_senddanmaku_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="528.0">
+                <ImageView android:layout_width="@dimen/market_sng_float_icon_width1" android:layout_height="@dimen/market_sng_float_icon_height1" android:src="@drawable/market_sng_icon_senddanmaku" android:scaleType="fitXY" android:layout_centerInParent="true" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_sng_game_senddanmaku" android:layout_alignParentBottom="true" style="@style/market_sng_float_textview_l" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/market_sng_layout_bottomgroup" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/market_sng_dimen_window_padding" android:layout_weight="130.0">
+                <RelativeLayout android:gravity="center" android:id="@id/market_sng_layout_forward" android:background="@drawable/market_sng_floatgeneral_selector" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/market_sng_img_forward" android:layout_width="@dimen/market_sng_float_icon_width2" android:layout_height="@dimen/market_sng_float_icon_height2" android:src="@drawable/market_sng_icon_forward" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_sng_game_forward" android:layout_below="@id/market_sng_img_forward" android:layout_centerHorizontal="true" style="@style/market_sng_float_textview_s" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:id="@id/market_sng_layout_hide" android:background="@drawable/market_sng_floatgeneral_selector" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/market_sng_dimen_window_padding" android:layout_weight="1.0">
+                    <ImageView android:id="@id/market_sng_img_hide" android:layout_width="@dimen/market_sng_float_icon_width2" android:layout_height="@dimen/market_sng_float_icon_height2" android:src="@drawable/market_sng_icon_hide" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_sng_game_hide" android:layout_below="@id/market_sng_img_hide" android:layout_centerHorizontal="true" style="@style/market_sng_float_textview_s" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

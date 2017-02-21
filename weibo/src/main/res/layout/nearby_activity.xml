@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/lyNearbyContent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.view.PullDownView android:id="@id/pdNearby" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/lvNearby" android:fadingEdge="none" android:fadingEdgeLength="0.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:drawSelectorOnTop="false" android:scrollingCache="false" android:divider="@drawable/divider_horizontal_timeline" android:dividerHeight="1.0dip" android:layout_weight="0.0" />
+    </com.sina.weibo.view.PullDownView>
+    <ScrollView android:layout_gravity="center" android:paddingLeft="29.0dip" android:paddingRight="29.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lyNearbyPrompt" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/ivNearbyPrompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/findfriend_icon_map" />
+            <TextView android:textSize="@dimen/getfriend_text_large" android:textColor="@color/main_content_text_color" android:gravity="center_horizontal" android:id="@id/tvNearbyPrompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/getfriend_nearby_prompt" />
+            <TextView android:textSize="@dimen/getfriend_text_xlarge" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tvNearbyOperate" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="39.0dip" android:text="@string/getfriend_nearby_enable" android:shadowColor="@color/main_button_shadow_text_color_for_deep_color_button" android:shadowDy="-2.0" android:shadowRadius="2.0" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="60.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="@dimen/getfriend_text_large" android:textColor="@color/getfriend_selection_text_highlighted" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/tvNearbyNodata" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/getfriend_nearby_nodata" />
+</FrameLayout>

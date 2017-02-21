@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/market_padding_medium_8dp" android:paddingTop="@dimen/market_padding_medium_8dp" android:paddingRight="@dimen/market_padding_medium_8dp" android:paddingBottom="@dimen/market_padding_smallest_4dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/market_font_middium" android:ellipsize="end" android:gravity="top" android:id="@id/item_sng_activity" android:paddingLeft="@dimen/market_sng_blank_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_sng_activity_hot" android:singleLine="true" />
+    <TextView android:textSize="@dimen/market_font_middium" android:ellipsize="end" android:id="@id/item_sng_activity_more" android:paddingLeft="@dimen/market_sng_blank_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_sng_activity_more" android:singleLine="true" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/item_sng_activity_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/market_padding_medium_8dp" android:layout_below="@id/item_sng_activity" />
+</RelativeLayout>

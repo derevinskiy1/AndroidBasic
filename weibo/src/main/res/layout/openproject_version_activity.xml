@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/settings_margin_top" android:paddingBottom="@dimen/settings_margin_top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/nameLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:id="@id/versiondesc0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/assistant_version_inner" android:layout_weight="2.0" style="@style/userinfo_panel_textview_title" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/remind_desc_color" android:gravity="center|right" android:id="@id/version_value0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:text="3.3.5" android:layout_weight="3.0" />
+    </LinearLayout>
+    <ImageView android:id="@id/divider1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fromLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:gravity="center_vertical" android:id="@id/fromdesc0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/assistant_version_from" android:layout_weight="2.0" style="@style/userinfo_panel_textview_title" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/remind_desc_color" android:gravity="center|right" android:id="@id/fromCurrent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:text="1033595010_3333_1001" android:layout_weight="3.0" />
+    </LinearLayout>
+</LinearLayout>

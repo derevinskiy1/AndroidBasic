@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/health_authorized_button">
+        <View android:id="@id/health_authorized_imageview" android:background="@drawable/health_guide_mobile_android" android:layout_width="240.0dip" android:layout_height="240.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_gray_33" android:id="@id/health_authorize_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_marginBottom="4.0dip" android:text="@string/health_source_record" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_93" android:id="@id/health_authorize_status_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_open_it_now" />
+    </LinearLayout>
+    <Button android:textSize="18.0sp" android:textColor="@color/health_button_orange_text_color" android:gravity="center" android:id="@id/health_authorized_button" android:background="@drawable/health_circle_button_orange_big" android:layout_width="230.0dip" android:layout_height="46.0dip" android:layout_marginBottom="40.0dip" android:text="@string/health_open_it" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/health_authorized_success" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="70.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/health_guide_mobile_done" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff5ab608" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/start_health_success" />
+    </LinearLayout>
+</RelativeLayout>

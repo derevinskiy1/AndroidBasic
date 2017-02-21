@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/widget_title" android:background="@drawable/widget_top" android:layout_width="fill_parent" android:layout_height="@dimen/go_widget_title_height">
+        <ImageView android:id="@id/refresh" android:layout_width="@dimen/go_widget_title_edit_height_width" android:layout_height="@dimen/go_widget_title_edit_height_width" android:layout_marginRight="2.0dip" android:src="@drawable/go_widget_refresh" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/edit" android:layout_width="@dimen/go_widget_title_edit_height_width" android:layout_height="@dimen/go_widget_title_edit_height_width" android:layout_marginRight="10.0dip" android:src="@drawable/go_widget_edit" android:layout_toLeftOf="@id/refresh" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/protrait" android:padding="1.0px" android:layout_width="@dimen/go_widget_title_portrait_height_width" android:layout_height="@dimen/go_widget_title_portrait_height_width" android:layout_marginLeft="@dimen/go_widget_title_portrait_margin_left" android:layout_marginRight="@dimen/go_widget_title_portrait_margin_right" android:src="@drawable/go_widget_logo" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/go_widget_title_nick_size" android:textStyle="bold" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center|left" android:id="@id/nick" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:layout_toLeftOf="@id/edit" android:layout_toRightOf="@id/protrait" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/data_content" android:background="@drawable/widget_middle" android:layout_width="fill_parent" android:layout_height="206.0dip" android:layout_below="@id/widget_title">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ly_operation_alert" android:layout_width="fill_parent" android:layout_height="206.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/widget_no_network" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/go_widget_poor_network_text_size" android:textColor="#ffc3c3c3" android:gravity="center" android:id="@id/notify_network_wake" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/go_widget_refresh_text_size" android:textColor="#ffc3c3c3" android:gravity="center" android:id="@id/notify_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/go_widget_refresh_text_size" android:textColor="#ffc3c3c3" android:gravity="center" android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <ListView android:id="@id/widget_listview" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/widget_list" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_shadow" android:background="@drawable/widget_bottom_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.5dip" android:layout_marginRight="4.5dip" android:layout_alignLeft="@id/widget_title" android:layout_alignRight="@id/widget_title" />
+</RelativeLayout>

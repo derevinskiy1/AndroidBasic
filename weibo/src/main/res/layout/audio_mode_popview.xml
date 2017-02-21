@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/market_title_bg_black" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tvAudiomode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/ivAudioMode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:src="@drawable/compose_voicesbutton_background" android:layout_toLeftOf="@id/tvAudiomode" android:layout_centerVertical="true" />
+</RelativeLayout>

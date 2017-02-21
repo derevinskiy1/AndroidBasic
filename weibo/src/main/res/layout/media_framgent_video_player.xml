@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/media_video_player_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.sina.weibo.video.view.VideoTextureView android:id="@id/surface_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/video_cover_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/video_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <FrameLayout android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginBottom="14.0dip">
+            <ImageView android:background="@drawable/videoplayer_playerloading_background" android:visibility="gone" android:layout_width="64.0dip" android:layout_height="64.0dip" />
+            <ImageView android:id="@id/media_activity_sina_small" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/videoplayer_loading" />
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/video_fragment_play_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/video_fragment_music_icon" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <com.sina.weibo.video.view.PlayCompletionActionView android:gravity="center" android:orientation="vertical" android:id="@id/media_video_play_completion_action_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center|right" android:orientation="vertical" android:id="@id/action_layout" android:descendantFocusability="blocksDescendants" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/action_icon" android:layout_width="@dimen/market_list_action_image_size" android:layout_height="@dimen/market_list_action_image_size" android:src="@drawable/market_icon_download" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/market_list_circle_button_text_size" android:gravity="center" android:id="@id/action_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/market_download" android:singleLine="true" />
+</LinearLayout>

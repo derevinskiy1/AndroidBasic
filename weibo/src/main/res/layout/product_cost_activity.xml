@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_product_cost" android:background="@color/common_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_cost_free" android:background="@color/common_card_background" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <RelativeLayout android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_gray_33" android:id="@id/tv_cost_free_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_cost_free_title" android:singleLine="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_gray_93" android:id="@id/tv_cost_free_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_cost_free_content" android:singleLine="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/iv_cost_free" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/common_icon_checkmark" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/common_horizontal_separator" />
+    <RelativeLayout android:id="@id/rl_cost_user_define" android:background="@color/common_card_background" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_gray_33" android:id="@id/tv_cost_user_define_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_cost_user_define_title" android:singleLine="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_gray_93" android:id="@id/tv_cost_user_define_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_cost_user_define_content" android:singleLine="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/iv_cost_user_define" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/common_icon_checkmark" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

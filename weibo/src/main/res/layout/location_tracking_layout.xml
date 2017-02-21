@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amap.api.maps.MapView android:id="@id/map" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.sina.weibo.hc.view.ScrollViewPager android:id="@id/scrollviewpager" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" />
+    <com.sina.weibo.hc.view.SportDataView android:id="@id/sportdataview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/gps_ly" android:background="@drawable/health_map_gps_button" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/sportdataview">
+        <TextView android:textSize="12.0sp" android:textColor="@color/main_button_text_color_for_deep_color_button" android:id="@id/gps_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_tracking_gps" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/main_button_text_color_for_deep_color_button" android:id="@id/gps_tv_on_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/health_tracking_gps_on" />
+    </LinearLayout>
+    <ImageView android:id="@id/cover_last_time" android:background="@color/health_sport_cover_time" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/health_countdown_three_icon" android:scaleType="center" />
+</RelativeLayout>

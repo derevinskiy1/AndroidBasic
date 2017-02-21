@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="market_detail_more_items">
+        <item>返回首页</item>
+        <item>转发到微博</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="market_subject_more_items">
+        <item>返回首页</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="market_share_weibo_contents">
+        <item>%s，这个有点意思[可爱]~</item>
+        <item>%s，真心不错！[呵呵]</item>
+        <item>乐,不宜迟 [嘻嘻]~</item>
+        <item>“%s”挺好的~</item>
+        <item>[太开心] “%s”太帅了！</item>
+    </string-array>
+    <string-array name="market_report_item">
+        <item>无法下载</item>
+        <item>无法安装</item>
+        <item>可安装但无法启动</item>
+        <item>版本太旧需要更新</item>
+        <item>恶意扣费</item>
+        <item>携带病毒</item>
+    </string-array>
+    <string-array name="alignment_array">
+        <item>None</item>
+        <item>Left</item>
+        <item>Center</item>
+        <item>Right</item>
+    </string-array>
+    <string-array name="image_size_array">
+        <item>Thumbnail</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>Full Size</item>
+    </string-array>
+    <string-array name="visitor_search_channels">
+        <item>热门</item>
+        <item>明星</item>
+    </string-array>
+    <string-array name="select_burn_time_items">
+        <item>关闭私密聊天</item>
+        <item>3秒</item>
+        <item>10秒</item>
+        <item>30秒</item>
+        <item>1分钟</item>
+        <item>5分钟</item>
+        <item>1小时</item>
+        <item>1天</item>
+        <item>1周</item>
+    </string-array>
+    <string-array name="select_burn_times">
+        <item>0</item>
+        <item>3</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>300</item>
+        <item>3600</item>
+        <item>86400</item>
+        <item>604800</item>
+    </string-array>
+    <string-array name="hongbao_result_award_content">
+        <item>未中奖！塞钱可以再抽一次哦~</item>
+        <item>没有中奖！换只小爪再试试~</item>
+        <item>未中奖！据说抢不抢的到主要看气质</item>
+        <item>没中奖！表伤心，换个姿势再试试~</item>
+        <item>未中奖！送你一份好运气，再试试~</item>
+    </string-array>
+</resources>

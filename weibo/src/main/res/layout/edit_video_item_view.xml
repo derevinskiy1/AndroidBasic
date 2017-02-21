@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sina.weibo.view.ImageSquareGrideViewItem android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/edit_video_view_cover_fr" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/edit_video_view_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    </FrameLayout>
+    <ImageView android:id="@id/edit_video_delete" android:background="@drawable/compose_photo_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/edit_video_view_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="30.0dip" android:src="@color/video_album_item_bottom_background" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0dip" android:textColor="@color/video_album_item_duration_text_color" android:id="@id/edit_video_view_size" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/video_album_item_duration_text_color" android:gravity="right" android:id="@id/edit_video_view_duration" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</com.sina.weibo.view.ImageSquareGrideViewItem>

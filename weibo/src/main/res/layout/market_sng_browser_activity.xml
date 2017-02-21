@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/market_sng_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:attr="http://schemas.android.com/apk/res-auto">
+    <com.sina.weibo.appmarket.widget.TitleBar android:id="@id/market_sng_tb_title" android:layout_width="fill_parent" android:layout_height="@dimen/baselayout_title_height" attr:left_type="1" attr:middle_text="@string/market_sng_menu_messagelist" />
+    <WebView android:id="@id/market_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/market_sng_tb_title" />
+    <include android:id="@id/market_sng_loading" android:layout_width="@dimen/pull_refresh_progress_size" android:layout_height="@dimen/pull_refresh_progress_size" android:layout_marginTop="@dimen/market_sng_loadding_margintop" android:layout_below="@id/market_sng_tb_title" android:layout_centerInParent="true" layout="@layout/market_sng_loadding" />
+    <com.sina.weibo.appmarket.widget.ReloadView android:id="@id/market_sng_reload" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/market_sng_tb_title" />
+    <ImageView android:id="@id/market_sng_top_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/market_sng_tb_title" />
+</RelativeLayout>

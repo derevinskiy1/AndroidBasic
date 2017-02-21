@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/forward"
+        android:icon="@drawable/toolbar_forward_icon"
+        android:title="@string/forward" />
+    <item
+        android:id="@id/comment"
+        android:icon="@drawable/toolbar_comment_icon"
+        android:title="@string/comment" />
+    <item
+        android:id="@id/liked"
+        android:icon="@drawable/toolbar_like"
+        android:title="@string/btn_detailweibo_liked" />
+</menu>

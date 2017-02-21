@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_homepage" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/fl_banner" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.sina.weibo.appmarket.sng.widget.InterceptorViewPager android:id="@id/vp_banner" android:layout_width="fill_parent" android:layout_height="160.0dip" />
+        <LinearLayout android:gravity="center|top" android:orientation="horizontal" android:id="@id/ll_banner_layout_point" android:paddingBottom="@dimen/market_padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/market_padding_large">
+        <TextView android:textSize="@dimen/market_font_middium" android:gravity="center" android:id="@id/tv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <include android:id="@id/layout_activities" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/market_sng_game_activities" />
+</LinearLayout>

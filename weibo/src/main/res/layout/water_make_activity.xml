@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.composerinde.view.WatermarkPullDownView android:id="@id/pd_water_make" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/lv_water_make" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:scrollingCache="false" android:fastScrollEnabled="true" />
+    </com.sina.weibo.composerinde.view.WatermarkPullDownView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_water_make_titlebar" android:layout_width="fill_parent" android:layout_height="@dimen/page_title_height">
+        <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/tv_water_make_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/titlebar_icon_margin" android:text="@string/imageviewer_back" />
+        <TextView android:textSize="18.0dip" android:ellipsize="end" android:gravity="center" android:id="@id/tv_water_make_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/title_share_photo" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/tv_water_make_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/titlebar_icon_margin" android:text="@string/cancel" />
+    </LinearLayout>
+</merge>

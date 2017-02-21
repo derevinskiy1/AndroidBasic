@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/market_sng_item_activity_image" android:layout_width="@dimen/market_sng_activity_icon_v2_width" android:layout_height="@dimen/market_sng_activity_icon_v2_height" android:layout_marginLeft="@dimen/market_sng_activity_icon_v2_margin" />
+    <TextView android:textSize="@dimen/market_sng_textsize_14" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/market_sng_item_activity_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_padding_medium" android:singleLine="true" />
+    <TextView android:textSize="@dimen/market_sng_textsize_12" android:textColor="@color/market_sng_appitem_snginfo" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/market_sng_item_activity_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_padding_medium" android:maxWidth="@dimen/market_sng_activity_content_maxwidht" android:singleLine="true" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/market_sng_item_activity_dot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_padding_smallest_4dp" />
+</LinearLayout>

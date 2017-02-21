@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:paddingLeft="8.0dip" android:layout_toLeftOf="@id/ivArrow" style="@style/user_info_detail_item">
+        <FrameLayout android:layout_width="92.0dip" android:layout_height="wrap_content">
+            <TextView android:id="@id/tvMember" android:text="@string/detail_member" style="@style/user_info_detail_verify_name" />
+        </FrameLayout>
+        <ImageView android:id="@id/page_detail_member_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@drawable/common_icon_membership" />
+    </LinearLayout>
+    <ImageView android:id="@id/ivArrow" style="@style/user_info_detail_arrow" />
+</RelativeLayout>

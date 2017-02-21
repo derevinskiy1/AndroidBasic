@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/settings_margin_top" android:paddingBottom="@dimen/settings_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/internalBrowserLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height">
+        <TextView android:textColor="@color/moreitem_text_color" android:gravity="center_vertical" android:id="@id/tvInternal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setting_url_open_internal" android:layout_centerVertical="true" style="@style/SettingMainText" />
+        <com.sina.weibo.view.SwitchButton android:id="@id/internalBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_text_padding_right" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/settings_desc_color" android:id="@id/tvInternalDescript" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_url_open_internal_desc" style="@style/SettingExplainText" />
+    <RelativeLayout android:id="@id/ucBrowserLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height">
+        <TextView android:textColor="@color/moreitem_text_color" android:id="@id/tvUc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setting_bind_uc" android:layout_centerVertical="true" style="@style/SettingMainText" />
+        <com.sina.weibo.view.SwitchButton android:id="@id/ucBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_text_padding_right" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/settings_desc_color" android:gravity="center_horizontal" android:id="@id/tvUcDescript" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_bind_uc_desc" style="@style/SettingExplainText" />
+</LinearLayout>

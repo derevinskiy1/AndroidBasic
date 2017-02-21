@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <com.sina.weibo.view.AttachAppIconView android:id="@id/detail_app_icon" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+            <TextView android:textSize="18.0sp" android:layout_gravity="center_vertical" android:id="@id/detail_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/detail_app_desc_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="14.0sp" android:id="@id/detail_app_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:lineSpacingExtra="@dimen/attach_app_text_padding" />
+        </LinearLayout>
+        <Button android:textSize="17.0sp" android:layout_gravity="center_horizontal" android:id="@id/attach_app_btn" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="16.0dip" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/wlan_thumbnail_view" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="21.0dip" android:scaleType="centerInside" android:layout_centerVertical="true" />
+    <TextView android:textAppearance="@style/NotificationText" android:id="@id/wlan_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/wlan_content_container" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginLeft="24.0dip" android:layout_toLeftOf="@id/wlan_time" android:layout_toRightOf="@id/wlan_thumbnail_view" android:layout_centerVertical="true">
+        <TextView android:textAppearance="@style/NotificationTitle" android:ellipsize="marquee" android:gravity="bottom" android:id="@id/wlan_title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Large Text" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textAppearance="@style/NotificationText" android:ellipsize="marquee" android:id="@id/wlan_summary" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TextView" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

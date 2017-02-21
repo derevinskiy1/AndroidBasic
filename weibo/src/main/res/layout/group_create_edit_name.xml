@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sina.weibo.view.ResizeableLayout android:id="@id/resizeableLayout" android:background="@color/common_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:id="@id/mainLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/edit_name_pic" android:layout_width="320.0dip" android:layout_height="190.0dip" android:src="@drawable/message_creategroup_image_named" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_93" android:layout_gravity="center_horizontal" android:id="@id/group_name_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="18.0dip" android:text="@string/create_group_name_a_perfect_name" />
+            <RelativeLayout android:id="@id/lyContent" android:background="@drawable/message_creategroup_named_inputbg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="12.0dip">
+                <EditText android:textSize="16.0sp" android:textColor="@color/common_gray_33" android:textColorHint="@color/common_gray_93" android:gravity="center_vertical" android:id="@id/etContent" android:background="@null" android:paddingLeft="15.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/create_group_name_limit" android:cursorVisible="true" android:singleLine="true" android:layout_toLeftOf="@id/ivDelete" android:layout_centerVertical="true" android:inputType="none" android:imeOptions="actionDone" android:textCursorDrawable="@null" />
+                <ImageView android:id="@id/ivDelete" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/search_clear_btn" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/main_highlight_text_color" android:gravity="center_vertical" android:id="@id/tvErrorMsg" android:paddingLeft="15.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="14.0sp" android:textColor="@color/common_link_blue" android:gravity="center_vertical" android:layout_gravity="bottom|center" android:id="@id/tvSelectGroup" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="36.0dip" android:minHeight="10.0dip" />
+</com.sina.weibo.view.ResizeableLayout>

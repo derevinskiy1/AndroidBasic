@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ly_choice_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/browser_textsize_control_new" android:visibility="gone" layout="@layout/browser_textsize_control" />
+    <TextView android:id="@id/browser_common_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/main_content_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="19.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="13.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/main_content_retweet_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" />
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/channnelmanage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="81.0dip">
+        <ImageView android:id="@id/channelimg" android:layout_width="57.0dip" android:layout_height="57.0dip" android:layout_marginLeft="14.0dip" android:src="@drawable/more_icon_channelmanage" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/channeltextgrp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/channelimg" android:layout_centerVertical="true">
+            <TextView android:textSize="15.0sp" android:textColor="@color/main_content_text_color" android:id="@id/channeltext" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/main_content_subtitle_text_color" android:id="@id/channeldesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/devideline" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="15.0sp" android:textColor="@color/main_content_text_color" android:ellipsize="marquee" android:id="@id/tv_dialog_header_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="17.0dip" android:text="@string/custom_more_shareto" android:singleLine="true" style="?android:attr/dropDownItemStyle" />
+    <ListView android:id="@id/lv_choice_dialog" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:scrollingCache="false" android:cacheColorHint="@null" android:fastScrollEnabled="false" android:headerDividersEnabled="false" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/main_content_text_color" android:ellipsize="marquee" android:gravity="center" android:id="@id/tv_dialog_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="49.0dip" android:singleLine="true" />
+</LinearLayout>

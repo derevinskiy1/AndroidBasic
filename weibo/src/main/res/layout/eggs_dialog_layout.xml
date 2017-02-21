@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/eggsDialogBg" android:layout_width="290.0dip" android:layout_height="290.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/common_gray_33" android:gravity="center" android:id="@id/eggsText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:layout_marginTop="31.0dip" android:layout_marginRight="26.0dip" />
+        <ImageView android:id="@id/eggsImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" />
+        <Button android:textSize="17.0sp" android:textColor="@color/common_yellow" android:id="@id/eggsBtn" android:background="@drawable/pop_dialog_btn_white_background" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="21.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="20.0dip" android:text="@string/wap_alert_iknow" />
+    </LinearLayout>
+</LinearLayout>

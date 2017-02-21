@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/navigationbar_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:background="#ffdfdfdf" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/popup_window_container" android:background="@color/page_info_cover_text_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="36.0dip" />
+        <ImageView android:id="@id/lbs_divider" android:background="@color/commom_background_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/lbs_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="38.0dip" android:layout_alignParentTop="true">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/fragment_shadow" android:background="#99000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <com.sina.weibo.view.EmptyGuideCommonView android:id="@id/emptyview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

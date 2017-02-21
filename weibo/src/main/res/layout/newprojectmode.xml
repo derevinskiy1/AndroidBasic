@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:paddingBottom="9.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/basicInfoModule" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_vertical" android:id="@id/info_title" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="13.0dip" android:text="基本信息" style="@style/userinfo_panel_textview_title" />
+            <RelativeLayout android:id="@id/wmLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="36.329987dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <TextView android:gravity="center_vertical" android:id="@id/wmdesc0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="当前WM值" android:layout_weight="2.0" style="@style/userinfo_panel_textview_title" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/remind_desc_color" android:gravity="center|right" android:id="@id/wmCurrent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="3333-1001" android:layout_weight="3.0" />
+                </LinearLayout>
+                <ImageView android:id="@id/silentTimeTriangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_triangle_right_margin" android:src="@drawable/triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:id="@id/fromLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="36.329987dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <TextView android:gravity="center_vertical" android:id="@id/fromdesc0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="当前From值" android:layout_weight="2.0" style="@style/userinfo_panel_textview_title" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/remind_desc_color" android:gravity="center|right" android:id="@id/fromCurrent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="1033595010" android:layout_weight="3.0" />
+                </LinearLayout>
+                <ImageView android:id="@id/silentTimeTriangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_triangle_right_margin" android:src="@drawable/triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:id="@id/serverLayout" android:layout_width="fill_parent" android:layout_height="65.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingRight="36.329987dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <TextView android:gravity="center_vertical" android:id="@id/serverdesc0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:text="服务器地址" style="@style/userinfo_panel_textview_title" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/remind_desc_color" android:gravity="center|left" android:id="@id/serverCurrent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="1033595010" />
+                </LinearLayout>
+                <ImageView android:id="@id/silentTimeTriangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_triangle_right_margin" android:src="@drawable/triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:id="@id/versionLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                        <TextView android:id="@id/versiondesc0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="当前版本：" android:layout_weight="3.0" style="@style/userinfo_panel_textview_title" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/remind_desc_color" android:gravity="right" android:id="@id/version_value0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="3.3.5" android:layout_weight="2.0" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                        <TextView android:id="@id/versiondesc1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="VervsionCode：" android:layout_weight="3.0" style="@style/userinfo_panel_textview_title" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/remind_desc_color" android:gravity="right" android:id="@id/version_value1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="3.3.5" android:layout_weight="2.0" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:id="@id/remindFrequencyTriangle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_triangle_right_margin" android:src="@drawable/triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/basicFunctionMoudle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_vertical" android:id="@id/fun_title" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="13.0dip" android:text="功能" style="@style/userinfo_panel_textview_title" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/switchPushLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/fundesc0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_push_enable" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/pushswitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/forceCrashLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/forceCrashTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_force_crash" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_triangle_right_margin" android:src="@drawable/triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/switchHotfixToastLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@id/hotfix_toast" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_hotfix_enable" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/HotfixToastswitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/switchHotfixLogLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@id/hotfix_log" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_log_enable" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/HotfixLogswitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/switchAutoSmsLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/fundescsms" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_autosms_enable" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/Smsswitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/switchDianXinLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/fundesc1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_dianxin_enable" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/DianXinswitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/switchMarkLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/fundesc2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_appmarket_enable" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/Markswitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/switchPopLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/fundesc3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_popupsdk_enable" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/Popswitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/switchLogLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/fundesc4" android:paddingRight="50.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_logall_enable" android:maxLines="2" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/Logswitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/switchShowLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/fundesc5" android:paddingRight="50.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_shortcut" android:maxLines="2" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/Showswitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/switchLog1Layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/fundesc6" android:paddingRight="50.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/project_url_log" android:maxLines="4" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/Log1switch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/toast_log_switchLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/fundesc6" android:paddingRight="50.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="信息toast显示详细log" android:maxLines="4" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/toast_log_switch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/btn_sendmailLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/fundesc7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_sendemail" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <ImageView android:id="@id/silentTimeTriangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_triangle_right_margin" android:src="@drawable/triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/btn_readUrlLogLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/readUrlLogText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_read_url_log" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <ImageView android:id="@id/silentTimeTriangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_triangle_right_margin" android:src="@drawable/triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/btn_resetLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/fundesc8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_navigator_reset" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <ImageView android:id="@id/silentTimeTriangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_triangle_right_margin" android:src="@drawable/triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/switchThemeLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/fundesc10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_test_theme" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/Themeswitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:id="@id/inputThemeLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="36.329987dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <TextView android:gravity="center_vertical" android:id="@id/themedesc0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_add_test_theme" android:layout_weight="0.3" style="@style/userinfo_panel_textview_title" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/remind_desc_color" android:gravity="center|right" android:id="@id/themeCurrent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="com.sina.weibo." android:layout_weight="0.7" />
+                </LinearLayout>
+                <ImageView android:id="@id/silentTimeTriangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_triangle_right_margin" android:src="@drawable/triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/fbBindShowLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/fundesc11" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_fbbind_show" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/FbBindShow" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/feedMenuShowLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/fundesc12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_feed_menu_show" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/feedMenuShow" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/popupSdkDebugLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/fundesc13" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_popupsdk_debug_mode" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/popupSdkDebugCB" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/FPSShowLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/FPSShowContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_fps_show" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/FPSShowSwitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/gzipLogLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/gzipLogContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_gizplog_show" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/gzipLogSwitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/cardTestModule" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_vertical" android:id="@id/cardTestTitle" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginTop="13.0dip" android:text="@string/project_card_test_name" style="@style/userinfo_panel_textview_title" />
+            <RelativeLayout android:id="@id/cardStatisticsLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/cardStatisticsContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_card_statistics_switch" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/cardStatisticsSwitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:id="@id/pageTestCaseLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/pageTestCaseContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_page_test_case" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <ImageView android:id="@id/pageTestCaseTriangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_triangle_right_margin" android:src="@drawable/triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/videoDebugModule" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_vertical" android:id="@id/videoDebugTitle" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginTop="13.0dip" android:text="@string/project_video_debug_text" style="@style/userinfo_panel_textview_title" />
+            <RelativeLayout android:id="@id/videoAutoplayLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/videoAutoplayText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_video_autoplay_switch" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/videoAutoplaySwtich" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:id="@id/videoFeedLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/videoFeedText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_video_videofeed_switch" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/videoFeedSwitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:id="@id/videoPlayerNativeLogLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/videoPlayerNativeLogText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_video_player_native_log_switch" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/videoPlayerNativeLogSwitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:id="@id/videoPlayerUnicomVipLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/videoPlayerUnicomVipText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_video_unicom_vip_switch" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/videoPlayerUnicomVipSwitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/wesyncDebugModule" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_vertical" android:id="@id/wesyncDebugTitle" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginTop="13.0dip" android:text="@string/wesync_debug_name" style="@style/userinfo_panel_textview_title" />
+            <RelativeLayout android:id="@id/wesyncPsDebugLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/wesyncPsDebugContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/wesync_ps_debug_switch" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/wesyncPsDebugSwitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:id="@id/psServerLayout" android:layout_width="fill_parent" android:layout_height="65.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingRight="36.329987dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <TextView android:gravity="center_vertical" android:id="@id/psServerdesc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:text="wesync ps 服务器地址" style="@style/userinfo_panel_textview_title" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/remind_desc_color" android:gravity="center|left" android:id="@id/psServerCurrent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="" />
+                </LinearLayout>
+                <ImageView android:id="@id/silentTimeTriangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_triangle_right_margin" android:src="@drawable/triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:id="@id/wesyncDispatchDebugLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/wesyncDispatchDebugContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/wesync_dispatch_debug_switch" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/wesyncDispatchDebugSwitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:id="@id/dispatchServerLayout" android:layout_width="fill_parent" android:layout_height="65.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingRight="36.329987dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <TextView android:gravity="center_vertical" android:id="@id/dispatchServerdesc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:text="wesync dispatch 服务器地址" style="@style/userinfo_panel_textview_title" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/remind_desc_color" android:gravity="center|left" android:id="@id/dispatchServerCurrent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="" />
+                </LinearLayout>
+                <ImageView android:id="@id/silentTimeTriangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_triangle_right_margin" android:src="@drawable/triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:id="@id/wesyncLogDebugLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/wesyncLogDebugContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/wesync_log_debug_switch" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/wesyncLogDebugSwitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/webviewDebugModule" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_vertical" android:id="@id/webviewDebugTitle" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginTop="13.0dip" android:text="@string/webview_debug_name" style="@style/userinfo_panel_textview_title" />
+            <RelativeLayout android:id="@id/webviewDebugLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/webviewDebugContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/webview_debug_switch" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/webviewDebugSwitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/jsbridgeDebugLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/jsbridgeDebugContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/jsbridge_debug_switch" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/jsbridgeDebugSwitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/memoryTestMoudle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_vertical" android:id="@id/switch_memory_title" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginTop="13.0dip" android:text="@string/project_memory_debug" style="@style/userinfo_panel_textview_title" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/MemoryDebugSwitchLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/MemoryDebugContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_memory_debug_switch" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <ToggleButton android:id="@id/memory_toggleButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/MemoryShowLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/MemoryShowContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_memory_show" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/MemoryShowSwitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/CpuShowLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/CpuShowContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_cpu_show" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/CpuShowSwitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/TrafficShowLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/TrafficShowContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_traffic_show" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/TrafficShowSwitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/LargeObjectShowLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/LargeObjectShowContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_large_object_show" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/LargeObjectShowSwitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/ThreadShowLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/ThreadShowContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_thread_show" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/ThreadShowSwitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/RankShowLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/RankShowContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_rank_show" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/RankShowSwitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/ObjectLifeShowLayout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center_vertical" android:id="@id/ObjectLifeShowContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/project_objectlife_show" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <CheckBox android:id="@id/ObjectLifeShowSwitch" android:background="@drawable/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/MemoryColorLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:paddingRight="45.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/MemoryColorContent" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:text="@string/project_memory_color" android:lines="1" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_triangle_right_margin" android:src="@drawable/triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/MemorySizeLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:paddingRight="45.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/MemorySizeContent" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:text="@string/project_memory_size" android:lines="1" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_triangle_right_margin" android:src="@drawable/triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/MemoryPositionLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:paddingRight="45.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/MemoryPositionContent" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:text="@string/project_memory_position" android:lines="1" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_triangle_right_margin" android:src="@drawable/triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/cmdMoudle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_vertical" android:id="@id/cmd_title" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="13.0dip" android:text="Run Terminal Emulator" style="@style/userinfo_panel_textview_title" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/cmdpingLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:paddingRight="45.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/cmdtitle0" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:text="run：ping www.sina.com.cn" android:lines="1" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_triangle_right_margin" android:src="@drawable/triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/cmdtraceLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:paddingRight="45.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/cmdtitle1" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:text="命令：traceroute www.sina.com.cn" android:lines="1" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_triangle_right_margin" android:src="@drawable/triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/cmdinputLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:paddingRight="45.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/cmdtitle2" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:text="Terminal Emulator" android:lines="1" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_triangle_right_margin" android:src="@drawable/triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/trafficInfoMoudle" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/trafficLayout" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/log_traffic" android:background="@drawable/btn_photo_album_save" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/log_feedback_traffic" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_detail_card" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/item_card" android:background="@drawable/common_card_bg" android:paddingLeft="@dimen/market_recomment_item_distance_inner_h" android:paddingTop="@dimen/market_recomment_item_distance_inner_v" android:paddingRight="@dimen/market_recomment_item_distance_inner_h" android:paddingBottom="@dimen/market_recomment_item_distance_inner_v" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/detail_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_recomment_item_distance_inner_h" android:layout_marginTop="@dimen/market_recomment_item_distance_inner_v" android:layout_marginRight="@dimen/market_recomment_item_distance_inner_h">
+            <com.sina.weibo.appmarket.widget.EllipsizingTextView android:textSize="@dimen/market_font_14" android:id="@id/detail_desc_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:layout_alignParentLeft="true" android:lineSpacingExtra="3.0dip" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/detail_rest_container" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_recomment_item_distance_inner_h" android:layout_marginRight="@dimen/market_recomment_item_distance_inner_h">
+            <ImageView android:gravity="center_vertical" android:id="@id/iv_arrow" android:background="@drawable/market_icon_arrow_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_padding_10" android:layout_marginRight="@dimen/market_padding_10" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <LinearLayout android:orientation="vertical" android:paddingRight="@dimen/market_padding_left_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/iv_arrow">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/market_font_14" android:ellipsize="end" android:id="@id/tv_download_count" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/market_font_14" android:ellipsize="end" android:id="@id/tv_version" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_detail_expendable" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/market_font_14" android:ellipsize="end" android:id="@id/tv_developer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/market_font_14" android:ellipsize="end" android:id="@id/tv_updatetime" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

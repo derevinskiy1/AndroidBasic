@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sina.weibo.view.ImageSquareGrideViewItem android:gravity="center" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/photo_item_sec_pic">
+        <ImageView android:id="@id/video_album_grideview_item_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/video_album_grideview_item_image_select_cover" android:background="#33000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/video_album_grideview_item_select" android:clickable="false" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <View android:id="@id/video_album_grideview_item_select_click_region" android:background="@null" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <RelativeLayout android:background="@color/video_album_item_bottom_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/video_album_gridview_item_vedio_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="10.0dip" android:textColor="@color/video_album_item_duration_text_color" android:gravity="center" android:id="@id/video_album_gridview_item_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/video_album_grideview_item_disable_bg" android:background="#7f000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.sina.weibo.view.ImageSquareGrideViewItem>

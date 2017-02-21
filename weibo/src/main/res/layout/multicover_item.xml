@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sina.weibo.mcover.view.ImageSquareGrideViewItem android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/iv_edit_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <com.sina.weibo.view.RoundProgressBar android:layout_gravity="center" android:id="@id/pb" android:background="@drawable/feed_image_loading" android:layout_width="30.0dip" android:layout_height="30.0dip" android_custom:rpbRoundColor="@android:color/transparent" android_custom:rpbRoundProgressColor="#b2ffffff" android_custom:rpbRoundWidth="5.0dip" android_custom:rpbTextSize="18.0sp" android_custom:rpbMax="100" android_custom:rpbTextIsDisplayable="false" android_custom:rpbStyle="FILL" />
+    <ImageView android:layout_gravity="center" android:id="@id/iv_retry" android:background="@drawable/profile_cover_edit" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+</com.sina.weibo.mcover.view.ImageSquareGrideViewItem>

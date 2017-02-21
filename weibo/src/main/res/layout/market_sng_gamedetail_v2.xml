@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/market_sng_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:attr="http://schemas.android.com/apk/res-auto">
+    <com.sina.weibo.appmarket.widget.TitleBar android:id="@id/market_sng_tb_title" android:layout_width="fill_parent" android:layout_height="@dimen/baselayout_title_height" attr:left_type="1" attr:middle_text="@string/market_sng_menu_messagelist" />
+    <com.sina.weibo.appmarket.sng.widget.DownLoadLayout android:id="@id/market_sng_layout_download" android:layout_width="fill_parent" android:layout_height="@dimen/market_sng_game_download_height" android:layout_marginLeft="@dimen/market_sng_game_detail_marginleft1" android:layout_marginTop="@dimen/market_sng_game_detail_margintop2" android:layout_marginRight="@dimen/market_sng_game_detail_marginleft1" android:layout_marginBottom="@dimen/market_sng_game_detail_margintop2" android:layout_alignParentBottom="true" />
+    <com.sina.weibo.view.PullDownView android:id="@id/market_sng_pdv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/market_sng_layout_download" android:layout_below="@id/market_sng_tb_title">
+        <include android:id="@id/market_sng_lv" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/market_sng_listview2" />
+    </com.sina.weibo.view.PullDownView>
+    <com.sina.weibo.appmarket.widget.ReloadView android:id="@id/market_sng_reload" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/market_sng_layout_download" android:layout_below="@id/market_sng_tb_title" />
+    <ImageView android:id="@id/market_sng_top_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/market_sng_tb_title" />
+</RelativeLayout>

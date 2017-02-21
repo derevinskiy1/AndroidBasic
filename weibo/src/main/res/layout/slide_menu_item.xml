@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/slide_menu_item_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/feed_slide_menu_item_width" android:layout_height="@dimen/feed_slide_menu_item_width">
+        <TextView android:id="@id/slide_item_icon" android:layout_width="@dimen/feed_slide_menu_item_icon_width" android:layout_height="@dimen/feed_slide_menu_item_icon_width" android:layout_marginBottom="@dimen/feed_slide_menu_item_icon_margin_bottom" />
+        <TextView android:textSize="@dimen/feed_slide_menu_text_size" android:textColor="@color/main_link_text_color" android:id="@id/slide_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/slide_menu_line" android:paddingTop="@dimen/feed_slide_menu_item_line_padding" android:paddingBottom="@dimen/feed_slide_menu_item_line_padding" android:layout_width="wrap_content" android:layout_height="@dimen/feed_slide_menu_item_width" android:src="@drawable/timeline_card_bottom_line" android:scaleType="fitXY" />
+</LinearLayout>

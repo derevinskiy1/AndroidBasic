@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/game_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.appmarket.widget.CategoryAppCardView android:id="@id/category_game_card_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.sina.weibo.appmarket.widget.ReloadView android:id="@id/reload" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.sina.weibo.appmarket.widget.ProgressView android:id="@id/rl_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

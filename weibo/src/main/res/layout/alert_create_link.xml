@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:padding="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/linkURL" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/link_enter_url" android:inputType="textUri" android:imeOptions="actionNext" />
+    <EditText android:id="@id/linkText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/link_enter_url_text" android:layout_below="@id/linkURL" android:inputType="text" />
+    <Button android:id="@id/ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:text="@android:string/ok" android:layout_below="@id/linkText" android:layout_alignParentRight="true" />
+    <Button android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/cancel" android:layout_toLeftOf="@id/ok" android:layout_alignTop="@id/ok" />
+</RelativeLayout>

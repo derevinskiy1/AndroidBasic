@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#bf000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/rl_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/shooting_bottom_ly_height" android:weightSum="5.0" android:layout_alignBottom="@id/rl_content">
+        <Button android:textSize="14.0sp" android:id="@id/iv_action" android:layout_width="0.0dip" android:layout_height="38.0dip" android:src="@drawable/shooting_action_button" android:text="@string/install_shooting" android:layout_weight="2.0" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-7.0dip" android:layout_marginRight="-7.0dip" android:src="@drawable/close_button" android:layout_alignTop="@id/rl_content" android:layout_alignRight="@id/rl_content" />
+</RelativeLayout>

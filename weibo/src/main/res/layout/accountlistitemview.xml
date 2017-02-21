@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="62.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/lyPortrait" android:layout_width="58.0dip" android:layout_height="58.0dip" android:layout_marginLeft="@dimen/accountmanager_icon_margin_lr" android:layout_marginRight="@dimen/accountmanager_icon_margin_lr">
+        <com.sina.weibo.view.RoundedImageView android:id="@id/ivPortrait" android:saveEnabled="true" android:layout_width="@dimen/accountmanager_icon_size" android:layout_height="@dimen/accountmanager_icon_size" android:scaleType="centerCrop" android:adjustViewBounds="false" android:layout_centerInParent="true" weibo:corner_radius="24.0dip" />
+        <ImageView android:id="@id/ivPortraitMask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:ellipsize="end" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/tvAccountName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:singleLine="true" android:layout_weight="1.0" />
+    <TextView android:textSize="10.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tvUnreadNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" />
+</LinearLayout>

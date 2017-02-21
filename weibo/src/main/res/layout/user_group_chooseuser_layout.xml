@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sina.weibo.view.ResizeableLayout android:id="@id/choose_contacts_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/select_show_bottom" android:background="@drawable/message_group_user_background" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <Button android:textSize="12.0sp" android:gravity="center" android:id="@id/select_show_save_button" android:background="@null" android:visibility="gone" android:clickable="false" android:layout_width="60.0dip" android:layout_height="35.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="10.0dip" android:text="@string/choose_contacts_confirm" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <EditText android:textSize="16.0sp" android:id="@id/search_edittext_s" android:focusableInTouchMode="true" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="10.0dip" android:text="abcdefghij" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@null" />
+            <HorizontalScrollView android:id="@id/select_show_hs" android:scrollbars="none" android:fadingEdge="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/search_edittext_s" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/select_show_LL" android:background="@null" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" />
+            </HorizontalScrollView>
+            <RelativeLayout android:id="@id/search_bar_for_contacts" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <ImageView android:id="@id/search_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/message_choosecontact_search" android:layout_centerVertical="true" />
+                <EditText android:textSize="16.0sp" android:textColorHint="@color/common_gray_93" android:id="@id/search_edittext" android:background="@null" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:hint="@string/search_label" android:singleLine="true" android:layout_toRightOf="@id/search_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:imeOptions="actionSearch" android:contentDescription="" style="@null" />
+            </RelativeLayout>
+            <ImageView android:id="@id/ivDivider" android:layout_width="fill_parent" android:layout_height="1.0px" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/select_show_bottom">
+            <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/searchbar" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <com.sina.weibo.view.PinnedSectionListView android:id="@id/lvUser" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:scrollingCache="false" android:layout_weight="0.0" />
+                        <com.sina.weibo.view.LetterIndexBar android:textSize="12.0sp" android:layout_gravity="right" android:id="@id/libMessageIndex" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="44.0dip" />
+                        <com.sina.weibo.view.CommonSearchView android:id="@id/search_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+            <ImageView android:layout_gravity="bottom" android:id="@id/select_show_bottom_shadow" android:background="@drawable/common_shadow_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        </FrameLayout>
+    </RelativeLayout>
+</com.sina.weibo.view.ResizeableLayout>

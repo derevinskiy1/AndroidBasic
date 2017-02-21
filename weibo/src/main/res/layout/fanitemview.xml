@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:weibo="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/lyItemPortrait" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/portrait_common_margin_left" android:layout_marginRight="9.0dip">
+        <com.sina.weibo.view.RoundedImageView android:id="@id/ivItemPortrait" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" weibo:round_background="true" />
+    </FrameLayout>
+    <com.sina.weibo.view.EditRelationButtonView android:id="@id/attendBtn" android:layout_width="@dimen/edit_relation_button_width" android:layout_height="@dimen/edit_relation_button_height" android:layout_marginLeft="10.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/contentlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/attendBtn" android:layout_toRightOf="@id/lyItemPortrait" android:layout_centerVertical="true">
+        <com.sina.weibo.view.MemberTextView android:textSize="@dimen/universal_textsize_16" android:textColor="@color/common_gray_33" android:ellipsize="end" android:id="@id/tvItemName" android:paddingRight="@dimen/nick_name_padding_right_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+        <TextView android:textSize="@dimen/universal_textsize_12" android:ellipsize="end" android:id="@id/tvItemSummary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fanslist_text_twoline_top_margin" android:singleLine="true" />
+        <com.sina.weibo.feed.view.MBlogTextView android:id="@id/itemsource" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fanslist_text_threeline_margin" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

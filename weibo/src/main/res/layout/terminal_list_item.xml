@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:layout_gravity="right" android:id="@id/textid" android:layout_width="30.0dip" android:layout_height="wrap_content" />
+        <TextView android:gravity="center|right" android:layout_gravity="right" android:id="@id/textip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="12341234" android:layout_weight="1.0" />
+        <TextView android:id="@id/texthost" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/textmin" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:id="@id/textavg" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:id="@id/textmax" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:gravity="center|right" android:id="@id/textmdev" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

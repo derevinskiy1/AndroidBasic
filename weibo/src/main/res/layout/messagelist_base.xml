@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.view.TopToastView android:id="@id/tv_reply_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/searchbar" android:paddingBottom="@dimen/message_list_padding_bottom_min" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:id="@id/v_tip_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="36.0dip" />
+            <com.sina.weibo.view.PullDownView android:id="@id/pd_blog_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.sina.weibo.view.AutoScrollListView android:id="@id/lvUser" android:fadingEdgeLength="0.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:drawSelectorOnTop="false" android:scrollingCache="false" android:cacheColorHint="#00000000" android:divider="@drawable/divider_horizontal_timeline" android:dividerHeight="1.0dip" android:layout_weight="0.0" />
+            </com.sina.weibo.view.PullDownView>
+        </LinearLayout>
+        <com.sina.weibo.view.MessageToolBarView android:id="@id/v_tool_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        <com.sina.weibo.view.ChatMessageBar android:id="@id/tvMessageBox" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.sina.weibo.view.AppPanel android:id="@id/app_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.sina.weibo.view.EmotionPanel android:id="@id/emotion_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

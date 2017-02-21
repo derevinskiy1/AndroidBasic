@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/market_selector_default_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/item_download_info_layout" android:layout_width="fill_parent" android:layout_height="@dimen/market_download_item_height">
+        <ImageView android:id="@id/item_icon" android:layout_width="@dimen/market_icon_size" android:layout_height="@dimen/market_icon_size" android:layout_marginLeft="@dimen/market_recomment_item_distance_inner_h" android:src="@drawable/market_icon_app_default" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.sina.weibo.appmarket.widget.CircleProgressButton android:id="@id/item_action_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/market_circle_progress_button" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="2.0dip" android:layout_toLeftOf="@id/item_action_btn" android:layout_toRightOf="@id/item_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:ellipsize="middle" android:gravity="center_vertical" android:id="@id/item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <View android:id="@id/item_gap" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ProgressBar android:id="@id/item_progressBar" android:layout_width="fill_parent" android:layout_height="14.0dip" android:layout_marginTop="2.0dip" android:max="1000" android:layout_alignParentLeft="true" style="?android:attr/progressBarStyleHorizontal" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff838383" android:id="@id/complete_download_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="0M/0M" android:layout_below="@id/item_progressBar" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff838383" android:id="@id/item_size" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="2.0dip" android:layout_toRightOf="@id/complete_download_size" android:layout_below="@id/item_progressBar" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff838383" android:gravity="top" android:id="@id/item_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="0%" android:layout_below="@id/item_progressBar" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.sina.weibo.appmarket.widget.ManageToolsBar android:id="@id/item_download_tools" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/item_download_info_layout" />
+    <View android:id="@id/item_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/market_list_item_divider_margin_size" android:layout_marginRight="@dimen/market_list_item_divider_margin_size" android:layout_alignParentBottom="true" />
+</RelativeLayout>

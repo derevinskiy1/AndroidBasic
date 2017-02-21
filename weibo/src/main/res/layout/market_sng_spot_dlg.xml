@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/market_sng_spot_dlg_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/market_sng_spot_dlg_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/market_sng_main_spot_dlg_close_btn_margin" android:layout_marginRight="@dimen/market_sng_main_spot_dlg_close_btn_margin" android:layout_alignTop="@id/market_sng_spot_dlg_image" android:layout_alignRight="@id/market_sng_spot_dlg_image" />
+</RelativeLayout>

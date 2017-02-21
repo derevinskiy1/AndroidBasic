@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/inicator_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:layout_gravity="center" android:id="@id/inicator_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:gravity="center" android:layout_gravity="center|left|top" android:id="@id/inicator_flag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:src="@drawable/new_dot" android:scaleType="fitXY" android:layout_toRightOf="@id/inicator_text" />
+        <TextView android:textSize="10.0sp" android:gravity="center" android:id="@id/inicator_num_flag" android:background="@drawable/main_badge" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_title_inicator_num_margin_left" android:layout_marginTop="2.0dip" android:text="N" android:layout_toRightOf="@id/inicator_text" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</FrameLayout>

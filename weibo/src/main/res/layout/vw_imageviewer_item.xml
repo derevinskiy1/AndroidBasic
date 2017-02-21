@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:attr="http://schemas.android.com/apk/res-auto">
+    <com.sina.weibo.view.SplitTouchTagImageView android:id="@id/ivPicView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.sina.weibo.view.PicTagView android:id="@id/picTagView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/gifWebViewStub" android:layout="@layout/vw_imageviewer_item_gif_stub" android:inflatedId="@id/gifWebView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0px" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center" android:id="@id/ivPicItemLoading" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.sina.weibo.view.RoundProgressBar android:id="@id/ivPreImage" android:background="@drawable/feed_image_loading" android:layout_width="56.0dip" android:layout_height="56.0dip" attr:rpbRoundColor="@android:color/transparent" attr:rpbRoundProgressColor="#b2ffffff" attr:rpbRoundWidth="10.0dip" attr:rpbStyle="FILL" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.view.CommonSearchView android:id="@id/search_groupchat_fans_searchbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/back_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_groupchat_fans_searchbar" />
+    <ListView android:id="@id/search_groupchat_fans_lv" android:fadingEdge="none" android:fadingEdgeLength="0.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:scrollingCache="false" android:layout_below="@id/search_groupchat_fans_searchbar" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="26.0dip" android:minHeight="26.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:layout_centerInParent="true">
+        <include android:id="@id/fr_people1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" layout="@layout/card_tiny_portrait_view" />
+        <include android:id="@id/fr_people2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" layout="@layout/card_tiny_portrait_view" />
+        <include android:id="@id/fr_people3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" layout="@layout/card_tiny_portrait_view" />
+        <include android:id="@id/fr_people4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" layout="@layout/card_tiny_portrait_view" />
+        <TextView android:textSize="12.0sp" android:layout_gravity="center_vertical" android:id="@id/tvDesc1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

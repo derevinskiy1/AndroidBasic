@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/lyWbcShow" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/lyQRcodePrompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/qrcode_card_margin" android:layout_marginTop="24.0dip" android:layout_marginRight="@dimen/qrcode_card_margin">
+                <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="228.0dip">
+                    <ImageView android:id="@id/ivQRcodeImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qrcode_image_loading" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <ImageView android:id="@id/ivPortrait" android:saveEnabled="true" android:layout_width="55.0dip" android:layout_height="55.0dip" android:src="@drawable/login_picture" android:scaleType="centerCrop" android:adjustViewBounds="false" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/ivPortraitDivider1" android:background="@drawable/divider_horizontal_timeline" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_toLeftOf="@id/ivPortrait" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/ivPortraitDivider2" android:background="@drawable/divider_horizontal_timeline" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_toRightOf="@id/ivPortrait" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/main_content_text_color" android:id="@id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/qrcode_name_margintop_size" android:layout_marginBottom="@dimen/qrcode_name_marginbottom_size" android:singleLine="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/main_content_subtitle_text_color" android:id="@id/tvQrcodePrompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/qrcode_prompt_marginbottom_size" android:text="@string/scan_qrcode" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lyMingpianPrompt" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/qrcode_cards_size" android:layout_marginLeft="@dimen/qrcode_card_margin" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/qrcode_card_margin">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/lyCamera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/ivCameraImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="@dimen/qrcode_card_marginbottom_size" android:src="@drawable/businesscard_icon_camera" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/main_content_text_color" android:layout_gravity="center_horizontal" android:id="@id/tvCamera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/capture_namecard" android:singleLine="true" />
+                </LinearLayout>
+                <ImageView android:id="@id/iv_divider1" android:layout_width="1.0dip" android:layout_height="60.0dip" android:src="@drawable/common_vertical_separator" android:scaleType="fitXY" />
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/lyContacts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip">
+                            <ImageView android:layout_gravity="center_horizontal" android:id="@id/ivContacts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/qrcode_card_marginbottom_size" android:src="@drawable/businesscard_icon_contacts" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/main_content_text_color" android:layout_gravity="center_horizontal" android:id="@id/tvContacts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/captured_cards" android:singleLine="true" />
+                        </LinearLayout>
+                        <TextView android:layout_gravity="right" android:id="@id/dottips" android:background="@drawable/text_new_badge" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+                    </FrameLayout>
+                </LinearLayout>
+                <ImageView android:id="@id/iv_divider2" android:layout_width="1.0dip" android:layout_height="60.0dip" android:src="@drawable/common_vertical_separator" android:scaleType="fitXY" />
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/lyCard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/ivCardImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/qrcode_card_marginbottom_size" android:src="@drawable/businesscard_icon_card" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/main_content_text_color" android:layout_gravity="center_horizontal" android:id="@id/tvCard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/getfriend_qrcode" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lyMingpianRequest" android:background="@drawable/common_card_code_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/qrcode_changecard_margintop_size" android:layout_marginLeft="@dimen/qrcode_card_margin" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/qrcode_card_margin">
+            <TextView android:textSize="15.0sp" android:textColor="@color/main_assistant_text_color" android:layout_gravity="center" android:id="@id/tvRequestCard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

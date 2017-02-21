@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.storm.ui.LayoutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/b"
+            android:gravity="center_horizontal"
+            android:text="布局的技巧"
+            android:textColor="#ff0000"/>
+
+        <!---LinearLayout自带分割线-->
+        <!--  Divider:用来定义一个drawable或color作为分割线。
+        showDividers:指定分割线在哪里显示，它们可以显示在开始位置，中间，末尾或者选择不显示。
+        Divider_Padding:给divider添加padding。-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:divider="@drawable/divider"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="美好"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="生活"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+
+
+        <com.example.storm.ui.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/c"/>
+
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ripple"
+            android:elevation="2dp"
+            android:text="Android5.0过渡动画"/>
+
+        <com.example.storm.ui.view.PathMeasureView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <com.example.storm.ui.view.PathView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <com.example.storm.ui.SwitchButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/oval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/oval"/>
+
+        <ListView
+            android:id="@+id/myList"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+
+        <!--<GridLayout-->
+        <!--android:id="@+id/gridLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--</GridLayout>-->
+
+
+        <com.example.storm.ui.view.AutoButton
+            android:id="@+id/auto_btn"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:background="@color/colorAccent"
+            android:text="确定"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/common_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/common_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="86.0dip" android:src="@drawable/verify_account_safe_icon" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/common_404_text" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/tv_verify_account_safe_msg" android:layout_width="224.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+        <Button android:textSize="17.0sp" android:textColor="@color/common_button_text" android:id="@id/bt_verify_accnout_safe_commit" android:background="@drawable/common_button_big_orange_bg" android:layout_width="fill_parent" android:layout_height="@dimen/new_regist_height_bt" android:layout_marginLeft="10.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="10.0dip" android:text="@string/verify_accnout_safe_commit" />
+    </LinearLayout>
+</ScrollView>

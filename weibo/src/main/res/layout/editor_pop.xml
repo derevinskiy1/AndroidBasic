@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/compose_popup_bg" android:padding="0.0dip" android:layout_width="280.0dip" android:layout_height="wrap_content" android:minHeight="150.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/edit_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/editlead_string" />
+        <EditText android:gravity="top" android:id="@id/edit_content" android:background="@drawable/compose_popup_input" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="85.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:minHeight="85.0dip" android:hint="@string/input_string" />
+        <TextView android:textSize="12.0sp" android:gravity="center" android:layout_gravity="right" android:id="@id/text_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="30.0dip" android:text="44" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:weightSum="2.0">
+            <TextView android:textColor="@color/main_button_text_color_for_light_color_button" android:gravity="center" android:id="@id/edit_cancel" android:background="@drawable/pop_dialog_btn_white_background" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/cancel_string" android:layout_weight="1.0" />
+            <TextView android:textColor="@color/pop_button_dialog_confirm_text_sel" android:gravity="center" android:id="@id/edit_sure" android:background="@drawable/pop_dialog_btn_orange_background" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/sure_string" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

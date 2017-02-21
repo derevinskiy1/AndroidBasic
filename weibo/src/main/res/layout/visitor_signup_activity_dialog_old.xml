@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:visibility="visible" layout="@layout/visitor_signup_dialog" />
+    <include android:visibility="gone" layout="@layout/visitor_sms_code_dialog" />
+    <TextView android:id="@id/tv_visitor_signup_cover" android:background="#00000000" android:visibility="gone" android:layout_width="270.0dip" android:layout_height="270.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ll_visitor_signup_loading" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/pb_visitor_signup_loading" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progressbar" />
+        <TextView android:gravity="center_vertical" android:id="@id/tv_visitor_signup_loading" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="2.0dip" android:text="@string/new_regist_confirm_registing" />
+    </LinearLayout>
+</FrameLayout>

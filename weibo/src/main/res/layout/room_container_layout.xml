@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:weibo="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/addcontent_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/closeimg" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/bulletscreen_icon_close" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/portrainlayout" android:layout_width="78.0dip" android:layout_height="78.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/ivPortraitRound" android:layout_width="78.0dip" android:layout_height="78.0dip" android:src="@drawable/userinfo_shadow_round" android:scaleType="fitXY" android:contentDescription="@null" />
+            <com.sina.weibo.view.RoundedImageView android:layout_gravity="center" android:id="@id/ivportrait" android:saveEnabled="true" android:layout_width="74.0dip" android:layout_height="74.0dip" android:scaleType="fitXY" android:adjustViewBounds="false" weibo:corner_radius="37.0dip" weibo:round_background="true" />
+        </FrameLayout>
+        <TextView android:textSize="16.0sp" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/livetext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="40.0dip" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/addcontent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" />
+    </LinearLayout>
+</RelativeLayout>

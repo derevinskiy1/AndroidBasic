@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/uxin_call_sdk_incall_backgroud_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/uxin_call_sdk_incall_layout_tips" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="15.0dip">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/uxin_call_sdk_layout_hide" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/uxin_call_sdk_incall_btn_retract_selector" />
+        </LinearLayout>
+        <TextView android:textSize="18.0sp" android:textColor="@color/uxin_call_sdk_in_come_message_top_text_color" android:gravity="center" android:id="@id/uxin_call_sdk_tv_incall_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uxin_call_sdk_incall_tips" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:layout_below="@id/uxin_call_sdk_incall_layout_tips">
+        <com.yx.widget.CircleImageView android:id="@id/uxin_call_sdk_iv_incall_head" android:layout_width="78.0dip" android:layout_height="78.0dip" android:src="@drawable/uxin_call_sdk_in_call_iv_head_default" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/uxin_call_sdk_in_come_phone_no_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/uxin_call_sdk_tv_incall_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="有信来电" android:singleLine="true" />
+            <ImageView android:id="@id/uxin_call_sdk_iv_incall_vip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/uxin_call_sdk_incall_iv_vip" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/uxin_call_sdk_in_come_phone_address_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/uxin_call_sdk_tv_incall_address" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="广东 深圳" android:singleLine="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/uxin_call_sdk_in_come_phone_state_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/uxin_call_sdk_tv_incall_time_state" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="39.0dip" android:text="接通中" android:singleLine="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/uxin_call_sdk_in_com_phone_prompt_text_color" android:id="@id/uxin_call_sdk_layout_net_change_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="39.0dip" android:text="@string/uxin_call_sdk_message_net_hint" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/uxin_call_sdk_in_com_phone_prompt_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/uxin_call_sdk_tv_not_wifi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="39.0dip" android:text="@string/uxin_call_sdk_incall_not_wifi_tips" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/uxin_call_sdk_layout_incall_mute" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/uxin_call_sdk_iv_incall_mute" android:background="@drawable/uxin_call_sdk_incall_btn_mute_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/uxin_call_sdk_in_come_mute_and_speaker_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/uxin_call_sdk_btn_text_mute" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/uxin_call_sdk_layout_incall_hangup" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/uxin_call_sdk_iv_incall_hangup" android:background="@drawable/uxin_call_sdk_incall_btn_hangup_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/uxin_call_sdk_in_come_hang_up_and_refuse_color" android:id="@id/uxin_call_sdk_refuse_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/uxin_call_sdk_btn_text_refuse" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/uxin_call_sdk_layout_incall_answer" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/uxin_call_sdk_iv_incall_answer" android:background="@drawable/uxin_call_sdk_incall_btn_answer_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/uxin_call_sdk_in_come_answer_text_color" android:id="@id/uxin_call_sdk_answer_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/uxin_call_sdk_btn_text_answer" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/uxin_call_sdk_layout_incall_speaker" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/uxin_call_sdk_iv_incall_speaker" android:background="@drawable/uxin_call_sdk_incall_btn_speaker_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/uxin_call_sdk_in_come_mute_and_speaker_text_color" android:id="@id/uxin_call_sdk_tv_incall_speaker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/uxin_call_sdk_btn_text_speaker" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

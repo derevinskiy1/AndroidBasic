@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/ll_recommend_header" android:background="@drawable/market_selector_recommend_item_background" android:paddingBottom="@dimen/market_recomment_item_distance_v" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_recommend_header_left" android:layout_width="0.0dip" android:layout_height="@dimen/market_recomment_card_img_height" android:layout_weight="2.0">
+        <ImageView android:id="@id/iv_left_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <View android:id="@id/iv_left_item_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/tv_left_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginBottom="7.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/rl_recommend_header_right" android:layout_width="0.0dip" android:layout_height="@dimen/market_recomment_card_img_height" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/fl_right1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/iv_right_item1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <View android:id="@id/iv_right_item1_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_right_item1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/fl_right2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/iv_right_item2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <View android:id="@id/iv_right_item2_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_right_item2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

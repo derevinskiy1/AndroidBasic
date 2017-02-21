@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/settings_margin_top" android:paddingBottom="@dimen/settings_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/privacyLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height">
+            <TextView android:gravity="center_vertical" android:id="@id/privacyContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_set" android:layout_centerVertical="true" style="@style/SettingMainText" />
+            <ImageView android:gravity="center" android:id="@id/privacyArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/blockLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top" android:layout_marginTop="@dimen/settings_margin_top">
+            <TextView android:gravity="center_vertical" android:id="@id/blockText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_block" android:layout_centerVertical="true" style="@style/SettingMainText" />
+            <ImageView android:id="@id/blockArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:src="@drawable/common_icon_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/divider2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/blockWeiboLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top">
+            <TextView android:gravity="center_vertical" android:id="@id/blockWeiboText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_bolck_weibo" android:layout_centerVertical="true" style="@style/SettingMainText" />
+            <ImageView android:id="@id/blockWeiboArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:src="@drawable/common_icon_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/blacklistLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height" android:layout_marginTop="@dimen/settings_margin_top">
+            <TextView android:gravity="center_vertical" android:id="@id/blacklistText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/settings_item_padding_left" android:text="@string/setting_blacklist" android:layout_centerVertical="true" style="@style/SettingMainText" />
+            <ImageView android:id="@id/blacklistArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:src="@drawable/common_icon_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/divider1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TabWidget android:orientation="horizontal" android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="@dimen/ivtype_mark_width" android:layout_weight="0.0" android:showDividers="none" />
+            <FrameLayout android:id="@android:id/tabcontent" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="0.0" />
+            <com.sina.weibo.PagerControl android:layout_gravity="bottom" android:id="@id/fragment_pagerControl" android:layout_width="fill_parent" android:layout_height="@dimen/tab_padding_bottom" android:layout_marginTop="-2.0dip" />
+            <ImageView android:id="@id/divider3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <com.sina.weibo.view.GoodsViewPager android:id="@id/fragment_answer_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ImageView android:id="@id/divider2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <RelativeLayout android:gravity="center" android:id="@id/createbtn_container" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_one_line_small_height">
+                <ImageView android:id="@id/create_goods_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/about_phone_textsize" android:id="@id/create_goods_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/contacts_addgroup_padding" android:text="@string/product_composer_choose_create_item" android:layout_toRightOf="@id/create_goods_iv" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrMore" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/settings_margin_top" android:paddingBottom="@dimen/settings_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/accountGroupLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/accountLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top">
+                <TextView android:gravity="center_vertical" android:id="@id/accountContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/weibo_account_manage" android:layout_centerVertical="true" style="@style/SettingMainText" />
+                <ImageView android:gravity="center" android:id="@id/accountLayout_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <RelativeLayout android:id="@id/lyPortrait" android:visibility="gone" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginRight="@dimen/settings_item_padding_left" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <com.sina.weibo.view.RoundedImageView android:id="@id/ivPortrait" android:saveEnabled="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:scaleType="centerCrop" android:adjustViewBounds="false" weibo:corner_radius="2.0dip" />
+                    <ImageView android:id="@id/newDot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_dot" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <ImageView android:id="@id/divder_account" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/accountSafeLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top">
+                <TextView android:gravity="center_vertical" android:id="@id/accountSafeContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_safe" android:layout_centerVertical="true" style="@style/SettingMainText" />
+                <ImageView android:gravity="center" android:id="@id/accountSafeArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/skinListLayout" android:paddingRight="@dimen/settings_item_padding_right" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top" android:layout_marginTop="@dimen/settings_margin_top">
+            <TextView android:gravity="center_vertical" android:id="@id/skinListContent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/skin_list" android:layout_weight="1.0" style="@style/SettingMainText" />
+            <ImageView android:id="@id/iv_new_skin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" />
+            <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/tvThemeName" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_text_padding_right" android:minWidth="18.0dip" android:minHeight="19.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="@dimen/settings_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/remindLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top">
+                <TextView android:gravity="center_vertical" android:id="@id/remindContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pref_outter_setting_title" android:layout_centerVertical="true" style="@style/SettingMainText" />
+                <ImageView android:gravity="center" android:id="@id/remindLayout_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/divider21" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <RelativeLayout android:id="@id/privacyAndSafe" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_middle">
+                <TextView android:gravity="center_vertical" android:id="@id/privacyAndSafeContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_and_safe" android:layout_centerVertical="true" style="@style/SettingMainText" />
+                <ImageView android:gravity="center" android:id="@id/privacyAndSafeArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/divider22" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <RelativeLayout android:id="@id/commonSettingLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top">
+                <TextView android:gravity="center_vertical" android:id="@id/commonSettingContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_title_generic_setting" android:layout_centerVertical="true" style="@style/SettingMainText" />
+                <ImageView android:gravity="center" android:id="@id/commonSetting_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="@dimen/settings_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/feedBackLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top">
+                <TextView android:gravity="center_vertical" android:id="@id/feedBackContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/weibo_feedback" android:layout_centerVertical="true" style="@style/SettingMainText" />
+                <ImageView android:gravity="center" android:id="@id/feedBackLayout_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/divider4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <RelativeLayout android:id="@id/moreAboutLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top">
+                <TextView android:gravity="center_vertical" android:id="@id/moreAboutContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_about" android:layout_centerVertical="true" style="@style/SettingMainText" />
+                <TextView android:textSize="12.0sp" android:id="@id/moreAboutNew" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <ImageView android:gravity="center" android:id="@id/moreAboutLayout_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="@dimen/settings_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/nightSkinLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top">
+                <TextView android:gravity="center_vertical" android:id="@id/nightSkinContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/skin_menu_night" android:layout_centerVertical="true" style="@style/SettingMainText" />
+                <com.sina.weibo.view.SwitchButton android:id="@id/nightModeCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_text_padding_right" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/divider3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <RelativeLayout android:id="@id/cleanCacheLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_middle">
+                <TextView android:gravity="center_vertical" android:id="@id/cleanCacheContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/preferences_clear_cache_title" android:layout_centerVertical="true" style="@style/SettingMainText" />
+                <ImageView android:gravity="center" android:id="@id/cleancache_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:gravity="center" android:id="@id/cleanCacheSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:layout_toLeftOf="@id/cleancache_arrow" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/exitAccountLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height" android:layout_marginTop="@dimen/settings_margin_top">
+            <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/exitAccountContent" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exit_weibo" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

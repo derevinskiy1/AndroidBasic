@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/goods_item_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_goods" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+    <ImageView android:id="@id/iv_goods_cover" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+    <LinearLayout android:orientation="vertical" android:id="@id/goods_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/iv_goods">
+        <TextView android:textSize="@dimen/about_phone_textsize" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fragment_toolbar_tab_long_padding" android:layout_marginTop="@dimen/fragment_toolbar_tab_long_padding" android:layout_marginRight="@dimen/fragment_toolbar_tab_long_padding" android:lines="2" android:includeFontPadding="false" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fragment_toolbar_tab_long_padding" android:layout_marginTop="@dimen/mst_toast_padding_icon_left" android:layout_marginBottom="@dimen/fragment_toolbar_tab_long_padding">
+            <TextView android:textSize="@dimen/about_phone_textsize" android:id="@id/tv_price_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+            <TextView android:textSize="@dimen/font_size_small" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/toolbar_padding_top" android:includeFontPadding="false" android:layout_toRightOf="@id/tv_price_tag" android:layout_alignBaseline="@id/tv_price_tag" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/iv_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tab_padding_bottom" android:layout_marginRight="@dimen/tab_padding_bottom" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/app_name" />
+    <ImageView android:id="@id/iv_checked" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tab_padding_bottom" android:layout_marginRight="@dimen/tab_padding_bottom" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/app_name" />
+    <RelativeLayout android:id="@id/soldout_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

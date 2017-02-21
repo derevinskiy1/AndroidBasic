@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="@color/main_content_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/comment_del_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="99.0dip" android:lineSpacingExtra="@dimen/prompt_dialog_content_line_space" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/block_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/is_block_commenter" android:layout_width="18.0dip" android:layout_height="19.0dip" android:scaleType="fitXY" />
+        <TextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/block_commenter_message" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/delete_comment_and_block" />
+    </LinearLayout>
+</LinearLayout>

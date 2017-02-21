@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/market_sng_comm_progress_dlg_layout" android:background="@drawable/progresshud_background" android:paddingTop="@dimen/market_sng_comm_progress_dlg_layout_padding" android:paddingBottom="@dimen/market_sng_comm_progress_dlg_layout_padding" android:layout_width="@dimen/market_sng_comm_progress_dlg_layout_width" android:layout_height="@dimen/market_sng_comm_progress_dlg_layout_height">
+        <ProgressBar android:id="@id/market_sng_comm_progress_dlg_pbar" android:layout_width="@dimen/market_sng_comm_progress_dlg_progressBar_size" android:layout_height="@dimen/market_sng_comm_progress_dlg_progressBar_size" android:indeterminate="false" android:indeterminateDrawable="@anim/new_progressbar_style" />
+        <TextView android:textSize="@dimen/market_sng_comm_progress_dlg_text_size" android:gravity="center" android:id="@id/market_sng_comm_progress_dlg_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/market_sng_comm_progress_dlg_text_margin_top" android:text="@string/market_sng_giftbag_dlg_loadding" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

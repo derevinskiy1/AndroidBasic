@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/menu_exit" android:id="@id/main_search" android:title="@string/exit" />
+    <item android:icon="@drawable/switchuser" android:id="@id/main_switchuser" android:title="@string/weibo_account_manage" />
+    <item android:icon="@drawable/setting" android:id="@id/main_settings" android:title="@string/menu_settings" />
+    <item android:icon="@drawable/officialweibo" android:id="@id/main_officialweibo" android:title="@string/weibo_officialweibo" />
+    <item android:icon="@drawable/night_mode" android:id="@id/main_night" android:title="@string/skin_menu_night" />
+    <item android:icon="@drawable/sun_mode" android:id="@id/main_night_close" android:title="@string/skin_menu_night_close" />
+    <item android:icon="@drawable/aboutweibo" android:id="@id/main_about" android:title="@string/weibo_about" />
+    <item android:icon="@drawable/feedback" android:id="@id/main_feedback" android:title="@string/weibo_feedback" />
+</menu>

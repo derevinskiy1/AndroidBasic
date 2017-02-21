@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.view.ImageSquareGrideView android:scrollbarStyle="outsideOverlay" android:id="@id/photo_album_gridview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="-1.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="-1.0dip" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:scrollingCache="false" android:cacheColorHint="@null" android:horizontalSpacing="4.0dip" android:verticalSpacing="4.0dip" android:stretchMode="columnWidth" android:fastScrollEnabled="false" />
+    <View android:id="@id/photo_album_bucket_bottom" android:background="@color/photo_album_pop_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/baselayout_title_height" android:layout_alignParentBottom="true" />
+    <FrameLayout android:id="@id/photo_album_bucket" android:paddingTop="@dimen/baselayout_title_height" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/photo_album_pop_bottom_height">
+        <ListView android:id="@id/photo_album_listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:scrollingCache="false" android:cacheColorHint="@null" android:divider="@null" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+    </FrameLayout>
+    <com.sina.weibo.photoalbum.view.PhotoalbumToolbar android:id="@id/photoalbum_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/photo_album_title_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/photoalbum_toolbar" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/photo_album_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <TextView android:textSize="24.0sp" android:gravity="center" android:id="@id/photo_album_empty_text" android:paddingLeft="35.0dip" android:paddingRight="35.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+        <TextView android:textSize="15.0sp" android:gravity="center" android:id="@id/photo_album_empty_sub_text" android:paddingLeft="35.0dip" android:paddingRight="35.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ViewStub android:id="@id/viewstub_album_bottom_bar" android:layout="@layout/album_bottom_bar" android:layout_width="fill_parent" android:layout_height="@dimen/pic_filter_top_height" android:layout_alignParentBottom="true" />
+    <View android:id="@id/empty_title" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/pic_filter_top_height" android:layout_alignParentTop="true" />
+    <View android:id="@id/empty_bottom" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/pic_filter_top_height" android:layout_alignParentBottom="true" />
+</RelativeLayout>

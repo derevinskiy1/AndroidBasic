@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_school" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_item_margin">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_schoolname" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="72.0dip" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/main_content_button_text_color" android:id="@id/tv_titleschoolname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/school_name" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/main_highlight_text_color" android:id="@id/tv_titlemar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/mar" />
+                </LinearLayout>
+                <AutoCompleteTextView android:textSize="15.0sp" android:textColor="@color/main_content_text_color" android:id="@id/et_contentschoolname" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:hint="@string/school_name_hint" android:popupBackground="@drawable/login_background_more" android:imeOptions="actionDone" />
+            </LinearLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_other" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_item_margin">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_enrolltime" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                            <TextView android:textSize="15.0sp" android:textColor="@color/main_content_button_text_color" android:id="@id/tv_titleenrolltime" android:layout_width="72.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/enroll_time" android:singleLine="true" />
+                            <TextView android:textSize="15.0sp" android:textColor="@color/main_content_text_color" android:gravity="center_vertical" android:id="@id/tv_enrolltime" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:hint="@string/please_choose" />
+                        </LinearLayout>
+                        <ImageView android:id="@id/iv_divider2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_department" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                            <TextView android:textSize="15.0sp" android:textColor="@color/main_content_button_text_color" android:id="@id/tv_titledepartment" android:layout_width="72.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/department" />
+                            <EditText android:textSize="15.0sp" android:textColor="@color/main_content_text_color" android:id="@id/et_contentdepartment" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:hint="@string/department_hint" android:imeOptions="actionDone" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/ll_delinfo" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_item_margin">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="15.0sp" android:textColor="@color/main_highlight_text_color" android:id="@id/tv_delinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/del_educationinfo" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_hint" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:gravity="center_vertical" android:id="@id/tv_suggest1" android:paddingLeft="109.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="44.0dip" android:singleLine="true" />
+                    <TextView android:textSize="15.0sp" android:gravity="center_vertical" android:id="@id/tv_suggest2" android:paddingLeft="109.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="44.0dip" android:singleLine="true" />
+                    <TextView android:textSize="15.0sp" android:gravity="center_vertical" android:id="@id/tv_suggest3" android:paddingLeft="109.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="44.0dip" android:singleLine="true" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

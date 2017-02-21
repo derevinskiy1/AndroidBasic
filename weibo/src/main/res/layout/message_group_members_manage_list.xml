@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.view.GroupSearchView android:id="@id/vSerachView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ListView android:id="@id/message_group_members_manage_listview" android:fadingEdge="none" android:fadingEdgeLength="0.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:scrollingCache="false" android:divider="@android:color/transparent" android:dividerHeight="10.0dip" />
+</LinearLayout>

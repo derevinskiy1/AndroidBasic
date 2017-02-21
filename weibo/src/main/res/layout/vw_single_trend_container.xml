@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.feed.view.MBlogTextView android:textSize="13.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvVerticalTrendsTitle" android:paddingLeft="@dimen/timeline_padding_left" android:paddingRight="@dimen/timeline_padding_right" android:layout_width="fill_parent" android:layout_height="@dimen/timeline_title_height" android:singleLine="true" />
+    <ImageView android:id="@id/ivTrendShowMenu" android:paddingLeft="@dimen/mblogitem_showmenu_btn_padding_left" android:paddingTop="@dimen/mblogitem_showmenu_btn_padding_top_with_title" android:paddingRight="@dimen/mblogitem_showmenu_btn_padding_right" android:paddingBottom="@dimen/mblogitem_showmenu_btn_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feed_card_navigationbar_more_icon" android:layout_alignParentRight="true" />
+</merge>

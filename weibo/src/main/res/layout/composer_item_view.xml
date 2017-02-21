@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/composer_item_image" android:background="#00ffffff" android:layout_width="@dimen/composer_panel_icon_width" android:layout_height="@dimen/composer_panel_icon_height" android:src="@drawable/tabbar_compose_notloaded" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/compose_tabbar_text_color" android:gravity="center" android:id="@id/composer_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="text" android:shadowColor="@null" />
+</merge>

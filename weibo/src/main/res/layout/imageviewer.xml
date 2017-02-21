@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ryIvRootView" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.view.CustomViewPager android:id="@id/picPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/tvPicBg" android:background="@drawable/preview_mask" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:gravity="center_vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tvPicIndex" android:background="@drawable/preview_number_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="80.0dip" android:minHeight="30.0dip" android:shadowColor="#ff4c4c4c" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="0.5" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/ivPicTitleBarRight" android:background="@drawable/userinfo_navigationbar_small_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/userinfo_navigationbar_more_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/lyPicFromParent" android:paddingLeft="14.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/tvPicFrom" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#ff4c4c4c" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="0.5" android:layout_weight="1.0" />
+            <ImageView android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/preview_goarrows_icon" android:layout_weight="0.0" />
+        </LinearLayout>
+        <ImageView android:id="@id/ivPreviewLine" android:background="@drawable/preview_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ryBars" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lyPicSaveOriginal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btSaveLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="64.0dip">
+                    <TextView android:textSize="15.0dip" android:textColor="@color/imageviewer_btn_text_color_selector" android:gravity="center" android:id="@id/btIvSave" android:background="@drawable/preview_button_bg" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/imageviewer_save" android:singleLine="true" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btOriginalLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="64.0dip">
+                    <TextView android:textSize="15.0dip" android:textColor="@color/imageviewer_btn_text_color_selector" android:gravity="center" android:id="@id/btIvOriginal" android:background="@drawable/preview_button_bg" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/imageviewer_original" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/lyPicObject" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btPicTagLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="64.0dip">
+                    <ImageView android:id="@id/btIvPicTag" android:background="@drawable/preview_button_bg" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/preview_tag_icon_selector" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btCommentNumberLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="64.0dip">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/preview_button_bg" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="64.0dip">
+                        <ImageView android:id="@id/ivCommentNumber" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/preview_comment_icon_selector" />
+                        <TextView android:textSize="15.0dip" android:textColor="@color/imageviewer_btn_text_color_selector" android:gravity="center" android:id="@id/tvCommentNumber" android:paddingLeft="2.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btLikeLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="64.0dip">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/preview_button_bg" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="64.0dip">
+                        <ImageView android:id="@id/ivLike" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/preview_unlike_btn" />
+                        <TextView android:textSize="15.0dip" android:textColor="@color/imageviewer_btn_text_color_selector" android:gravity="center" android:id="@id/tvLike" android:paddingLeft="2.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notice_good" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ZoomControls android:orientation="horizontal" android:id="@id/zcZooms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/imageViewerGuide" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:layout_centerInParent="true">
+        <ImageView android:id="@id/imageViewerGuideLeft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/preview_arrowleft_icon" />
+        <ImageView android:id="@id/imageViewerGuideRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/preview_arrowright_icon" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

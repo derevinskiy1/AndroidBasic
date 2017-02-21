@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.composerinde.element.view.GroupElementView android:id="@id/element_group" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="15.0sp" android:ellipsize="end" android:gravity="center" android:id="@id/input_limit" android:focusable="true" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:maxEms="3" android:singleLine="true" android:layout_toLeftOf="@id/element_group" android:layout_centerVertical="true" android:contentDescription="@string/new_label" />
+    <com.sina.weibo.composerinde.element.view.LocationElementView android:id="@id/element_location" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/compose_locaiton_marginleft" android:layout_toLeftOf="@id/input_limit" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+</RelativeLayout>

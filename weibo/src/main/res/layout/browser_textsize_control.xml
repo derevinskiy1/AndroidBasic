@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/content" android:background="@drawable/menu_icon_background" android:layout_width="fill_parent" android:layout_height="@dimen/infopage_control_size_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="right" android:id="@id/small_ly" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/text_size_small" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/middle_ly" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageButton android:layout_gravity="center" android:id="@id/text_size_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/larger_ly" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageButton android:layout_gravity="left" android:id="@id/text_size_larger" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

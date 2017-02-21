@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/edit_pic_view_pager_item" android:layout_width="fill_parent" android:layout_height="186.0dip" android:scaleType="centerCrop" />
+    <RelativeLayout android:id="@id/author_contentview" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/main_content_text_color" android:gravity="center" android:id="@id/filter_dialog_author_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="滤镜作者:" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/main_content_text_color" android:gravity="center" android:id="@id/filter_dialog_author_name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:text="新浪微博官方提供" android:layout_toRightOf="@id/filter_dialog_author_view" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/main_content_split_line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:id="@id/desc_contentview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="44.0dip">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/main_content_text_color" android:gravity="center" android:id="@id/filter_dialog_desc_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="滤镜描述:" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/main_content_text_color" android:gravity="center" android:id="@id/filter_dialog_detail_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:singleLine="true" android:layout_toRightOf="@id/filter_dialog_desc_view" android:layout_alignTop="@id/filter_dialog_desc_view" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/main_button_text_color_for_deep_color_button" android:gravity="center" android:id="@id/filter_dialog_click_view" android:background="@drawable/common_button_big_green_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="20.0dip" android:text="免费" />
+</LinearLayout>

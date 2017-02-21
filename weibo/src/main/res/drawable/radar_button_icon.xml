@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transition
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/radar_button_icon_scan" android:drawable="@drawable/radar_button_icon_scan" />
+    <item android:id="@id/radar_button_icon_scaning" android:drawable="@drawable/radar_button_icon_scaning" />
+</transition>

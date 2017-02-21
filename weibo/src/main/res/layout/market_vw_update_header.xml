@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_header_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/download_mgr" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/market_vw_group_view" />
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/header_layout" android:background="@drawable/market_app_list_title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/market_list_header_layout_height">
+        <TextView android:textSize="@dimen/market_group_title_size" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/header_title" android:paddingLeft="@dimen/market_group_title_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="可升级(0)" android:layout_alignParentLeft="true" />
+        <RelativeLayout android:id="@id/update_header_all_update_layout" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/update_header_update_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/market_icon_upadet_header_update" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:layout_gravity="center_vertical" android:id="@id/update_header_all_update_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/market_update_header_all" android:layout_toRightOf="@id/update_header_update_icon" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

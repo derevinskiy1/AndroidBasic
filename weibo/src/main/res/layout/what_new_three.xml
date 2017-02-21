@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/start_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tv_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/new_feature" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/iv_navigater_clickable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="83.0dip" android:src="@drawable/new_feture_btn" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/iv_navigater_ets_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_feature_red_packets_logo" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

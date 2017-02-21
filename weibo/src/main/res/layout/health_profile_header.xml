@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/common_card_background" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="80.0dip">
+        <com.sina.weibo.view.PortraitView android:id="@id/portraitView" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_gray_33" android:id="@id/nameView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/common_gray_93" android:gravity="center_vertical" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/health_profile_today_sport_info" />
+    <RelativeLayout android:background="@drawable/common_card_top_background" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="53.0dip">
+        <TextView android:textSize="24.0sp" android:textColor="@color/common_gray_33" android:id="@id/scoreView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_33" android:id="@id/scoreUnitView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unit_dash_chart_number" android:layout_toRightOf="@id/scoreView" android:layout_alignBaseline="@id/scoreView" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_93" android:gravity="right" android:id="@id/sloganView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_toRightOf="@id/scoreUnitView" android:layout_centerVertical="true" />
+        <View android:background="@drawable/health_common_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/common_card_middle_background" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="53.0dip">
+        <TextView android:textSize="24.0sp" android:textColor="@color/common_gray_33" android:id="@id/stepValueView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_33" android:id="@id/stepUnitView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unit_step_count" android:layout_toRightOf="@id/stepValueView" android:layout_alignBaseline="@id/stepValueView" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_93" android:id="@id/distanceView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="@drawable/health_common_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/common_card_bottom_background" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="53.0dip">
+        <TextView android:textSize="24.0sp" android:textColor="@color/common_gray_33" android:id="@id/caloriesValueView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_33" android:id="@id/caloriesUnitView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unit_calorie" android:layout_toRightOf="@id/caloriesValueView" android:layout_alignBaseline="@id/caloriesValueView" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_93" android:id="@id/caloriesDescView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/common_gray_93" android:gravity="center_vertical" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/health_profile_total_sport_info" />
+    <RelativeLayout android:background="@drawable/common_card_middle_background" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="53.0dip">
+        <TextView android:textSize="24.0sp" android:textColor="@color/common_gray_33" android:id="@id/totalStepValueView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_33" android:id="@id/totalStepUnitView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unit_step_count" android:layout_toRightOf="@id/totalStepValueView" android:layout_alignBaseline="@id/totalStepValueView" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_93" android:id="@id/totalDistanceView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="@drawable/health_common_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/common_card_bottom_background" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="53.0dip">
+        <TextView android:textSize="24.0sp" android:textColor="@color/common_gray_33" android:id="@id/totalCaloriesValueView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_33" android:id="@id/totalCaloriesUnitView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unit_calorie" android:layout_toRightOf="@id/totalCaloriesValueView" android:layout_alignBaseline="@id/totalCaloriesValueView" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_93" android:id="@id/totalCaloriesDescView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/common_gray_93" android:gravity="center_vertical" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/health_profile_achieved_medals" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/mScroll" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.sina.weibo">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/source_margin_top" android:paddingBottom="@dimen/source_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/mBlogItemViewDemo" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/divider1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <RelativeLayout android:id="@id/editSource" android:layout_width="fill_parent" android:layout_height="@dimen/source_card_height" />
+        <ImageView android:id="@id/divider2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <ListView android:id="@id/mWeibotailList" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@drawable/divider_horizontal_timeline" />
+        <ListView android:id="@id/mCardList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@null" />
+    </LinearLayout>
+</ScrollView>

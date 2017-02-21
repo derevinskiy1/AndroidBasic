@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/about_rel" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.utils.CustomScrollView android:id="@id/scrollviewcontainer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/verticalScrollArea" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/gotobottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="到底部" android:layout_weight="1.0" />
+                    <Button android:id="@id/pageup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="上一页" android:layout_weight="1.0" />
+                </LinearLayout>
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/logcontent" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/gototop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="到顶部" android:layout_weight="1.0" />
+                    <TextView android:textColor="#ff000000" android:id="@id/pagenum" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <Button android:id="@id/pagedown" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="下一页" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <HorizontalScrollView android:id="@id/HScrollview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <Button android:id="@id/HS_pageup" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="上一页" />
+                    </LinearLayout>
+                    <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/HS_logcontent" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="#ff000000" android:id="@id/HS_pagenum" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <Button android:id="@id/HS_pagedown" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="下一页" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </com.sina.weibo.utils.CustomScrollView>
+</LinearLayout>

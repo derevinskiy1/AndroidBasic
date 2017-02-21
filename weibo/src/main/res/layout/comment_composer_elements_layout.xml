@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.composerinde.element.view.EditBoxElementView android:id="@id/element_editbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="3.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_addition_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <com.sina.weibo.composerinde.element.view.VideoElementView android:id="@id/element_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginBottom="7.0dip" />
+        <com.sina.weibo.composerinde.element.view.PicElementView android:id="@id/element_pic" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.sina.weibo.composerinde.element.view.WeiboElementView android:id="@id/element_weibo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/lvFollow" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:scrollingCache="false" android:divider="@null" android:dividerHeight="0.0dip" />
+        <com.sina.weibo.view.LetterIndexBar android:textSize="12.0sp" android:layout_gravity="right" android:id="@id/libIndex" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <com.sina.weibo.view.CommonSearchView android:id="@id/search_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

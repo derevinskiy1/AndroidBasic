@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingTop="@dimen/baselayout_title_height" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:picker="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_93" android:gravity="center" android:id="@id/profile_setting_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/health_guide_title" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.sina.weibo.hc.view.GenderPicker android:id="@id/profile_setting_gender" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/profile_setting_birth_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:id="@id/profile_setting_birth_image" android:background="@drawable/health_guide_woman" android:layout_width="74.0dip" android:layout_height="212.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_63" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_guide_set_birth" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_93" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_guide_birth_year" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <View android:background="@drawable/health_horizontal_picker_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <com.sina.weibo.hc.view.DatePickerView android:textSize="14.0sp" android:textColor="@color/health_picker_text_color" android:id="@id/profile_setting_birth_year" android:background="@drawable/health_horizontal_picker_bg" android:layout_width="fill_parent" android:layout_height="64.0dip" />
+                <View android:background="@drawable/health_horizontal_picker_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/profile_setting_height_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/profile_setting_height_image_part" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <View android:id="@id/profile_setting_height_image" android:background="@drawable/health_guide_woman" android:layout_width="74.0dip" android:layout_height="212.0dip" />
+                <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="10.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_63" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_guide_set_height" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_93" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_guide_height_unit" />
+                </LinearLayout>
+                <View android:layout_width="1.0dip" android:layout_height="66.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/profile_setting_height_image_part" android:layout_alignTop="@id/profile_setting_height_image_part">
+                <LinearLayout android:orientation="horizontal" android:layout_width="64.0dip" android:layout_height="290.0dip">
+                    <View android:background="@drawable/health_vertical_picker_line" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <com.sina.weibo.hc.view.HeightPickerView android:textSize="14.0sp" android:textColor="@color/health_picker_text_color" android:id="@id/profile_setting_height" android:background="@drawable/health_vertical_picker_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" picker:sideItems="3" />
+                    <View android:background="@drawable/health_vertical_picker_line" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/profile_setting_weight_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:id="@id/profile_setting_weight_image" android:background="@drawable/health_guide_woman" android:layout_width="74.0dip" android:layout_height="212.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="16.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_63" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_guide_set_weight" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_93" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_guide_weight_unit" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <View android:background="@drawable/health_horizontal_picker_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <com.sina.weibo.hc.view.WeightPickerView android:textSize="14.0sp" android:textColor="@color/health_picker_text_color" android:id="@id/profile_setting_weight" android:background="@drawable/health_horizontal_picker_bg" android:layout_width="fill_parent" android:layout_height="64.0dip" />
+                <View android:background="@drawable/health_horizontal_picker_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip">
+        <LinearLayout android:id="@id/profile_setting_control" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <Button android:textSize="16.0sp" android:textColor="@color/health_button_orange_text_color" android:gravity="center" android:id="@id/profile_setting_pre" android:background="@drawable/health_circle_button_orange" android:layout_width="106.0dip" android:layout_height="40.0dip" android:layout_marginRight="48.0dip" android:text="@string/health_button_previous" />
+            <Button android:textSize="16.0sp" android:textColor="@color/health_button_orange_text_color" android:gravity="center" android:id="@id/profile_setting_next" android:background="@drawable/health_circle_button_orange" android:layout_width="106.0dip" android:layout_height="40.0dip" android:text="@string/health_button_next" />
+        </LinearLayout>
+        <Button android:textSize="18.0sp" android:textColor="@color/health_button_orange_text_color" android:gravity="center" android:id="@id/profile_setting_stone" android:background="@drawable/health_circle_button_orange_big" android:visibility="gone" android:layout_width="210.0dip" android:layout_height="46.0dip" android:text="@string/health_button_next" />
+    </LinearLayout>
+</LinearLayout>

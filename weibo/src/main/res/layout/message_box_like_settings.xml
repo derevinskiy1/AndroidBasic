@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/likeInnerSettingsLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top" android:layout_marginTop="@dimen/settings_margin_top">
+            <TextView android:gravity="center_vertical" android:id="@id/likeInnerSettingsText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pref_inner_setting_title" android:layout_centerVertical="true" style="@style/SettingMainText" />
+            <com.sina.weibo.view.SwitchButton android:id="@id/likeInnerSettingsCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:id="@id/hint1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pref_inner_setting_hint" style="@style/SettingExplainText" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/likeInnerSettingsLayout2" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top" android:layout_marginTop="@dimen/settings_margin_top">
+            <TextView android:gravity="center_vertical" android:id="@id/likeInnerSettingsText2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pref_inner_setting_like_from_message2" android:layout_centerVertical="true" style="@style/SettingMainText" />
+            <com.sina.weibo.view.SwitchButton android:id="@id/likeInnerSettingsCheckBox2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:id="@id/hint2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/message_box_like_setting_inner_hint3" style="@style/SettingExplainText" />
+    </LinearLayout>
+</ScrollView>

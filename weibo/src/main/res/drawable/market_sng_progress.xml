@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <clip android:drawable="@drawable/market_sng_download_btn" />
+    </item>
+    <item android:id="@android:id/progress">
+        <clip android:drawable="@drawable/market_sng_download_btn_click" />
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip android:drawable="@drawable/market_sng_download_btn_click" />
+    </item>
+</layer-list>

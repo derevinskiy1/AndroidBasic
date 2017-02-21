@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/v_line" android:background="@drawable/common_horizontal_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/main_content_text_color" android:ellipsize="marquee" android:gravity="center" android:id="@id/tv_dialog_item" android:layout_width="fill_parent" android:layout_height="49.0dip" android:singleLine="true" />
+</LinearLayout>

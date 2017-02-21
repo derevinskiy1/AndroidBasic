@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/userinfo_membership_level1_bg" android:maxLevel="1" />
+    <item android:drawable="@drawable/userinfo_membership_level2_bg" android:maxLevel="2" />
+    <item android:drawable="@drawable/userinfo_membership_level3_bg" android:maxLevel="3" />
+    <item android:drawable="@drawable/userinfo_membership_level4_bg" android:maxLevel="4" />
+    <item android:drawable="@drawable/userinfo_membership_level5_bg" android:maxLevel="5" />
+    <item android:drawable="@drawable/userinfo_membership_level6_bg" android:maxLevel="6" />
+    <item android:drawable="@drawable/userinfo_membership_bg" android:maxLevel="100" />
+</level-list>

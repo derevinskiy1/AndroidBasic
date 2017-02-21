@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivEmptyGuidePic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:src="@drawable/empty_default" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/tvEmptyGuidePrompt" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_below="@id/ivEmptyGuidePic" android:layout_centerHorizontal="true" android:lineSpacingMultiplier="1.1" />
+    <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btEmptyGuideFirst" android:layout_width="240.0dip" android:layout_height="46.0dip" android:layout_marginTop="34.0dip" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_below="@id/tvEmptyGuidePrompt" android:layout_centerHorizontal="true" android:lineSpacingMultiplier="1.1" />
+    <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btEmptyGuideSecond" android:layout_width="240.0dip" android:layout_height="46.0dip" android:layout_marginTop="12.0dip" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_below="@id/btEmptyGuideFirst" android:layout_centerHorizontal="true" android:lineSpacingMultiplier="1.1" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.card.view.CommonCardTitleView android:id="@id/common_title" android:layout_width="fill_parent" android:layout_height="26.0dip" />
+    <LinearLayout android:id="@id/usergroup" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_below="@id/common_title">
+        <include android:id="@id/fr_people1" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/page_people_recommend_view" />
+        <include android:id="@id/fr_people2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" layout="@layout/page_people_recommend_view" />
+        <include android:id="@id/fr_people3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" layout="@layout/page_people_recommend_view" />
+        <include android:id="@id/fr_people4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" layout="@layout/page_people_recommend_view" />
+    </LinearLayout>
+</RelativeLayout>

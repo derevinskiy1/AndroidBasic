@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:weibo="http://schemas.android.com/apk/res-auto">
+    <com.sina.weibo.feed.view.MBlogTextView android:textSize="13.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvTrendsTitle" android:paddingLeft="@dimen/timeline_padding_left" android:paddingRight="@dimen/timeline_padding_right" android:layout_width="fill_parent" android:layout_height="@dimen/timeline_title_height" android:singleLine="true" />
+    <com.sina.weibo.page.view.trend.BounceBackViewPager android:id="@id/viewPagerTrends" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tvTrendsTitle" />
+    <ImageView android:id="@id/ivTrendShowMenu" android:paddingLeft="@dimen/mblogitem_showmenu_btn_padding_left" android:paddingTop="@dimen/mblogitem_showmenu_btn_padding_top_with_title" android:paddingRight="@dimen/mblogitem_showmenu_btn_padding_right" android:paddingBottom="@dimen/mblogitem_showmenu_btn_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feed_card_navigationbar_more_icon" android:layout_alignParentRight="true" />
+    <com.sina.weibo.page.view.TrendIndicateView android:id="@id/trend_indicator" android:paddingTop="8.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/viewPagerTrends" weibo:indicate_padding="4.0dip" />
+</merge>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="120.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/uxin_call_sdk_big_top_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/uxin_call_sdk_notify_big_iv_head" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/uxin_call_sdk_in_call_iv_head_default" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/uxin_call_sdk_notify_big_iv_head" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20.0sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/uxin_call_sdk_notify_big_tv_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="有信" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:id="@id/uxin_call_sdk_notify_big_tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15:45" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/uxin_call_sdk_notify_big_tv_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/uxin_call_sdk_incall_tips" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:id="@id/uxin_call_sdk_notify_big_layout_hangup" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/uxin_call_sdk_incall_btn_hangup_nor" />
+        </LinearLayout>
+        <LinearLayout android:background="@android:color/darker_gray" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:id="@id/uxin_call_sdk_notify_big_layout_answer" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/uxin_call_sdk_incall_btn_answer_nor" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

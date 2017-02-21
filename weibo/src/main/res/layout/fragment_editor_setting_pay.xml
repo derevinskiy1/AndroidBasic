@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/settings_margin_top" android:layout_marginBottom="@dimen/settings_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/showPayLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top">
+        <TextView android:textColor="@color/main_content_text_color" android:gravity="center_vertical" android:id="@id/tvShowPay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/article_settings_pay_show" android:layout_centerVertical="true" style="@style/SettingMainText" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/common_gray_93" android:gravity="center_vertical" android:id="@id/tvShowPayDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/article_settings_pay_show_desc" android:layout_toRightOf="@id/tvShowPay" android:layout_centerVertical="true" style="@style/SettingSubText" />
+        <com.sina.weibo.view.SwitchButton android:id="@id/showPayCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_text_padding_right" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/divider1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:id="@id/VIPLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/showVIPLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top">
+            <TextView android:textColor="@color/main_content_text_color" android:gravity="center_vertical" android:id="@id/tvShowVIP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/article_settings_pay_vip_show" android:layout_centerVertical="true" style="@style/SettingMainText" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_gray_93" android:gravity="center_vertical" android:id="@id/tvShowVIPDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/article_settings_pay_vip_show_desc" android:layout_toRightOf="@id/tvShowVIP" android:layout_centerVertical="true" style="@style/SettingSubText" />
+            <com.sina.weibo.view.SwitchButton android:id="@id/showVIPCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_text_padding_right" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/SingleLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/showSingleLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top">
+            <TextView android:textColor="@color/main_content_text_color" android:gravity="center_vertical" android:id="@id/tvShowSingle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/article_settings_pay_single_show" android:layout_centerVertical="true" style="@style/SettingMainText" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_gray_93" android:gravity="center_vertical" android:id="@id/tvShowSingleDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/article_settings_pay_single_show_desc" android:layout_toRightOf="@id/tvShowSingle" android:layout_centerVertical="true" style="@style/SettingSubText" />
+            <com.sina.weibo.view.SwitchButton android:id="@id/showSingleCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_text_padding_right" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/divider2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <LinearLayout android:gravity="center" android:id="@id/setSingleLayout" android:layout_width="fill_parent" android:layout_height="73.0dip">
+            <RelativeLayout android:id="@id/setSingleInputLayout" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip">
+                <TextView android:textColor="@color/main_content_text_color" android:gravity="center_vertical" android:id="@id/tvSetSingle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/article_settings_pay_single_price" android:layout_centerVertical="true" style="@style/SettingMainText" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_text_padding_right" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <EditText android:textSize="16.0sp" android:textColorHint="@color/common_content_button_disabled_text" android:gravity="right" android:id="@id/etSetSingleMid" android:background="@color/transparent" android:layout_width="200.0dip" android:layout_height="wrap_content" android:hint="@string/article_settings_pay_single_price_hint" android:singleLine="true" android:inputType="numberDecimal" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/main_content_text_color" android:id="@id/tvYuan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/article_settings_pay_single_price_unit" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textColor="@color/main_content_subtitle_text_color" android:id="@id/tvDescript" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/article_settings_pay_desc" style="@style/SettingExplainText" />
+</LinearLayout>

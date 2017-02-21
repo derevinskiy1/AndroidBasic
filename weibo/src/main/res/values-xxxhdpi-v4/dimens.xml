@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="message_group_item_view_identity_offset_top">26.0px</dimen>
+    <dimen name="message_group_item_view_identity_offset_left">29.0px</dimen>
+</resources>

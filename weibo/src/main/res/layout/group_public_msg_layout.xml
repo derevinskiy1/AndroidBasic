@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/group_pub_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/message_announcement_common" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <FrameLayout android:id="@id/closeregon" android:layout_width="40.0dip" android:layout_height="35.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center" android:id="@id/closeimg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_close_grpmsg" />
+    </FrameLayout>
+    <TextView android:textSize="14.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/group_pub_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:maxLines="3" android:layout_toLeftOf="@id/closeregon" android:layout_toRightOf="@id/group_pub_icon" android:layout_centerVertical="true" />
+</RelativeLayout>

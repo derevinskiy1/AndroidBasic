@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <RelativeLayout android:id="@id/notice_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/notice_state" android:layout_alignParentLeft="true">
+        <LinearLayout android:id="@id/avatar_outter_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <FrameLayout android:id="@id/avatar_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+                <com.sina.weibo.weiyou.DMGroupAvatarView android:id="@id/portrait_group_view" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" weibo:side_length="50.0dip" weibo:avatar_padding="2.0dip" />
+                <RelativeLayout android:id="@id/lyNoticeItemPortrait" android:layout_width="52.0dip" android:layout_height="51.0dip">
+                    <com.sina.weibo.view.RoundedImageView android:id="@id/ivNoticeItemPortrait" android:saveEnabled="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:scaleType="fitXY" android:adjustViewBounds="false" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" weibo:corner_radius="0.0dip" weibo:round_background="true" />
+                    <ImageView android:id="@id/ivNoticeItemPortraitV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/portrait_normal" android:scaleType="fitXY" android:adjustViewBounds="false" android:maxWidth="18.0dip" android:maxHeight="18.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/avatar_outter_layout" android:layout_alignTop="@id/avatar_outter_layout">
+            <TextView android:enabled="true" android:textSize="15.0sp" android:textColor="@color/main_content_text_color" android:ellipsize="end" android:id="@id/notice_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" />
+            <TextView android:enabled="true" android:textSize="12.0sp" android:textColor="@color/main_content_button_text_color" android:id="@id/notice_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="false" />
+            <TextView android:enabled="true" android:textSize="12.0sp" android:textColor="@color/main_content_button_text_color" android:id="@id/notice_extra" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="false" />
+            <TextView android:layout_width="fill_parent" android:layout_height="11.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/main_assistant_text_color" android:gravity="center" android:id="@id/notice_state" android:layout_width="52.0dip" android:layout_height="30.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:text="@string/notice_agree" android:layout_alignParentRight="true" />
+</RelativeLayout>

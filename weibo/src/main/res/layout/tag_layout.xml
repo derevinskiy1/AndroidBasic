@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sina.weibo.photoalbum.view.FilterTagLayout android:id="@id/dosh_tag_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tag_point_circle" android:background="@drawable/camera_tag_dot_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/tag_point" android:background="@drawable/camera_tag_dot_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+    <TextView android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/dosh_tag_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/tag_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+</com.sina.weibo.photoalbum.view.FilterTagLayout>

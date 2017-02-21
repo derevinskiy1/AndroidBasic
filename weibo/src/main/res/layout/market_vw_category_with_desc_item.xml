@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_cat_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+        <ImageView android:id="@id/iv_category_logo" android:background="#ffff9900" android:layout_width="3.0dip" android:layout_height="15.0dip" />
+        <TextView android:textSize="16.0sp" android:ellipsize="end" android:gravity="left" android:id="@id/tv_category_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="10.0dip" android:text="@string/market_category_header_title" android:maxLines="2" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/ll_cat_desc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ll_cat_name">
+        <TableLayout android:ellipsize="end" android:gravity="left" android:id="@id/tl_category_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" android:layout_marginBottom="8.0dip" />
+    </LinearLayout>
+</RelativeLayout>

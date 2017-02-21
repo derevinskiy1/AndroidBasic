@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.view.InterceptTouchEventLinearLayout android:orientation="vertical" android:id="@id/video_feed_item_above_video_layout" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.sina.weibo.feed.view.VideoFeedTitleView android:id="@id/mblogHeadtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.sina.weibo.view.InterceptTouchEventLinearLayout>
+    <ViewStub android:id="@id/stub_player_view" android:layout="@layout/video_feed_player_view_layout" android:inflatedId="@id/video_feed_player_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.sina.weibo.view.InterceptTouchEventLinearLayout android:orientation="vertical" android:id="@id/video_feed_item_below_video_layout" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/timeline_padding_left" android:layout_marginRight="@dimen/timeline_padding_right" android:layout_marginBottom="8.0dip">
+            <com.sina.weibo.feed.view.VideoFeedMaxlineTextView android:textColor="@color/common_gray_63" android:id="@id/tvItemContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:lineSpacingExtra="2.669983dip" />
+            <ViewStub android:id="@id/stub_item_readmore" android:layout="@layout/mblogitem_readmore" android:inflatedId="@id/item_readmore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <com.sina.weibo.feed.view.VideoFeedBottomButtonsView android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ly_bottom_btns" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="36.0dip" />
+        <View android:background="@color/video_feed_list_divide" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </com.sina.weibo.view.InterceptTouchEventLinearLayout>
+</merge>

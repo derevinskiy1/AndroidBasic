@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <RelativeLayout android:id="@id/rlContent" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_3_line_height">
+        <FrameLayout android:id="@id/lyItemPortrait" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/portrait_common_margin_left" android:layout_marginRight="@dimen/portrait_common_margin_right" android:layout_centerVertical="true">
+            <com.sina.weibo.view.RoundedImageView android:layout_gravity="center_vertical" android:id="@id/ivItemPortrait" android:saveEnabled="true" android:scaleType="fitXY" android:adjustViewBounds="false" weibo:corner_radius="@dimen/small_portrait_round_radius" weibo:cover_border_width="1.0px" weibo:cover_border_color="#0d000000" weibo:round_background="true" style="@style/portrait_large_style" />
+            <ImageView android:id="@id/ivItemPortraitV" style="@style/portrait_avatar_style" />
+        </FrameLayout>
+        <ImageView android:id="@id/tvDistance" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="9.0dip" android:src="@drawable/common_icon_checkmark" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:id="@id/tvItemName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_toLeftOf="@id/tvDistance" android:layout_toRightOf="@id/lyItemPortrait" />
+        <View android:id="@id/divider" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="4.0dip" android:layout_toLeftOf="@id/tvDistance" android:layout_toRightOf="@id/lyItemPortrait" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:typeface="monospace" android:textColor="#ff8f939a" android:id="@id/tvItemContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="8.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_toLeftOf="@id/tvDistance" android:layout_toRightOf="@id/lyItemPortrait" android:layout_below="@id/tvItemName" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_nearby" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_toLeftOf="@id/tvDistance" android:layout_toRightOf="@id/lyItemPortrait" android:layout_below="@id/tvItemContent">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/head_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/list_male" />
+            <TextView android:textSize="14.0sp" android:layout_gravity="center_vertical" android:id="@id/near_user_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

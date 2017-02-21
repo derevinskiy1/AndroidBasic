@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resource
+  xmlns:guide="http://schemas.android.com/apk/res/com.sina.weibo">
+    <guide guide:padding_bottom="-240.0dip" guide:guide_mode="hover" guide:guide_gravity="center|top" guide:auto_dismiss_delay="3000" guide:content_view="@layout/about" guide:animation_style="@style/new_user_guide_home" guide:pop_background_image="@drawable/helper_newuser_guide_slipback" />
+</resource>

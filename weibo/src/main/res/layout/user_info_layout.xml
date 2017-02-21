@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <RelativeLayout android:id="@id/setting_userinfo_rl" android:clickable="true" android:layout_width="fill_parent" android:layout_height="80.0dip">
+        <com.sina.weibo.weiyou.view.CircleImageView android:id="@id/setting_avatar_iv" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/setting_avatar_mask_iv" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="-4.0dip" android:layout_marginBottom="0.0dip" android:layout_alignRight="@id/setting_avatar_iv" android:layout_alignBottom="@id/setting_avatar_iv" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/setting_triangle_iv" android:layout_toRightOf="@id/setting_avatar_iv" android:layout_centerVertical="true">
+            <TextView android:textSize="15.0sp" android:textColor="@color/main_content_text_color" android:ellipsize="end" android:id="@id/setting_nick_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <ImageView android:id="@id/setting_leaguer_iv" android:paddingLeft="@dimen/user_info_icon_marginleft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/setting_nick_tv" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/main_content_subtitle_text_color" android:ellipsize="end" android:id="@id/setting_user_desc_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" android:layout_below="@id/setting_nick_tv" />
+        </RelativeLayout>
+        <ImageView android:id="@id/setting_triangle_iv" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

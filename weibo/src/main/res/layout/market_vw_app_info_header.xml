@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/lyMainInfo" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <ImageView android:background="@drawable/profile_cover_shadow" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_above="@id/ivShield" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/layout_name" android:layout_width="fill_parent" android:layout_height="@dimen/page_info_nick_height" android:layout_toRightOf="@id/iv_logo" android:layout_alignTop="@id/iv_logo">
+        <TextView android:textSize="16.0sp" android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/tv_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="0M" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/tv_size" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="appName" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/ivShield" android:layout_width="fill_parent" android:layout_height="84.0dip" android:minHeight="@dimen/cover_marginbottom" android:layout_below="@id/layout_name" />
+    <com.sina.weibo.view.RoundedImageView android:id="@id/iv_logo" android:layout_width="@dimen/user_info_portrait_width" android:layout_height="@dimen/user_info_portrait_height" android:layout_marginLeft="16.0dip" android:layout_marginTop="@dimen/page_info_portrait_margintop" android:layout_marginRight="15.0dip" android:src="@drawable/preview_card_pic_loading" weibo:corner_radius="3.0dip" weibo:cover_border_width="1.0dip" weibo:cover_border_color="#0d000000" weibo:round_background="true" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/layout_btns" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="16.0dip" android:layout_below="@id/layout_name" android:layout_alignLeft="@id/layout_name">
+        <FrameLayout android:id="@id/layout_progress_btn" android:clickable="true" android:layout_width="@dimen/page_info_btn_width" android:layout_height="wrap_content" android:layout_marginRight="@dimen/page_info_btn_margin">
+            <ProgressBar android:id="@id/pb_downloading_bar" android:background="@drawable/common_button_big_green_bg" android:layout_width="@dimen/page_info_btn_width" android:layout_height="@dimen/page_info_btn_height" android:layout_marginRight="@dimen/page_info_btn_margin" android:max="1000" android:progress="0" android:indeterminateOnly="false" android:progressDrawable="@drawable/market_appinfo_progressbar" style="?android:attr/progressBarStyleHorizontal" />
+            <RelativeLayout android:gravity="center" android:id="@id/layout_download" android:clickable="true" android:layout_width="@dimen/page_info_btn_width" android:layout_height="@dimen/page_info_btn_height" android:layout_marginRight="@dimen/page_info_btn_margin">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/market_btn_icon_download" android:scaleType="center" />
+                    <TextView android:textSize="@dimen/page_header_btn_text_size" android:textColor="@color/market_detail_white_blank" android:layout_gravity="center_vertical" android:id="@id/tv_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_download" />
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/layout_like" android:background="@drawable/userinfo_relationship_invitebutton" android:clickable="true" android:layout_width="@dimen/page_info_btn_width" android:layout_height="@dimen/page_info_btn_height" android:layout_toRightOf="@id/layout_progress_btn">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/timeline_icon_like" android:scaleType="center" />
+                <TextView android:textSize="@dimen/page_header_btn_text_size" android:layout_gravity="center_vertical" android:id="@id/tv_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+1" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/ll_from_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_below="@id/iv_logo" android:layout_alignParentLeft="true">
+        <TextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/tv_app_from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_from" android:singleLine="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/from_arrow_img" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/market_icon_arrow_down" android:layout_toRightOf="@id/tv_app_from" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_send_weibo" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="12.0dip" android:layout_below="@id/iv_logo" android:layout_alignParentRight="true">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/cb_send_weibo" android:layout_width="24.0dip" android:layout_height="24.0dip" android:checked="true" style="@style/market_checkBox" />
+        <TextView android:textSize="14.0sp" android:layout_gravity="center_vertical" android:id="@id/tv_send_weibo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_downtime_send_weibo" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/radarSwitchLayout" android:background="@drawable/common_card_bottom_bg" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/main_content_text_color" android:gravity="center_vertical" android:id="@id/radarSwitchText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/radar_sound_text" android:layout_centerVertical="true" style="@style/SettingMainText" />
+    <com.sina.weibo.view.SwitchButton android:id="@id/radarSwitchCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_text_padding_right" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

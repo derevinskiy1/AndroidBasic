@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.photoalbum.view.PhotoalbumToolbar android:id="@id/photoalbum_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/tag_content_view" android:background="@color/common_card_background" android:layout_width="fill_parent" android:layout_height="0.0dip">
+        <ImageView android:id="@id/tag_image" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_alignParentTop="true" />
+        <com.sina.weibo.photoalbum.view.FilterTagContainer android:id="@id/edit_pic_view_tag_container" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/common_gray_93" android:gravity="center" android:id="@id/tag_alert_msg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/pic_tag_guide_text" android:layout_weight="1.0" />
+</LinearLayout>

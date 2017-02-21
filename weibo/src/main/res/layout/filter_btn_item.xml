@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imgFilterBtn" android:duplicateParentState="true" android:layout_width="@dimen/filter_tool_bar_item_button_width" android:layout_height="@dimen/filter_tool_bar_item_button_width" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/imgCronerBtn" android:duplicateParentState="true" android:layout_width="36.0dip" android:layout_height="36.0dip" android:maxWidth="@dimen/filter_tool_bar_item_button_width" android:maxHeight="@dimen/filter_tool_bar_item_button_width" android:layout_alignLeft="@id/imgFilterBtn" android:layout_alignTop="@id/imgFilterBtn" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/filter_button_text_color" android:gravity="center" android:id="@id/txtFilterBtn" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="@dimen/filter_tool_bar_item_text_bg_height" android:text="@string/filter_origin" android:singleLine="true" />
+</LinearLayout>

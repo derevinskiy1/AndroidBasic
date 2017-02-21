@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_choose_microgroup" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_microgroup" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/main_content_text_color" android:id="@id/tv_microgroup_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/iv_microgroup" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_microgroup_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/common_icon_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

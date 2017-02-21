@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/ll_like_reason" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_like_reason" android:visibility="gone" android:layout_width="@dimen/market_recomment_card_icon_length" android:layout_height="@dimen/market_recomment_card_icon_length" android:layout_marginLeft="@dimen/market_recomment_card_icon_left_distance" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/market_font_14" android:ellipsize="end" android:gravity="bottom|center|left" android:layout_gravity="center_vertical" android:id="@id/tv_like_reason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+</LinearLayout>

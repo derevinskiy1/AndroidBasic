@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivEmptyGuidePic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:src="@drawable/empty_default" />
+    <TextView android:textSize="14.0sp" android:gravity="center_horizontal" android:id="@id/tvEmptyGuidePrompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_prompt_common" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:lineSpacingMultiplier="1.1" />
+    <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btEmptyGuidePrompt" android:visibility="gone" android:layout_width="142.0dip" android:layout_height="46.0dip" android:layout_marginTop="10.0dip" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:lineSpacingMultiplier="1.1" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/loading_prompt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/progress_bar" style="@style/weibo_progressbar" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffc8c8c8" android:gravity="center" android:id="@id/loading_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/loadinfo" />
+    </LinearLayout>
+</merge>

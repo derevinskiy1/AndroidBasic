@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/market_sng_all_margin" android:paddingRight="@dimen/market_sng_all_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/sng_gamemanager_layout" android:layout_width="fill_parent" android:layout_height="@dimen/market_sng_gamemanager_item_height">
+        <ImageView android:id="@id/sng_gamemanager_img_gameicon" android:layout_width="@dimen/market_sng_gamemanager_item_icon_width" android:layout_height="@dimen/market_sng_gamemanager_item_icon_height" android:layout_marginLeft="@dimen/remind_check_box_right_margin" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.sina.weibo.view.SwitchButton android:id="@id/sng_gamemanager_check" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/remind_check_box_right_margin" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:id="@id/sng_gamemanager_tv_gamename" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_sng_all_margin" android:layout_marginRight="@dimen/market_sng_all_margin" android:singleLine="true" android:layout_toLeftOf="@id/sng_gamemanager_check" android:layout_toRightOf="@id/sng_gamemanager_img_gameicon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+</LinearLayout>

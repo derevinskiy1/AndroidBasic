@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_homepage" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:attr="http://schemas.android.com/apk/res-auto">
+    <com.sina.weibo.appmarket.widget.TitleBar android:id="@id/tb_title" android:layout_width="fill_parent" android:layout_height="@dimen/baselayout_title_height" attr:left_type="1" attr:right_type2="8" attr:middle_text="@string/market_title_activity_app_list" />
+    <ImageView android:id="@id/market_sng_top_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.sina.weibo.appmarket.widget.ProgressView android:id="@id/rl_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:gravity="right" android:id="@id/tv_tag" android:paddingTop="5.0dip" android:paddingRight="22.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_sng_gamemanager_notice" />
+    <include android:id="@id/sng_lv_game" android:visibility="gone" layout="@layout/market_sng_listview" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/market_sng_appitem_category" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/market_sng_gamemanager_empty" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sina.weibo.radar.view.radarscan.RadarBackgroundView android:layout_width="fill_parent" android:layout_height="fill_parent" android:inAnimation="@anim/radar_fading_in" android:outAnimation="@anim/radar_fading_out"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/layout_radar_background_idel" android:padding="36.0dip" android:visibility="visible" android:layout_width="@dimen/radar_button_size" android:layout_height="@dimen/radar_button_size" android:src="@drawable/radar_button_scan_background" style="@style/radar_scan_image_view" />
+    <RelativeLayout android:layout_gravity="center" android:id="@id/layout_radar_background_scanning" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/radar_circle_solid_1" android:src="@drawable/radar_circle_solid_1" style="@style/radar_scan_image_view" />
+        <ImageView android:id="@id/radar_circle_solid_2" android:src="@drawable/radar_circle_solid_2" style="@style/radar_scan_image_view" />
+        <ImageView android:id="@id/radar_circle_stroke" android:src="@drawable/radar_circle_stroke" style="@style/radar_scan_image_view" />
+    </RelativeLayout>
+</com.sina.weibo.radar.view.radarscan.RadarBackgroundView>

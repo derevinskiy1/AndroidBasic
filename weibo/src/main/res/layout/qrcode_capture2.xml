@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/scanFrame" android:background="@drawable/qrcode_border" android:layout_width="@dimen/qrcode_frame_width" android:layout_height="@dimen/qrcode_frame_height" android:layout_centerInParent="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip">
+            <ImageView android:id="@id/scanLine" android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="fitXY" />
+        </FrameLayout>
+    </RelativeLayout>
+    <FrameLayout android:background="@drawable/qrcode_tip_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/qrcode_tips_margin_top" android:maxWidth="240.0dip" android:minWidth="210.0dip" android:layout_below="@id/scanFrame" android:layout_centerHorizontal="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/main_button_text_color_for_deep_color_button" android:ellipsize="end" android:gravity="center" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="4.0dip" android:maxWidth="220.0dip" />
+    </FrameLayout>
+</RelativeLayout>

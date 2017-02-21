@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/ll_cat_group_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <include android:id="@id/rl_category1_new_layout" layout="@layout/market_vw_category_with_desc_item" />
+    </LinearLayout>
+    <View android:layout_width="3.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <include android:id="@id/rl_category2_new_layout" layout="@layout/market_vw_category_with_desc_item" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:attr="http://schemas.android.com/apk/res-auto">
+    <com.sina.weibo.appmarket.widget.TitleBar android:id="@id/market_sng_titlebar" android:layout_width="fill_parent" android:layout_height="@dimen/baselayout_title_height" attr:left_type="1" attr:right_type2="8" attr:middle_text="@string/market_title_notice_expire" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/market_sng_titlebar">
+        <TextView android:textSize="18.0sp" android:textColor="@color/market_sng_gamedetail_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_sng_token_time_error1" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/market_sng_gamedetail_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/market_sng_token_time_error2" />
+    </LinearLayout>
+    <ImageView android:id="@id/market_sng_line" android:background="@drawable/common_horizontal_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/market_sng_titlebar" />
+</RelativeLayout>

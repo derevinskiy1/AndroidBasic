@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.card.view.CommonCardTitleView android:id="@id/common_title" android:layout_width="fill_parent" android:layout_height="26.0dip" />
+    <ImageView android:id="@id/iv_card_pic" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:scaleType="fitXY" android:adjustViewBounds="false" />
+</LinearLayout>

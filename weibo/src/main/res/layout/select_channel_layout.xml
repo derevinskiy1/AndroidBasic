@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_popup_window" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="36.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/subscribe_main_layout" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.sina.weibo.view.DragGrid android:gravity="center" android:id="@id/userGridView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fragment_listview_margin" android:layout_marginTop="7.0dip" android:layout_marginRight="@dimen/fragment_drag_hortial_margin" android:layout_marginBottom="12.0dip" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/fragment_drag_vertial_margin" android:verticalSpacing="@dimen/fragment_drag_hortial_margin" android:stretchMode="columnWidth" android:numColumns="4" />
+            <TextView android:textSize="@dimen/universal_textsize_14" android:gravity="center_vertical" android:id="@id/more_category_text" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="36.0dip" android:text="@string/other_channel" />
+            <com.sina.weibo.view.OtherGridView android:gravity="center" android:id="@id/otherGridView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fragment_listview_margin" android:layout_marginTop="7.0dip" android:layout_marginRight="@dimen/fragment_drag_hortial_margin" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/fragment_drag_vertial_margin" android:verticalSpacing="@dimen/fragment_drag_hortial_margin" android:stretchMode="columnWidth" android:numColumns="4" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

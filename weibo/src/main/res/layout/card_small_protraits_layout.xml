@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <com.sina.weibo.card.view.CommonCardTitleView android:id="@id/title_layout" android:paddingRight="-2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <LinearLayout android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_below="@id/title_layout">
+        <com.sina.weibo.view.RoundedImageView android:id="@id/fr_people1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" weibo:round_background="true" />
+        <com.sina.weibo.view.RoundedImageView android:id="@id/fr_people2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:scaleType="fitXY" weibo:round_background="true" />
+        <com.sina.weibo.view.RoundedImageView android:id="@id/fr_people3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:scaleType="fitXY" weibo:round_background="true" />
+        <com.sina.weibo.view.RoundedImageView android:id="@id/fr_people4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:scaleType="fitXY" weibo:round_background="true" />
+        <com.sina.weibo.view.RoundedImageView android:id="@id/fr_people5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:scaleType="fitXY" weibo:round_background="true" />
+        <com.sina.weibo.view.RoundedImageView android:id="@id/fr_people6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:scaleType="fitXY" weibo:round_background="true" />
+        <com.sina.weibo.view.RoundedImageView android:id="@id/fr_people7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:scaleType="fitXY" weibo:round_background="true" />
+    </LinearLayout>
+</RelativeLayout>

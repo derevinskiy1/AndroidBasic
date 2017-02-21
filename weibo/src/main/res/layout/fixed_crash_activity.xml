@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pkg_broken" android:background="#fff2f2f2" android:paddingLeft="15.0dip" android:paddingTop="0.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/fixed_crash_empty_failed_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/empty_failed" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/empty_view_text_color" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="45.0dip" android:text="@string/weibo_pkg_broken" />
+            <Button android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/exit" android:background="@drawable/login_button_big_orange_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/exit" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/about_rel" android:background="#fff2f2f2" android:paddingLeft="15.0dip" android:paddingTop="0.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/fixed_crash_empty_failed_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/empty_failed" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/crash_page_title" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/empty_view_text_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="45.0dip" android:text="@string/crash_cleardata_desc" />
+            <Button android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/clear_cache" android:background="@drawable/login_button_big_orange_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/crash_clearcache" />
+            <RelativeLayout android:id="@id/skip" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height" android:layout_marginBottom="25.0dip">
+                <TextView android:textSize="18.0sp" android:textColor="#ff929292" android:id="@id/tv_weibo_draft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/startweibo" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+                <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/draftNum" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_webweibo" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height" android:layout_marginBottom="25.0dip">
+                <TextView android:textSize="18.0sp" android:textColor="#ff929292" android:id="@id/to_webweibo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/to_web_weibo" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/main_link_text_color" android:layout_gravity="center_horizontal" android:id="@id/txt_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crash_update_desc" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

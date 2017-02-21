@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_read_count" android:background="@drawable/radar_card_read" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/common_button_text" android:id="@id/tv_read_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/common_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="@string/feed_read_count_text" android:singleLine="true" />
+</LinearLayout>

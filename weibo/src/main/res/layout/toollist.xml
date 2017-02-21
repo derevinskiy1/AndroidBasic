@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff6f6f6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/compose_form_bar_bg" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/style_string" android:layout_centerInParent="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffff8707" android:gravity="center" android:id="@id/edit_finish" android:layout_width="60.0dip" android:layout_height="fill_parent" android:text="@string/finish_string" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="252.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/bit_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+                <LinearLayout android:gravity="center" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.sina.weibo.note.noteeditor.RippleToggleButton android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/format_bar_bold" android:tag="@string/format_bar_tag_bold" android:background="@drawable/format_bar_button_bold_selector" android:layout_width="fill_parent" android:layout_height="52.0dip" style="@style/FormatBarButton" />
+                </LinearLayout>
+                <View android:background="#ffe6e6e6" android:layout_width="1.0px" android:layout_height="fill_parent" />
+                <LinearLayout android:gravity="center" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.sina.weibo.note.noteeditor.RippleToggleButton android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/format_bar_italic" android:tag="@string/format_bar_tag_italic" android:background="@drawable/format_bar_button_italic_selector" android:layout_width="fill_parent" android:layout_height="52.0dip" style="@style/FormatBarButton" />
+                </LinearLayout>
+                <View android:background="#ffe6e6e6" android:layout_width="1.0px" android:layout_height="fill_parent" />
+                <LinearLayout android:gravity="center" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.sina.weibo.note.noteeditor.RippleToggleButton android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/format_bar_strikeThrough" android:tag="strikeThrough" android:background="@drawable/format_bar_button_strike_selector" android:layout_width="fill_parent" android:layout_height="52.0dip" style="@style/FormatBarButton" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/color_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="6.0dip" android:weightSum="7.0">
+                <LinearLayout android:gravity="center" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <com.sina.weibo.note.noteeditor.RippleToggleButton android:id="@id/toollist_black" android:tag="\#333333" android:background="@drawable/compose_color_black_selector" android:layout_width="33.0dip" android:layout_height="33.0dip" style="@style/FormatBarButton" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <com.sina.weibo.note.noteeditor.RippleToggleButton android:id="@id/toollist_gray" android:tag="\#808080" android:background="@drawable/compose_color_gray_selector" android:layout_width="33.0dip" android:layout_height="33.0dip" style="@style/FormatBarButton" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <com.sina.weibo.note.noteeditor.RippleToggleButton android:id="@id/toollist_red" android:tag="\#ff583d" android:background="@drawable/compose_color_red_selector" android:layout_width="33.0dip" android:layout_height="33.0dip" style="@style/FormatBarButton" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <com.sina.weibo.note.noteeditor.RippleToggleButton android:id="@id/toollist_yellow" android:tag="\#fdaa25" android:background="@drawable/compose_color_yellow_selector" android:layout_width="33.0dip" android:layout_height="33.0dip" style="@style/FormatBarButton" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <com.sina.weibo.note.noteeditor.RippleToggleButton android:id="@id/toollist_green" android:tag="\#44c67b" android:background="@drawable/compose_color_green_selector" android:layout_width="33.0dip" android:layout_height="33.0dip" style="@style/FormatBarButton" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <com.sina.weibo.note.noteeditor.RippleToggleButton android:id="@id/toollist_blue" android:tag="\#14b2e0" android:background="@drawable/compose_color_blue_selector" android:layout_width="33.0dip" android:layout_height="33.0dip" style="@style/FormatBarButton" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <com.sina.weibo.note.noteeditor.RippleToggleButton android:id="@id/toollist_purple" android:tag="\#b065e2" android:background="@drawable/compose_color_purple_selector" android:layout_width="33.0dip" android:layout_height="33.0dip" style="@style/FormatBarButton" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="252.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <com.sina.weibo.note.noteeditor.RippleToggleButton android:id="@id/format_bar_button_h1" android:tag="h1" android:background="@drawable/format_bar_button_list_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" style="@style/FormatBarButton" />
+                    <TextView android:textSize="22.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/heading_one_string" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <com.sina.weibo.note.noteeditor.RippleToggleButton android:id="@id/format_bar_button_h2" android:tag="h2" android:background="@drawable/format_bar_button_list_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" style="@style/FormatBarButton" />
+                    <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/heading_two_string" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <com.sina.weibo.note.noteeditor.RippleToggleButton android:id="@id/format_bar_button_paragraph" android:tag="paragraph" android:background="@drawable/format_bar_button_list_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" style="@style/FormatBarButton" />
+                    <TextView android:textSize="18.0sp" android:textColor="#ff555555" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/weibonote_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <com.sina.weibo.note.noteeditor.RippleToggleButton android:id="@id/format_bar_quote" android:tag="@string/format_bar_tag_blockquote" android:background="@drawable/format_bar_button_list_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" style="@style/FormatBarButton" />
+                    <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/blockquote_srting" android:drawableLeft="@drawable/compose_form_quote" android:drawablePadding="5.0dip" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <com.sina.weibo.note.noteeditor.RippleToggleButton android:id="@id/format_bar_ul" android:tag="@string/format_bar_tag_unorderedList" android:background="@drawable/format_bar_button_list_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" style="@style/FormatBarButton" />
+                    <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/unorderlist_string" android:drawableLeft="@drawable/compose_form_unordered" android:drawablePadding="5.0dip" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

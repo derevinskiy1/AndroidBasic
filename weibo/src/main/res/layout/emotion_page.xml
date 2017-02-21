@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/emotion_page_root" android:background="@drawable/bg_face" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <android.support.v4.view.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.sina.weibo.view.PageIndicatorDrawableNew android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="7.0dip" />
+    <TextView android:textSize="@dimen/emotion_tab_text_size" android:textColor="@color/emotion_recent_hint" android:id="@id/indicator_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

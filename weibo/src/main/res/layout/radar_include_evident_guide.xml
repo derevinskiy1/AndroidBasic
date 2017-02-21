@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_evident_guide" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_evident_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/radar_card_guide_gesture_up" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/common_404_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/radar_recommend_other_evident" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_evident_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="440.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/radar_card_guide_gesture_down" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/common_404_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/radar_no_interest_evident" />
+    </LinearLayout>
+</RelativeLayout>

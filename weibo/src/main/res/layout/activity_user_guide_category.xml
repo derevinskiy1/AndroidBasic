@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/common_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/normal_rootview" android:background="@color/common_background" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/user_guide_category_list" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/user_guide_category_list_item_selector" android:divider="#00000000" android:dividerHeight="10.0dip" android:layout_above="@id/next" android:layout_alignParentTop="true" />
+        <Button android:textSize="16.0sp" android:textColor="@color/common_yellow" android:gravity="center" android:id="@id/next" android:background="@drawable/user_guide_category_btn_selector" android:layout_width="fill_parent" android:layout_height="@dimen/new_regist_height_bt" android:text="@string/next" android:shadowDx="0.0" android:shadowDy="2.0" android:shadowRadius="3.0" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/title_bar_bg_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/title_bar_bg" android:background="@drawable/navigationbar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ImageView android:background="@drawable/base_layout_shadow_up" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="16.0dip" android:textColor="@color/navagationbar_comm_text_color" android:id="@id/left_btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="@string/login_back" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/navigationbar_title_color" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/interestpeople_title" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <include android:id="@id/emptyview" android:visibility="gone" layout="@layout/new_interest_people_empty_view" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:paddingBottom="9.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/laylout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/command_edit_laylout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="0.0dip">
+            <EditText android:layout_gravity="center|left" android:id="@id/edit" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="ping -c 1 -t 1 api.weibo.cn" android:hint="请输入或者选择命令。" android:singleLine="true" android:maxLength="256" android:layout_weight="1.0">
+                <requestFocus />
+            </EditText>
+            <Button android:layout_gravity="center_vertical" android:id="@id/runbtn" android:visibility="visible" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:text="trace" />
+        </LinearLayout>
+        <TextView android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="" />
+        <ListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" />
+        <TextView android:gravity="center" android:id="@id/tracedata" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="" />
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@id/btn_stop" android:visibility="gone" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="1.0dip" android:text="stop" />
+    </LinearLayout>
+</ScrollView>

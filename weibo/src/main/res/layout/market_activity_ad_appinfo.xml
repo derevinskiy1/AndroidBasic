@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/subject_layout" android:background="@color/market_common_base_page_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:attr="http://schemas.android.com/apk/res-auto">
+    <com.sina.weibo.appmarket.widget.TitleBar android:id="@id/tb_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" attr:left_type="1" attr:middle_text="@string/market_title_fragment_app" />
+    <com.sina.weibo.appmarket.widget.AdAppInfoHeaderView android:id="@id/view_head" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0px" android:layout_below="@id/tb_title" />
+    <ScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/view_head">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_container" android:background="@color/market_common_base_page_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+</RelativeLayout>

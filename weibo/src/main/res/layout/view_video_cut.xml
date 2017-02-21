@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/cut_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.photoalbum.video.HorizontalScrollViewEx android:scrollbarThumbHorizontal="@android:color/transparent" android:id="@id/video_thumbnails_background" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:id="@id/video_thumbnails" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:layout_width="wrap_content" android:layout_height="60.0dip" />
+            </LinearLayout>
+            <com.sina.weibo.photoalbum.video.TimeUnitView android:id="@id/video_time_unit" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+            <View android:layout_width="fill_parent" android:layout_height="15.0dip" />
+        </LinearLayout>
+    </com.sina.weibo.photoalbum.video.HorizontalScrollViewEx>
+    <RelativeLayout android:id="@id/video_cut_layout" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="45.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="105.0dip" android:layout_centerVertical="true">
+        <View android:id="@id/video_cut_left_shadow" android:background="#aaffffff" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/video_cut_left" android:layout_width="@dimen/video_selection_cut_view_width" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/video_selection_cut_view_margin">
+            <ImageView android:background="@drawable/camera_video_capture_leftbutton" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:id="@id/video_cut_right_shadow" android:background="#aaffffff" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        <RelativeLayout android:id="@id/video_cut_right" android:layout_width="@dimen/video_selection_cut_view_width" android:layout_height="fill_parent" android:layout_marginRight="@dimen/video_selection_cut_view_margin" android:layout_alignParentRight="true">
+            <ImageView android:background="@drawable/camera_video_capture_rightbutton" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:background="#ffe57500" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/video_cut_view_header_line_margin" android:layout_marginRight="@dimen/video_cut_view_header_line_margin" android:layout_alignLeft="@id/video_cut_left" android:layout_alignRight="@id/video_cut_right" />
+        <ImageView android:background="#ffe57500" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/video_cut_view_header_line_margin" android:layout_marginRight="@dimen/video_cut_view_header_line_margin" android:layout_alignLeft="@id/video_cut_left" android:layout_alignRight="@id/video_cut_right" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/video_selection" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:paddingBottom="45.0dip" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_centerVertical="true">
+        <com.sina.weibo.photoalbum.video.VideoCutSeekBar android:id="@id/video_selection_seek_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</RelativeLayout>

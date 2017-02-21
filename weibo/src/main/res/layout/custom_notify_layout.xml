@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/icon_rl" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_margin="5.0dip">
+        <ImageView android:id="@id/large_icom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/queue_icon_send" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0sp" android:id="@id/tv_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/large_icom" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/title_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_toRightOf="@id/icon_rl">
+        <TextView android:id="@id/tv_notify_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" />
+        <TextView android:ellipsize="middle" android:id="@id/tv_notify_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+    </RelativeLayout>
+    <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_toRightOf="@id/icon_rl" android:layout_below="@id/title_rl" android:layout_alignBottom="@id/icon_rl">
+        <ImageView android:id="@id/small_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <TextView android:ellipsize="end" android:id="@id/notify_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_toLeftOf="@id/tv_notify_time" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_toRightOf="@id/icon_rl" android:layout_below="@id/title_rl" android:layout_alignBottom="@id/icon_rl">
+        <ProgressBar android:id="@id/pb_show_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Horizontal" />
+    </RelativeLayout>
+</RelativeLayout>

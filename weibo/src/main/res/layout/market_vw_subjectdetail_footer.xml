@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/subject_footer_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/market_font_14" android:gravity="bottom" android:id="@id/tv_subject_footer_title" android:layout_width="fill_parent" android:layout_height="@dimen/market_subject_detail_footer_title_height" android:layout_marginLeft="@dimen/market_padding_left_10" android:text="@string/market_subject_footer_card_title" android:layout_alignParentLeft="true" />
+    <com.sina.weibo.appmarket.widget.BannerCardView android:id="@id/view_subject_footer_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_subject_footer_title" />
+    <com.sina.weibo.appmarket.widget.BannerCardView android:id="@id/view_subject_footer_two" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/view_subject_footer_one" />
+</RelativeLayout>

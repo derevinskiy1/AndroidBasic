@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_gravity="top" android:id="@id/lyTitleBar" android:background="@drawable/navigationbar_background" android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <FrameLayout android:id="@id/rltitleBack" android:paddingLeft="12.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+        <com.sina.weibo.page.cardlist.immersion.view.StateObservedTextView android:textSize="17.0sp" android:textColor="#ff242e38" android:layout_gravity="center_vertical" android:id="@id/titleBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/leftNewDot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+    </FrameLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/rltitlemiddle" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_title" android:background="@drawable/grouplist_title_bg" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <ProgressBar android:id="@id/title_middle_progress" android:visibility="gone" style="@style/weibo_progressbar" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="20.0sp" android:textColor="@color/navigationbar_title_color" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/titleText" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0.0dip" android:singleLine="true" android:includeFontPadding="false" />
+                <TextView android:textSize="13.0sp" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/subTitleText" android:padding="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:singleLine="true" android:includeFontPadding="false" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/ll_title_2" android:background="@drawable/btn_group_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_centerInParent="true">
+            <ImageView android:id="@id/leftDis" android:paddingRight="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/navigationbar_arrow_down" android:layout_centerVertical="true" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/navigationbar_title_color" android:ellipsize="end" android:gravity="center" android:id="@id/titleText_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_toRightOf="@id/leftDis" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/titleIcon" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/navigationbar_arrow_down" android:layout_toRightOf="@id/titleText_2" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/msgcntr_pop_second_title_unreadnum_fontsize" android:textColor="@android:color/white" android:gravity="center" android:id="@id/titleExtra" android:background="@drawable/text_new_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:minWidth="10.0dip" android:layout_toRightOf="@id/titleText_2" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ProgressBar android:id="@id/base_progress_bar" android:visibility="gone" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/weibo_progressbar" />
+    <LinearLayout android:id="@id/rltitleSave" android:paddingLeft="10.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <FrameLayout android:id="@id/searchbar_wrapper" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="fill_parent" android:layout_marginRight="7.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/search_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/navigationbar_search_bg" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/rightBtn_wrapper" android:layout_width="wrap_content" android:layout_height="44.0dip">
+            <com.sina.weibo.page.cardlist.immersion.view.StateObservedTextView android:textSize="17.0sp" android:textColor="#ff242e38" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/titleSave" android:focusable="true" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <ImageView android:layout_gravity="center|right" android:id="@id/radar_breath_icon_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:scaleType="fitEnd" />
+            <ImageView android:layout_gravity="center" android:id="@id/radar_breath_icon_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <ImageView android:id="@id/newDot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+    </LinearLayout>
+    <TextView android:id="@id/right_mask" android:background="@drawable/navigationbar_background" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+</RelativeLayout>

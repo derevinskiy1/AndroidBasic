@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="60" android:drawable="@drawable/loading_blue1" />
+    <item android:duration="60" android:drawable="@drawable/loading_blue2" />
+    <item android:duration="60" android:drawable="@drawable/loading_blue5" />
+    <item android:duration="60" android:drawable="@drawable/loading_blue6" />
+    <item android:duration="60" android:drawable="@drawable/loading_blue7" />
+    <item android:duration="60" android:drawable="@drawable/loading_blue8" />
+    <item android:duration="60" android:drawable="@drawable/loading_blue9" />
+    <item android:duration="60" android:drawable="@drawable/loading_blue10" />
+    <item android:duration="60" android:drawable="@drawable/loading_blue11" />
+    <item android:duration="60" android:drawable="@drawable/loading_blue14" />
+    <item android:duration="60" android:drawable="@drawable/loading_blue15" />
+    <item android:duration="60" android:drawable="@drawable/loading_blue16" />
+    <item android:duration="60" android:drawable="@drawable/loading_blue19" />
+    <item android:duration="60" android:drawable="@drawable/loading_blue20" />
+    <item android:duration="60" android:drawable="@drawable/loading_blue23" />
+    <item android:duration="60" android:drawable="@drawable/loading_blue24" />
+    <item android:duration="60" android:drawable="@drawable/loading_blue27" />
+    <item android:duration="60" android:drawable="@drawable/loading_blue28" />
+</animation-list>

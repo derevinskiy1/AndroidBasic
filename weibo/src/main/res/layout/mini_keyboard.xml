@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/keyboard_layout" android:background="@drawable/mini_keyboard_shape" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/changeToSystem" android:background="@drawable/mini_keyboard_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/mini_keyboard_system" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mini_insurance" android:contentDescription="@null" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0sp" android:textColor="#ff999999" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="@string/alipay_keyboard" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.alipay.android.app.ui.quickpay.keyboard.MiniKeyboard android:layout_gravity="bottom|center" android:id="@id/keyboard_view" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:keyBackground="@drawable/mini_keyboard_key_bg" android:keyTextColor="#ffffffff" android:keyPreviewLayout="@layout/mini_keyboard_preview" />
+</LinearLayout>

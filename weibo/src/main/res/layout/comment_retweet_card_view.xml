@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/comment_retweet_portrait_root" android:layout_width="fill_parent" android:layout_height="@dimen/timeline_big_card_normal_content_height"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <com.sina.weibo.view.RoundedImageView android:id="@id/comment_retweet_portrait" android:saveEnabled="true" android:layout_width="@dimen/timeline_big_card_normal_content_height" android:layout_height="@dimen/timeline_big_card_normal_content_height" android:scaleType="fitXY" android:adjustViewBounds="false" weibo:corner_radius="0.0dip" weibo:border_width="1.0px" weibo:border_color="#0c000000" weibo:round_background="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/comment_retweet_portrait" android:layout_centerVertical="true">
+        <TextView android:textSize="15.0sp" android:ellipsize="end" android:id="@id/comment_retweet_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="2.0dip" android:singleLine="true" />
+        <TextView android:textSize="12.0sp" android:ellipsize="end" android:id="@id/comment_retweet_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="2.0dip" android:text="" android:maxLines="2" android:includeFontPadding="false" android:lineSpacingExtra="2.669983dip" />
+    </LinearLayout>
+    <com.sina.weibo.card.view.MainCardView android:id="@id/mcvCard" android:paddingLeft="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

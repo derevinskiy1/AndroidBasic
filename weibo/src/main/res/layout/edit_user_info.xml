@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:paddingLeft="@dimen/detail_margin" android:paddingRight="@dimen/detail_margin" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/detail_margin_top" android:paddingBottom="@dimen/detail_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/lyPortrait" android:clickable="true" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginBottom="@dimen/common_item_margin">
+            <LinearLayout android:gravity="center_vertical" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ivPortraitArrow" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <FrameLayout android:layout_width="73.0dip" android:layout_height="wrap_content">
+                    <com.sina.weibo.view.RoundedImageView android:id="@id/ivPortrait" android:saveEnabled="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="fitXY" android:adjustViewBounds="false" weibo:corner_radius="@dimen/small_portrait_round_radius" weibo:border_width="1.0dip" weibo:border_color="#0d000000" weibo:round_background="true" />
+                </FrameLayout>
+                <TextView android:id="@id/tvPortraitContent" android:text="@string/upload_portrait" style="@style/user_info_detail_content" />
+            </LinearLayout>
+            <ImageView android:id="@id/ivPortraitArrow" style="@style/user_info_detail_arrow" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/lyNick" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/user_info_detail_item">
+                <TextView android:id="@id/tvNick" android:text="@string/detail_nick" style="@style/user_info_detail_name" />
+                <TextView android:id="@id/tvNickContent" style="@style/user_info_detail_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/divider1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <RelativeLayout android:id="@id/lyGender" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/user_info_detail_item">
+                <TextView android:id="@id/tvGender" android:text="@string/detail_gender" style="@style/user_info_detail_name" />
+                <TextView android:id="@id/tvGenderContent" style="@style/user_info_detail_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/divider2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <RelativeLayout android:id="@id/lyAddress" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/user_info_detail_item">
+                <TextView android:id="@id/tvAddress" android:text="@string/detail_address" style="@style/user_info_detail_name" />
+                <TextView android:id="@id/tvAddressContent" style="@style/user_info_detail_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/divider3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <RelativeLayout android:id="@id/lyIntro" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/common_item_margin">
+            <LinearLayout style="@style/user_info_detail_item">
+                <TextView android:id="@id/tvIntro" android:text="@string/detail_intro" style="@style/user_info_detail_name" />
+                <TextView android:id="@id/tvIntroContent" android:hint="@string/edit_intro_hint" style="@style/user_info_detail_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/lyBirthday" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/user_info_detail_item">
+                <TextView android:id="@id/tvBirthday" android:text="@string/detail_birthday" style="@style/user_info_detail_name" />
+                <TextView android:id="@id/tvBirthdayContent" android:hint="@string/edit_birthday_hint" style="@style/user_info_detail_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/divider4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <RelativeLayout android:id="@id/lyEmail" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/user_info_detail_item">
+                <TextView android:id="@id/tvEmail" android:text="@string/detail_email" style="@style/user_info_detail_name" />
+                <TextView android:id="@id/tvEmailContent" android:hint="@string/edit_email_hint" style="@style/user_info_detail_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/divider5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <RelativeLayout android:id="@id/lyBlog" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/user_info_detail_item">
+                <TextView android:id="@id/tvBlog" android:text="@string/detail_blog" style="@style/user_info_detail_name" />
+                <TextView android:id="@id/tvBlogContent" android:hint="@string/edit_blog_hint" style="@style/user_info_detail_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/divider6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <RelativeLayout android:id="@id/lyQQ" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/user_info_detail_item">
+                <TextView android:id="@id/tvQQ" android:text="@string/detail_qq" style="@style/user_info_detail_name" />
+                <TextView android:id="@id/tvQQContent" android:hint="@string/edit_qq_hint" style="@style/user_info_detail_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/divider7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <RelativeLayout android:id="@id/lyMSN" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/user_info_detail_item">
+                <TextView android:id="@id/tvMSN" android:text="@string/detail_msn" style="@style/user_info_detail_name" />
+                <TextView android:id="@id/tvMSNContent" android:hint="@string/edit_msn_hint" style="@style/user_info_detail_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

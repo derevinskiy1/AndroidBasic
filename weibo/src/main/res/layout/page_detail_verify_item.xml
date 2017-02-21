@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:paddingLeft="8.0dip" android:layout_toLeftOf="@id/ivArrow" style="@style/user_info_detail_item">
+        <FrameLayout android:layout_width="92.0dip" android:layout_height="wrap_content">
+            <TextView android:id="@id/tvVerify" android:background="@drawable/userinfo_verify_enterprise" android:text="@string/detail_verify" style="@style/user_info_detail_verify_name" />
+        </FrameLayout>
+        <TextView android:id="@id/tvVerifyContent" style="@style/user_info_detail_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/ivArrow" style="@style/user_info_detail_arrow" />
+</RelativeLayout>

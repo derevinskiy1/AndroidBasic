@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.composerinde.view.ComposerToolbarView android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/stub_emotion_panel" android:layout="@layout/editlayout_emotion_panel" android:inflatedId="@id/emotion_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/stub_app_panel" android:layout="@layout/editlayout_app_panel" android:inflatedId="@id/app_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

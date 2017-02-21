@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/local_media_controller_titlebar" android:background="@drawable/editor_titlebar_background" android:layout_width="fill_parent" android:layout_height="@dimen/video_preview_top_bar_size">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/local_media_controller_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:gravity="center" android:id="@id/local_media_controller_btn_cancel" android:background="@drawable/userinfo_buttonicon_back_icon" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_centerVertical="true" android:contentDescription="@string/filter_restart_photo" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="44.0dip" android:layout_centerInParent="true">
+            <TextView android:textSize="12.0dip" android:textColor="@android:color/white" android:id="@id/local_media_controller_time_current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" android:singleLine="true" style="@style/MediaController_Text" />
+            <TextView android:textSize="12.0dip" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" android:singleLine="true" style="@style/MediaController_Text" />
+            <TextView android:textSize="12.0dip" android:textColor="@android:color/white" android:id="@id/local_media_controller_time_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" android:singleLine="true" style="@style/MediaController_Text" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/video_player_preview_index_root" android:visibility="gone" android:layout_width="@dimen/pic_filter_top_height" android:layout_height="@dimen/pic_filter_top_height" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:id="@id/video_player_preview_index" android:background="@drawable/compose_photo_preview" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/local_media_controller_bottombar" android:background="@drawable/camera_toolbar_background" android:layout_width="fill_parent" android:layout_height="@dimen/video_preview_bottom_bar_size" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="44.0dip" android:layout_weight="1.0">
+                <SeekBar android:id="@id/local_media_controller_seekbar" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:focusable="true" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="44.0dip" android:maxHeight="44.0dip" android:max="1000" android:indeterminateOnly="false" android:minHeight="44.0dip" android:thumb="@drawable/media_controller_selector_holo" android:thumbOffset="9.0dip" style="@style/MediaController_SeekBar" />
+                <SeekBar android:id="@id/local_mediacontroller_horizontal_seekbar" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:focusable="true" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="44.0dip" android:maxHeight="34.0dip" android:max="1000" android:indeterminateOnly="false" android:minHeight="34.0dip" android:thumb="@drawable/media_controller_selector_holo" android:thumbOffset="9.0dip" style="@style/MediaController_SeekBar" />
+            </FrameLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/video_player_preview_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/camera_button_delete_bg" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/video_player_preview_next" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/next" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/notification_send" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/local_media_controller_bottombar" android:layout_below="@id/local_media_controller_titlebar">
+        <ImageButton android:id="@id/local_media_controller_play_pause" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@string/media_controller_play_pause" />
+    </RelativeLayout>
+</RelativeLayout>

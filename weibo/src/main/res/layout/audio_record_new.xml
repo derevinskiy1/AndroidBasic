@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/ll_panel" android:background="@color/recording_background_color" android:layout_width="150.0dip" android:layout_height="150.0dip">
+        <ImageView android:id="@id/iv_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="28.0dip" android:src="@drawable/recording_recording_indicator" android:scaleType="center" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/tv_recode_status" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/iv_icon" />
+        <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/tv_action_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="11.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/settings_margin_top" android:layout_marginBottom="@dimen/settings_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/showRewardLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height_top">
+        <TextView android:gravity="center_vertical" android:id="@id/tvShowReward" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/article_settings_reward_show" android:layout_centerVertical="true" style="@style/SettingMainText" />
+        <com.sina.weibo.view.SwitchButton android:id="@id/showRewardCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_text_padding_right" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/divider1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:id="@id/editLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/main_content_subtitle_text_color" android:gravity="left" android:id="@id/editSubTitle" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/article_settings_reward_edit_desc" />
+        <FrameLayout android:id="@id/editBottomLayout" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="14.0dip">
+            <EditText android:textSize="16.0sp" android:textColor="@color/common_gray_63" android:gravity="start" android:id="@id/etRewardText" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="12.0dip" android:text="" android:singleLine="true" android:inputType="text" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/common_prompt_red" android:layout_gravity="end|bottom|center" android:id="@id/tvCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="-1" android:includeFontPadding="false" />
+        </FrameLayout>
+    </LinearLayout>
+    <TextView android:textColor="@color/main_content_subtitle_text_color" android:id="@id/tvDescript" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/article_settings_reward_desc" style="@style/SettingExplainText" />
+</LinearLayout>

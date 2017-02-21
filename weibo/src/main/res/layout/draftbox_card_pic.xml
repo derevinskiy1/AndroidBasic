@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/weibo_image" android:layout_width="@dimen/timeline_big_card_normal_pic_width" android:layout_height="@dimen/timeline_big_card_normal_pic_height" android:scaleType="fitXY" />
+    <TextView android:textSize="17.0sp" android:ellipsize="end" android:gravity="center|left" android:id="@id/weibo_content" android:paddingLeft="5.0dip" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLines="3" android:layout_weight="1.0" android:lineSpacingExtra="3.0dip" />
+</LinearLayout>

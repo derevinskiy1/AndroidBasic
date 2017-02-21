@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/article_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/article_cover_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.sina.weibo.feed.view.ArticleTitleView android:id="@id/article_author_header" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+    <View android:background="@color/common_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="20.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/article_title_container" android:paddingLeft="@dimen/share_private_message_margin" android:paddingRight="@dimen/share_private_message_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.sina.weibo.feed.view.MBlogTextView android:textSize="24.0sp" android:textColor="@color/common_gray_33" android:id="@id/article_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:lineSpacingExtra="4.0sp" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+            <com.sina.weibo.feed.view.MBlogTextView android:textSize="@dimen/universal_textsize_13" android:textColor="@color/common_gray_93" android:ellipsize="end" android:id="@id/tv_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="10" android:singleLine="true" />
+            <View android:id="@id/tdivider0" android:background="@color/common_content_button_disabled_text" android:visibility="gone" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <com.sina.weibo.feed.view.MBlogTextView android:textSize="@dimen/universal_textsize_13" android:textColor="@color/common_gray_93" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <View android:id="@id/tdivider1" android:background="@color/common_content_button_disabled_text" android:visibility="gone" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <com.sina.weibo.feed.view.MBlogTextView android:textSize="@dimen/universal_textsize_13" android:textColor="@color/common_gray_93" android:id="@id/tv_readcount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.sina.weibo.feed.view.MBlogTextView android:textSize="17.0sp" android:textColor="@color/common_gray_63" android:id="@id/article_introduction" android:background="@drawable/friendcircle_timeline_comment_bg" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/share_private_message_margin" android:layout_marginRight="@dimen/share_private_message_margin" android:layout_marginBottom="20.0dip" android:lineSpacingExtra="8.0sp" />
+    <ViewStub android:id="@id/middle_share_view" android:layout="@layout/article_share_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+    <com.sina.weibo.feed.view.ArticleHtmlContentView android:id="@id/article_htmlview_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

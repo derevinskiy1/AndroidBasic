@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.photoalbum.view.PhotoalbumToolbar android:id="@id/photoalbum_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/preview_index_root" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="15.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:id="@id/preview_index" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+        </FrameLayout>
+        <ImageView android:id="@id/photo_album_title_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

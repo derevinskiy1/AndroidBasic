@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/market_sng_all_margin" android:paddingRight="@dimen/market_sng_all_margin" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/market_sng_all_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.appmarket.sng.widget.HorizontalListView android:id="@id/market_sng_horizonlv" android:paddingLeft="@dimen/market_recomment_item_distance_inner_h" android:paddingTop="@dimen/market_recomment_item_distance_inner_v" android:paddingRight="@dimen/market_recomment_item_distance_inner_h" android:paddingBottom="@dimen/market_recomment_item_distance_inner_v" android:layout_width="fill_parent" android:layout_height="@dimen/market_sng_dimen_height" />
+    <TextView android:textSize="@dimen/market_sng_textsize_l" android:id="@id/market_sng_tv_intro" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/market_sng_gamedetail_msg" android:gravity="center|left|top" android:id="@id/market_sng_tv_msg" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+</LinearLayout>

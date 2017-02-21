@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/media_video_completion_layout_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/common_button_text" android:gravity="center" android:id="@id/video_guide_error_text" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/media_video_error_text" android:singleLine="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/video_guide_content_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

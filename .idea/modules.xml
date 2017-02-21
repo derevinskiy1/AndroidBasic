@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidStudyCode/AndroidStudyCode.iml" filepath="$PROJECT_DIR$/AndroidStudyCode/AndroidStudyCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UI.iml" filepath="$PROJECT_DIR$/UI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/animator/animator.iml" filepath="$PROJECT_DIR$/animator/animator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base64/base64.iml" filepath="$PROJECT_DIR$/base64/base64.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cache/cache.iml" filepath="$PROJECT_DIR$/cache/cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coordinator/coordinator.iml" filepath="$PROJECT_DIR$/coordinator/coordinator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customviewandviewgroup/customviewandviewgroup.iml" filepath="$PROJECT_DIR$/customviewandviewgroup/customviewandviewgroup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/database/database.iml" filepath="$PROJECT_DIR$/database/database.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dayandnighttheme/dayandnighttheme.iml" filepath="$PROJECT_DIR$/dayandnighttheme/dayandnighttheme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dialog/dialog.iml" filepath="$PROJECT_DIR$/dialog/dialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/glidedemo2/glidedemo2.iml" filepath="$PROJECT_DIR$/glidedemo2/glidedemo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/htmljs/htmljs.iml" filepath="$PROJECT_DIR$/htmljs/htmljs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/httpurlconnection/httpurlconnection.iml" filepath="$PROJECT_DIR$/httpurlconnection/httpurlconnection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lottery/lottery.iml" filepath="$PROJECT_DIR$/lottery/lottery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lottery1/lottery1.iml" filepath="$PROJECT_DIR$/lottery1/lottery1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lrc/lrc.iml" filepath="$PROJECT_DIR$/lrc/lrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvp/mvp.iml" filepath="$PROJECT_DIR$/mvp/mvp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myview/myview.iml" filepath="$PROJECT_DIR$/myview/myview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ndk/ndk.iml" filepath="$PROJECT_DIR$/ndk/ndk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/net/net.iml" filepath="$PROJECT_DIR$/net/net.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay/pay.iml" filepath="$PROJECT_DIR$/pay/pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/segmentview/segmentview.iml" filepath="$PROJECT_DIR$/segmentview/segmentview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sensortest/sensortest.iml" filepath="$PROJECT_DIR$/sensortest/sensortest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/skinchange/skinchange.iml" filepath="$PROJECT_DIR$/skinchange/skinchange.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slidemenu/slidemenu.iml" filepath="$PROJECT_DIR$/slidemenu/slidemenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smoothimageview/smoothimageview.iml" filepath="$PROJECT_DIR$/smoothimageview/smoothimageview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sqlite/sqlite.iml" filepath="$PROJECT_DIR$/sqlite/sqlite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/surfaceview/surfaceview.iml" filepath="$PROJECT_DIR$/surfaceview/surfaceview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sweepview/sweepview.iml" filepath="$PROJECT_DIR$/sweepview/sweepview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipeback/swipeback.iml" filepath="$PROJECT_DIR$/swipeback/swipeback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/systemui/systemui.iml" filepath="$PROJECT_DIR$/systemui/systemui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testbmob/testbmob.iml" filepath="$PROJECT_DIR$/testbmob/testbmob.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testdrawable/testdrawable.iml" filepath="$PROJECT_DIR$/testdrawable/testdrawable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testglide/testglide.iml" filepath="$PROJECT_DIR$/testglide/testglide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/translucentbardemo/translucentbardemo.iml" filepath="$PROJECT_DIR$/translucentbardemo/translucentbardemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewpagerdemo/viewpagerdemo.iml" filepath="$PROJECT_DIR$/viewpagerdemo/viewpagerdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wechatpay/wechatpay.iml" filepath="$PROJECT_DIR$/wechatpay/wechatpay.iml" />
+    </modules>
+  </component>
+</project>

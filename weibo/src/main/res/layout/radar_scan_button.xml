@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sina.weibo.radar.view.radarscan.RadarButtonView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/radar_button" android:padding="36.0dip" android:layout_width="@dimen/radar_button_size" android:layout_height="@dimen/radar_button_size" android:src="@drawable/radar_button_scan" style="@style/radar_scan_image_view" />
+    <ImageView android:id="@id/radar_button_icon" android:layout_width="@dimen/radar_button_icon_size" android:layout_height="@dimen/radar_button_icon_size" android:src="@drawable/radar_button_icon" style="@style/radar_scan_image_view" />
+</com.sina.weibo.radar.view.radarscan.RadarButtonView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_card_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.card.view.WeiboHorizontalScrollView android:layout_gravity="center" android:id="@id/scrollView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/picsContainer" android:paddingLeft="@dimen/visitor_card_item_distance_inner_l" android:paddingRight="@dimen/visitor_card_item_distance_inner_r" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/visitor_card_item_distance_inner_t" android:layout_marginBottom="@dimen/visitor_card_item_distance_inner_b" />
+    </com.sina.weibo.card.view.WeiboHorizontalScrollView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/group_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/lyGroupItem" android:layout_width="fill_parent" android:layout_height="@dimen/group_item_text_height">
+        <TextView android:textSize="18.0sp" android:id="@id/groupItem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/group_item_text_padding" android:layout_marginRight="@dimen/group_item_text_padding" android:singleLine="true" android:drawablePadding="7.0dip" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/groupUnread" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/new_dot" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/groupNewGuide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/group_item_text_padding" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/ivDivider" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/group_item_divider_height" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+</LinearLayout>

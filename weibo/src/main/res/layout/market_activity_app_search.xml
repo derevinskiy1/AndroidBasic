@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_search_page" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:attr="http://schemas.android.com/apk/res/com.sina.weibo">
+    <RelativeLayout android:id="@id/search_bar" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="17.0sp" android:gravity="center" android:id="@id/btn_search_or_back" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:minWidth="@dimen/market_search_button_size" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btn_search_or_back" android:layout_centerVertical="true">
+            <EditText android:textSize="@dimen/market_font_14" android:id="@id/et_key" android:background="@drawable/square_search_bg" android:paddingLeft="30.0dip" android:paddingTop="8.0dip" android:paddingRight="30.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:hint="@string/market_input_search" android:singleLine="true" android:layout_centerVertical="true" android:imeOptions="actionSearch" />
+            <ImageView android:gravity="center" android:id="@id/tv_search_group" android:background="@drawable/searchbar_textfield_search_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <LinearLayout android:id="@id/btn_clear_search" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_btn_clear_search" android:background="@drawable/search_clear_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/rl_search_body" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/sv_friend_search_topn" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.sina.weibo.appmarket.widget.CatSubjectCardView android:id="@id/ll_friend_search_topn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" />
+        </ScrollView>
+        <com.sina.weibo.appmarket.widget.CategoryAppCardView android:id="@id/category_app_card_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:id="@id/correct_layout" android:visibility="gone" android:layout_alignParentTop="true" layout="@layout/market_vw_search_list_header" />
+        <ListView android:id="@id/lv_result" android:fadingEdge="none" android:fadingEdgeLength="0.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:scrollingCache="false" android:divider="@android:color/transparent" android:dividerHeight="@dimen/market_card_style_divider_height" android:layout_below="@id/correct_layout" android:fastScrollEnabled="false" />
+        <com.sina.weibo.appmarket.widget.ReloadView android:id="@id/reload" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.sina.weibo.appmarket.widget.ProgressView android:id="@id/waitingLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

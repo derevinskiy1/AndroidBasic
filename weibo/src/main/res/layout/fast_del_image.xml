@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/fd_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/compose_image_placeholder" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/fd_del_image" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/compose_pic_delete" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/fd_long_image_mark" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/compose_image_longimage" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</merge>
